@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134473598250",
+  "conclusion": "success",
+  "started_at": "2026-11-18T00:07:32Z",
+  "completed_at": "2026-11-18T00:16:23Z",
+  "title": "1250 passed, 6 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 8 min 51 s\n\nOn 10b87ff \u00b7 10 min 20 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_fcd4140a1b08fb29/4c4187491abeaaba4b09649cffbb81c5/html/index.html)\n\n<details>\n<summary>6 flaky tests, not blocking</summary>\n\n`child.clientAction/parent.childLoader` failed once here, then passed on retry\n`should scroll to hash locations with URL encoded characters` failed once here, then passed on retry\n`express` failed once here, then passed on retry\n`allows fine-grained revalidation` failed 3 times here, then passed on retry\n`without JS` failed once here, then passed on retry\n`Prerenders a static array of routes with server bundles` failed twice here, then passed on retry\n\n</details>\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ }
+]
