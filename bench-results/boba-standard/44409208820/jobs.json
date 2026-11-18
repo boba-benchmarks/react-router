@@ -1,0 +1,139 @@
+[
+ {
+  "id": 135172540271,
+  "name": "integration (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/react-router/actions/runs/44409208820/job/135172540271",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-18T22:11:57Z",
+  "started_at": "2026-11-18T22:12:08Z",
+  "completed_at": "2026-11-18T22:18:39Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-135172540271-1",
+  "runner_group_name": "coldtea boba - react-router",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-18T22:12:09Z",
+    "completed_at": "2026-11-18T22:12:11Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-18T22:12:11Z",
+    "completed_at": "2026-11-18T22:12:11Z"
+   },
+   {
+    "name": "\u2b07\ufe0f Checkout repo",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-18T22:12:11Z",
+    "completed_at": "2026-11-18T22:12:12Z"
+   },
+   {
+    "name": "\ud83d\udce6 Setup pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-18T22:12:12Z",
+    "completed_at": "2026-11-18T22:12:14Z"
+   },
+   {
+    "name": "\u2394 Setup node 22",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-18T22:12:14Z",
+    "completed_at": "2026-11-18T22:12:19Z"
+   },
+   {
+    "name": "\ud83d\udce5 Install deps",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-18T22:12:19Z",
+    "completed_at": "2026-11-18T22:12:25Z"
+   },
+   {
+    "name": "\ud83d\udce5 Install Playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-18T22:12:25Z",
+    "completed_at": "2026-11-18T22:12:34Z"
+   },
+   {
+    "name": "\u2699\ufe0f Build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-18T22:12:34Z",
+    "completed_at": "2026-11-18T22:13:02Z"
+   },
+   {
+    "name": "\ud83d\udc40 Run Integration Tests on Boba",
+    "status": "completed",
+    "conclusion": "failure",
+    "number": 9,
+    "started_at": "2026-11-18T22:13:02Z",
+    "completed_at": "2026-11-18T22:18:34Z"
+   },
+   {
+    "name": "\ud83d\udc40 Run Integration Tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 10,
+    "started_at": "2026-11-18T22:18:34Z",
+    "completed_at": "2026-11-18T22:18:34Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@v4",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-18T22:18:34Z",
+    "completed_at": "2026-11-18T22:18:34Z"
+   },
+   {
+    "name": "Post \u2394 Setup node 22",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 20,
+    "started_at": "2026-11-18T22:18:34Z",
+    "completed_at": "2026-11-18T22:18:34Z"
+   },
+   {
+    "name": "Post \ud83d\udce6 Setup pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-18T22:18:34Z",
+    "completed_at": "2026-11-18T22:18:34Z"
+   },
+   {
+    "name": "Post \u2b07\ufe0f Checkout repo",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-18T22:18:34Z",
+    "completed_at": "2026-11-18T22:18:35Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-18T22:18:35Z",
+    "completed_at": "2026-11-18T22:18:35Z"
+   }
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/135176362755",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T22:13:05Z",
+  "completed_at": "2026-11-18T22:18:27Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`allows fine-grained revalidation` fails on this commit every time\n\n<!-- boba-card:946e250861ed1cfe -->\n\n> expect(received).toEqual(expected) // deep equality\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/react-router, at commit 10b87ff. It fails on this push, and Boba has no run of main to compare with.\n\n1. integration/single-fetch-test.ts \u203a single-fetch \u203a allows fine-grained revalidation\n   expect(received).toEqual(expected) // deep equality\n\nCheck your fixes: npx playwright test integration/single-fetch-test.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_5d638824a0d3c99c/c09d9ab9b4d6e655849ffc19c1a35b9c/html/index.html#?testId=d111059f1e1a5d69500a-ba23e7f613fdc6c4891e) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_5d638824a0d3c99c/c09d9ab9b4d6e655849ffc19c1a35b9c/html/index.html)\n\n<details>\n<summary>4 flaky tests, not blocking \u00b7 1245 passed \u00b7 44 skipped \u00b7 5 min 23 s</summary>\n\n`Supports React Server Functions side-effect redirect headers for document requests` failed once here, then passed on retry\n`Suppport throwing redirect Response from suspended render` failed once here, then passed on retry\n`should scroll to hash locations with URL encoded characters` failed once here, then passed on retry\n`throws a 400 if you call serverLoader without a server loader` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
