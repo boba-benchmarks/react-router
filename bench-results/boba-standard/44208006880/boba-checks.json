@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134483579091",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T00:28:48Z",
+  "completed_at": "2026-11-18T00:37:48Z",
+  "title": "2 tests failed on this commit",
+  "summary": "### \u274c 2 tests failed on this commit\n\nBoth fail on this commit every time\n\n#### 1. `should scroll to hash locations`\n\n<!-- boba-card:44f2933bbcf1c74b -->\n\n> The page said \u201c0\u201d The test expected \u201c\\> 0\u201d\n\n<details>\n<summary><b>2. <code>should scroll to hash locations with URL encoded characters</code></b> \u00b7 expected \u201c&gt; 0\u201d</summary>\n\n<!-- boba-card:90f50ee4cd93bdfc -->\n\n> The page said \u201c0\u201d The test expected \u201c\\> 0\u201d\n\n</details>\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the 2 Playwright tests failing on boba-benchmarks/react-router, at commit 10b87ff. They fail on this push, and Boba has no run of main to compare with.\n\n1. integration/scroll-test.ts \u203a with JavaScript \u203a should scroll to hash locations\n   The page said \u201c0\u201d The test expected \u201c> 0\u201d\n\n2. integration/scroll-test.ts \u203a with JavaScript \u203a should scroll to hash locations with URL encoded characters\n   The page said \u201c0\u201d The test expected \u201c> 0\u201d\n\nCheck your fixes: npx playwright test integration/scroll-test.ts\n```\n\n</details>\n\n[Open the traces](https://www.coldtea.ai/api/boba/reports/bj_e81d5c8e68738880/8e074b3af882cdeb489e8e061c73abc5/html/index.html#?q=s:failed) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_e81d5c8e68738880/8e074b3af882cdeb489e8e061c73abc5/html/index.html)\n\n<details>\n<summary>3 flaky tests, not blocking \u00b7 1245 passed \u00b7 44 skipped \u00b7 9 min</summary>\n\n`does not call actions on cross-origin document POST requests` failed once here, then passed on retry\n`no client loaders or fallbacks` failed once here, then passed on retry\n`sends proper arguments to loaders when future.v8_passThroughRequests is enabled` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
