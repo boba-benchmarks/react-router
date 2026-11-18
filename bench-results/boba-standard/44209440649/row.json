@@ -1,0 +1,29 @@
+{
+ "at": "2026-11-18T00:48:02+00:00",
+ "suite": "react-router",
+ "repo": "boba-benchmarks/react-router",
+ "runner": "boba-standard",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/react-router/actions/runs/44209440649",
+ "run_id": 44209440649,
+ "sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "conclusion": "success",
+ "wall_s": 568,
+ "queue_s": 8,
+ "job_s": 568,
+ "jobs": 1,
+ "vcpu_min": null,
+ "billed_min": null,
+ "usd": null,
+ "tests": {
+  "passed": 1250,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 44,
+  "checks": 1,
+  "conclusions": [
+   "success"
+  ]
+ }
+}

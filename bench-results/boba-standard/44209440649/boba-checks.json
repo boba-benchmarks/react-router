@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134488067296",
+  "conclusion": "success",
+  "started_at": "2026-11-18T00:39:04Z",
+  "completed_at": "2026-11-18T00:47:35Z",
+  "title": "1250 passed, 4 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 8 min 31 s\n\nOn 10b87ff \u00b7 9 min 20 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_0d93f63dc0a9eb7b/5c5d70360e11df3353f18ee6f1c87329/html/index.html)\n\n<details>\n<summary>4 flaky tests, not blocking</summary>\n\n`allows fine-grained revalidation` failed once here, then passed on retry\n`should scroll to hash locations` failed 3 times here, then passed on retry\n`does not call actions on cross-origin document POST requests` failed once here, then passed on retry\n`Vite / NODE_ENV / build` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
