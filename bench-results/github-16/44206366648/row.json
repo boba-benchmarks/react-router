@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-18T00:25:04+00:00",
+ "suite": "react-router",
+ "repo": "boba-benchmarks/react-router",
+ "runner": "github-16",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/react-router/actions/runs/44206366648",
+ "run_id": 44206366648,
+ "sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "conclusion": "success",
+ "wall_s": 527,
+ "queue_s": 3,
+ "job_s": 527,
+ "jobs": 1,
+ "vcpu_min": 140.5,
+ "billed_min": 9,
+ "usd": 0.378,
+ "tests": {
+  "passed": 1246,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 44,
+  "failed_tests": [],
+  "flaky_tests": [
+   "rsc/route-discovery-test.ts::RSC (vite) bounds route discovery for documents and data::chromium",
+   "rsc/rsc-nojs-test.ts::Suppport throwing external redirect Response from suspended render::chromium",
+   "rsc/rsc-test.ts::Supports navigating between server-first/client-first routes starting on a server route::chromium",
+   "vite-prerender-test.ts::Prerenders a static array of routes with server bundles::chromium"
+  ],
+  "files": 1
+ }
+}
