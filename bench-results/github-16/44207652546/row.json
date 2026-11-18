@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-18T00:34:31+00:00",
+ "suite": "react-router",
+ "repo": "boba-benchmarks/react-router",
+ "runner": "github-16",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/react-router/actions/runs/44207652546",
+ "run_id": 44207652546,
+ "sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "conclusion": "success",
+ "wall_s": 545,
+ "queue_s": 3,
+ "job_s": 545,
+ "jobs": 1,
+ "vcpu_min": 145.3,
+ "billed_min": 10,
+ "usd": 0.42,
+ "tests": {
+  "passed": 1246,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 44,
+  "failed_tests": [],
+  "flaky_tests": [
+   "resource-routes-test.ts::should handle ErrorResponses thrown from resource routes on client submissions::chromium",
+   "rsc/route-discovery-test.ts::RSC (vite) bounds route discovery for documents and data::chromium",
+   "rsc/rsc-nojs-test.ts::Suppport throwing external redirect Response from render::chromium",
+   "single-fetch-test.ts::call-site revalidation opt-out handles parent routes w/o shouldRevalidate::chromium"
+  ],
+  "files": 1
+ }
+}
