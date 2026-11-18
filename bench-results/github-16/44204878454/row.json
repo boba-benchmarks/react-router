@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-18T00:15:38+00:00",
+ "suite": "react-router",
+ "repo": "boba-benchmarks/react-router",
+ "runner": "github-16",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/react-router/actions/runs/44204878454",
+ "run_id": 44204878454,
+ "sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "conclusion": "success",
+ "wall_s": 605,
+ "queue_s": 6,
+ "job_s": 605,
+ "jobs": 1,
+ "vcpu_min": 161.3,
+ "billed_min": 11,
+ "usd": 0.462,
+ "tests": {
+  "passed": 1246,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 44,
+  "failed_tests": [],
+  "flaky_tests": [
+   "rsc/rsc-nojs-test.ts::Supports React Server Functions side-effect redirect headers for document requests::chromium",
+   "rsc/rsc-nojs-test.ts::Suppport throwing external redirect Response from suspended render::chromium",
+   "rsc/rsc-nojs-test.ts::Suppport throwing redirect Response from suspended render::chromium",
+   "vite-plugin-cloudflare-test.ts::handles CSS side effects during SSR in dev::chromium"
+  ],
+  "files": 1
+ }
+}
