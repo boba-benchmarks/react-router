@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134489939384",
+  "conclusion": "success",
+  "started_at": "2026-11-18T00:49:18Z",
+  "completed_at": "2026-11-18T00:51:37Z",
+  "title": "1250 passed, 1 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 2 min 19 s\n\nOn 10b87ff \u00b7 3 min 27 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_db0be7fe4f271534/af32855af10d754441b813097bd350b0/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`sends proper arguments to loaders when future.v8_passThroughRequests is disabled` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
