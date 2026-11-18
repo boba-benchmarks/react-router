@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134478628918",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T00:18:25Z",
+  "completed_at": "2026-11-18T00:27:13Z",
+  "title": "2 tests failed on this commit",
+  "summary": "### \u274c 2 tests failed on this commit\n\nBoth fail on this commit every time\n\n#### 1. `allows fine-grained revalidation`\n\n<!-- boba-card:946e250861ed1cfe -->\n\n> expect(received).toEqual(expected) // deep equality\n\n<details>\n<summary><b>2. <code>should scroll to hash locations with URL encoded characters</code></b> \u00b7 expected \u201c&gt; 0\u201d</summary>\n\n<!-- boba-card:90f50ee4cd93bdfc -->\n\n> The page said \u201c0\u201d The test expected \u201c\\> 0\u201d\n\n</details>\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the 2 Playwright tests failing on boba-benchmarks/react-router, at commit 10b87ff. They fail on this push, and Boba has no run of main to compare with.\n\n1. integration/single-fetch-test.ts \u203a single-fetch \u203a allows fine-grained revalidation\n   expect(received).toEqual(expected) // deep equality\n\n2. integration/scroll-test.ts \u203a with JavaScript \u203a should scroll to hash locations with URL encoded characters\n   The page said \u201c0\u201d The test expected \u201c> 0\u201d\n\nCheck your fixes: npx playwright test integration/single-fetch-test.ts integration/scroll-test.ts\n```\n\n</details>\n\n[Open the traces](https://www.coldtea.ai/api/boba/reports/bj_1899d42708a0b02c/5029718f4719d482272db8af7305e126/html/index.html#?q=s:failed) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1899d42708a0b02c/5029718f4719d482272db8af7305e126/html/index.html)\n\n<details>\n<summary>3 flaky tests, not blocking \u00b7 1245 passed \u00b7 44 skipped \u00b7 8 min 48 s</summary>\n\n`with JS` failed once here, then passed on retry\n`Supports React Server Functions side-effect redirect headers for document requests` failed once here, then passed on retry\n`Suppport throwing redirect Response from suspended render` failed once here, then passed on retry\n\n</details>\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ }
+]

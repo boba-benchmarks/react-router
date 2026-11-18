@@ -1,0 +1,884 @@
+﻿2026-11-18T00:17:06.1492744Z Current runner version: '2.338.2'
+2026-11-18T00:17:06.1497275Z Runner name: 'boba-134473751135-1'
+2026-11-18T00:17:06.1497908Z Runner group name: 'coldtea boba - react-router'
+2026-11-18T00:17:06.1498708Z Machine name: 'ubuntu'
+2026-11-18T00:17:06.1501055Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T00:17:06.1502467Z Actions: read
+2026-11-18T00:17:06.1503077Z Checks: write
+2026-11-18T00:17:06.1503601Z Contents: read
+2026-11-18T00:17:06.1504079Z Metadata: read
+2026-11-18T00:17:06.1504655Z PullRequests: write
+2026-11-18T00:17:06.1505149Z ##[endgroup]
+2026-11-18T00:17:06.1506582Z Secret source: Actions
+2026-11-18T00:17:06.1507485Z Cache mode: write
+2026-11-18T00:17:06.1508171Z Prepare workflow directory
+2026-11-18T00:17:06.1735579Z Prepare all required actions
+2026-11-18T00:17:06.1763661Z Getting action download info
+2026-11-18T00:17:06.6291669Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-18T00:17:06.6760607Z Download action repository 'pnpm/action-setup@v6' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+2026-11-18T00:17:06.9803897Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+2026-11-18T00:17:07.0472771Z Download action repository 'coldteadotai/boba@v1' (SHA:4ca4c1926a0f3307fc0d9f0f5c07aa08c2b6586a)
+2026-11-18T00:17:07.3439027Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-18T00:17:07.5084414Z Complete job name: integration (boba-standard)
+2026-11-18T00:17:07.5477263Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-18T00:17:07.5658463Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-18T00:17:07.5670912Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T00:17:07.5672137Z ##[endgroup]
+2026-11-18T00:17:07.6409980Z Boba checked this job in 61 ms; dependency cache: box disk; databases: fresh
+2026-11-18T00:17:07.6644606Z ##[group]Run actions/checkout@v6
+2026-11-18T00:17:07.6645464Z with:
+2026-11-18T00:17:07.6646247Z   repository: boba-benchmarks/react-router
+2026-11-18T00:17:07.6651227Z   token: ***
+2026-11-18T00:17:07.6651904Z   ssh-strict: true
+2026-11-18T00:17:07.6652738Z   ssh-user: git
+2026-11-18T00:17:07.6653469Z   persist-credentials: true
+2026-11-18T00:17:07.6654247Z   clean: true
+2026-11-18T00:17:07.6655168Z   sparse-checkout-cone-mode: true
+2026-11-18T00:17:07.6656034Z   fetch-depth: 1
+2026-11-18T00:17:07.6656870Z   fetch-tags: false
+2026-11-18T00:17:07.6657610Z   show-progress: true
+2026-11-18T00:17:07.6658343Z   lfs: false
+2026-11-18T00:17:07.6659194Z   submodules: false
+2026-11-18T00:17:07.6660065Z   set-safe-directory: true
+2026-11-18T00:17:07.6660958Z   allow-unsafe-pr-checkout: false
+2026-11-18T00:17:07.6661787Z env:
+2026-11-18T00:17:07.6662420Z   CI: true
+2026-11-18T00:17:07.6663177Z ##[endgroup]
+2026-11-18T00:17:07.8334658Z Syncing repository: boba-benchmarks/react-router
+2026-11-18T00:17:07.8336571Z ##[group]Getting Git version info
+2026-11-18T00:17:07.8337500Z Working directory is '/home/runner/work/react-router/react-router'
+2026-11-18T00:17:07.8338808Z [command]/usr/bin/git version
+2026-11-18T00:17:07.8393095Z git version 2.56.1
+2026-11-18T00:17:07.8407990Z ##[endgroup]
+2026-11-18T00:17:07.8416461Z Temporarily overriding HOME='/home/runner/work/_temp/df744a2a-06d4-41b9-840b-833121942ad2' before making global git config changes
+2026-11-18T00:17:07.8418442Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T00:17:07.8421522Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-router/react-router
+2026-11-18T00:17:07.8449650Z Deleting the contents of '/home/runner/work/react-router/react-router'
+2026-11-18T00:17:07.8452300Z ##[group]Determining repository object format
+2026-11-18T00:17:07.8454676Z ##[endgroup]
+2026-11-18T00:17:07.8456964Z ##[group]Initializing the repository
+2026-11-18T00:17:07.8458146Z [command]/usr/bin/git init /home/runner/work/react-router/react-router
+2026-11-18T00:17:07.8518792Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T00:17:07.8520516Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T00:17:07.8521691Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T00:17:07.8523874Z hint: call:
+2026-11-18T00:17:07.8524500Z hint:
+2026-11-18T00:17:07.8525188Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T00:17:07.8525953Z hint:
+2026-11-18T00:17:07.8526682Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T00:17:07.8528052Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T00:17:07.8529131Z hint:
+2026-11-18T00:17:07.8529708Z hint: 	git branch -m <name>
+2026-11-18T00:17:07.8530318Z hint:
+2026-11-18T00:17:07.8531116Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T00:17:07.8532401Z Initialized empty Git repository in /home/runner/work/react-router/react-router/.git/
+2026-11-18T00:17:07.8536671Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/react-router
+2026-11-18T00:17:07.8574748Z ##[endgroup]
+2026-11-18T00:17:07.8575867Z ##[group]Disabling automatic garbage collection
+2026-11-18T00:17:07.8577309Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-18T00:17:07.8600494Z ##[endgroup]
+2026-11-18T00:17:07.8602206Z ##[group]Setting up auth
+2026-11-18T00:17:07.8603206Z Removing SSH command configuration
+2026-11-18T00:17:07.8604620Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T00:17:07.8630031Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T00:17:07.8907941Z Removing HTTP extra header
+2026-11-18T00:17:07.8911295Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T00:17:07.8933437Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T00:17:07.9136622Z Removing includeIf entries pointing to credentials config files
+2026-11-18T00:17:07.9139538Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T00:17:07.9164667Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T00:17:07.9349576Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T00:17:07.9372701Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-router/react-router/.git.path /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:17:07.9396070Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:17:07.9417870Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:17:07.9445386Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:17:07.9469397Z ##[endgroup]
+2026-11-18T00:17:07.9470433Z ##[group]Fetching the repository
+2026-11-18T00:17:07.9473520Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +10b87ff62714e588c23c2aa57bf158d60e8b5d12:refs/remotes/origin/main
+2026-11-18T00:17:08.4434800Z From https://github.com/boba-benchmarks/react-router
+2026-11-18T00:17:08.4436794Z  * [new ref]         10b87ff62714e588c23c2aa57bf158d60e8b5d12 -> origin/main
+2026-11-18T00:17:08.4441725Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-18T00:17:08.4458296Z   origin/main
+2026-11-18T00:17:08.4463884Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-18T00:17:08.4480856Z 10b87ff62714e588c23c2aa57bf158d60e8b5d12
+2026-11-18T00:17:08.4484035Z ##[endgroup]
+2026-11-18T00:17:08.4485032Z ##[group]Determining the checkout info
+2026-11-18T00:17:08.4486067Z ##[endgroup]
+2026-11-18T00:17:08.4486652Z [command]/usr/bin/git sparse-checkout disable
+2026-11-18T00:17:08.4513901Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T00:17:08.4532060Z ##[group]Checking out the ref
+2026-11-18T00:17:08.4533372Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T00:17:08.5182325Z Switched to a new branch 'main'
+2026-11-18T00:17:08.5184188Z branch 'main' set up to track 'origin/main'.
+2026-11-18T00:17:08.5191795Z ##[endgroup]
+2026-11-18T00:17:08.5219653Z [command]/usr/bin/git log -1 --format=%H
+2026-11-18T00:17:08.5236287Z 10b87ff62714e588c23c2aa57bf158d60e8b5d12
+2026-11-18T00:17:08.5424411Z ##[group]Run pnpm/action-setup@v6
+2026-11-18T00:17:08.5425171Z with:
+2026-11-18T00:17:08.5425783Z   dest: ~/setup-pnpm
+2026-11-18T00:17:08.5426439Z   run_install: null
+2026-11-18T00:17:08.5426994Z   cache: false
+2026-11-18T00:17:08.5427647Z   cache_dependency_path: pnpm-lock.yaml
+2026-11-18T00:17:08.5428535Z   package_json_file: package.json
+2026-11-18T00:17:08.5429493Z   standalone: false
+2026-11-18T00:17:08.5430174Z env:
+2026-11-18T00:17:08.5430782Z   CI: true
+2026-11-18T00:17:08.5431623Z ##[endgroup]
+2026-11-18T00:17:08.6368857Z ##[group]Running self-installer...
+2026-11-18T00:17:09.3830047Z 
+2026-11-18T00:17:09.3830847Z added 1 package, and audited 2 packages in 579ms
+2026-11-18T00:17:09.3831158Z 
+2026-11-18T00:17:09.3831377Z 1 package is looking for funding
+2026-11-18T00:17:09.3831973Z   run `npm fund` for details
+2026-11-18T00:17:09.3833037Z 
+2026-11-18T00:17:09.3833192Z found 0 vulnerabilities
+2026-11-18T00:17:09.8352054Z Checking for updates...
+2026-11-18T00:17:10.1150614Z Switching pnpm from v11.28.10 to v9.10.0...
+2026-11-18T00:17:10.5021310Z .../v11/79e-1a1ec03bcdf-b6bb397672358698 | Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-18T00:17:10.5030747Z .../v11/79e-1a1ec03bcdf-b6bb397672358698 |   +1 +
+2026-11-18T00:17:10.7634087Z .../v11/79e-1a1ec03bcdf-b6bb397672358698 | Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-11-18T00:17:11.0505865Z [WARN] Detected a pnpm v10 installation layout at PNPM_HOME. The pnpm shims at PNPM_HOME have been refreshed so the new version is active, but pnpm v11 expects bins in PNPM_HOME/bin. Run "pnpm setup" to migrate your PATH to the v11 layout.
+2026-11-18T00:17:11.0562187Z Successfully updated pnpm to v9.10.0
+2026-11-18T00:17:11.1093574Z ##[endgroup]
+2026-11-18T00:17:11.1093937Z Installation Completed!
+2026-11-18T00:17:11.1256978Z ##[group]Run actions/setup-node@v6
+2026-11-18T00:17:11.1257257Z with:
+2026-11-18T00:17:11.1257453Z   node-version: 22
+2026-11-18T00:17:11.1257718Z   cache: pnpm
+2026-11-18T00:17:11.1257947Z   check-latest: false
+2026-11-18T00:17:11.1259336Z   token: ***
+2026-11-18T00:17:11.1259572Z   package-manager-cache: true
+2026-11-18T00:17:11.1259799Z env:
+2026-11-18T00:17:11.1260029Z   CI: true
+2026-11-18T00:17:11.1260251Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T00:17:11.1260569Z ##[endgroup]
+2026-11-18T00:17:11.2140698Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+2026-11-18T00:17:11.2141200Z ##[group]Environment details
+2026-11-18T00:17:11.4447190Z node: v22.23.5
+2026-11-18T00:17:11.4447511Z npm: 10.9.9
+2026-11-18T00:17:11.4447799Z yarn: 1.22.22
+2026-11-18T00:17:11.4448371Z ##[endgroup]
+2026-11-18T00:17:11.4455817Z [command]/home/runner/setup-pnpm/node_modules/.bin/bin/pnpm store path --silent
+2026-11-18T00:17:11.6859927Z /home/runner/.local/share/pnpm/store/v3
+2026-11-18T00:17:12.0225421Z pnpm cache is not found
+2026-11-18T00:17:12.0357706Z ##[group]Run pnpm install --frozen-lockfile
+2026-11-18T00:17:12.0358088Z [36;1mpnpm install --frozen-lockfile[0m
+2026-11-18T00:17:12.0376382Z shell: /usr/bin/bash -e {0}
+2026-11-18T00:17:12.0376766Z env:
+2026-11-18T00:17:12.0377012Z   CI: true
+2026-11-18T00:17:12.0377230Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T00:17:12.0377554Z ##[endgroup]
+2026-11-18T00:17:12.3225133Z Scope: all 37 workspace projects
+2026-11-18T00:17:12.3653531Z Lockfile is up to date, resolution step is skipped
+2026-11-18T00:17:12.4091101Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-18T00:17:12.5020694Z Packages: +1549
+2026-11-18T00:17:12.5021305Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-18T00:17:13.4102134Z Progress: resolved 1549, reused 0, downloaded 346, added 349
+2026-11-18T00:17:14.4092531Z Progress: resolved 1549, reused 0, downloaded 539, added 556
+2026-11-18T00:17:15.4093586Z Progress: resolved 1549, reused 0, downloaded 869, added 890
+2026-11-18T00:17:16.4093802Z Progress: resolved 1549, reused 0, downloaded 1327, added 1349
+2026-11-18T00:17:17.0480793Z Progress: resolved 1549, reused 0, downloaded 1521, added 1549, done
+2026-11-18T00:17:17.2740674Z .../node_modules/msw postinstall$ node -e "try{require('./config/scripts/postinstall')}catch(e){}"
+2026-11-18T00:17:17.2741169Z .../esbuild@0.25.0/node_modules/esbuild postinstall$ node install.js
+2026-11-18T00:17:17.2741728Z .../node_modules/workerd postinstall$ node install.js
+2026-11-18T00:17:17.2742084Z .../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+2026-11-18T00:17:17.3124726Z .../node_modules/msw postinstall: Done
+2026-11-18T00:17:17.3181172Z .../sharp@0.34.5/node_modules/sharp install$ node install/check.js || npm run build
+2026-11-18T00:17:17.3463802Z .../esbuild@0.25.0/node_modules/esbuild postinstall: Done
+2026-11-18T00:17:17.3772008Z .../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+2026-11-18T00:17:17.3875453Z .../esbuild@0.27.4/node_modules/esbuild postinstall$ node install.js
+2026-11-18T00:17:17.4005782Z .../node_modules/workerd postinstall: Done
+2026-11-18T00:17:17.4061737Z .../sharp@0.34.5/node_modules/sharp install: Done
+2026-11-18T00:17:17.4082714Z .../esbuild@0.19.12/node_modules/esbuild postinstall$ node install.js
+2026-11-18T00:17:17.4235580Z .../node_modules/@swc/core postinstall$ node postinstall.js
+2026-11-18T00:17:17.4442553Z .../esbuild@0.27.4/node_modules/esbuild postinstall: Done
+2026-11-18T00:17:17.4660721Z .../esbuild@0.19.12/node_modules/esbuild postinstall: Done
+2026-11-18T00:17:17.4688162Z .../node_modules/@swc/core postinstall: Done
+2026-11-18T00:17:18.0165418Z 
+2026-11-18T00:17:18.0166965Z dependencies:
+2026-11-18T00:17:18.0167286Z + @babel/core 7.27.7
+2026-11-18T00:17:18.0167575Z + @babel/preset-env 7.27.2
+2026-11-18T00:17:18.0167850Z + @babel/preset-react 7.27.1
+2026-11-18T00:17:18.0168151Z + @babel/preset-typescript 7.27.1
+2026-11-18T00:17:18.0168527Z + @eslint/compat 2.0.3
+2026-11-18T00:17:18.0168825Z + @manypkg/get-packages 1.1.3
+2026-11-18T00:17:18.0169106Z + @mdx-js/rollup 3.1.0
+2026-11-18T00:17:18.0169407Z + @playwright/test 1.58.2
+2026-11-18T00:17:18.0169636Z + @types/jest 29.5.12
+2026-11-18T00:17:18.0169916Z + @types/jsdom 21.1.1
+2026-11-18T00:17:18.0170136Z + @types/react 18.2.18
+2026-11-18T00:17:18.0170382Z + @types/react-dom 18.2.7
+2026-11-18T00:17:18.0170659Z + @types/react-test-renderer 18.3.1
+2026-11-18T00:17:18.0170944Z + @typescript-eslint/eslint-plugin 8.57.1
+2026-11-18T00:17:18.0171323Z + @typescript-eslint/parser 8.57.1
+2026-11-18T00:17:18.0171566Z + babel-jest 29.7.0
+2026-11-18T00:17:18.0171839Z + babel-plugin-dev-expression 0.2.3
+2026-11-18T00:17:18.0172102Z + dox 1.0.0
+2026-11-18T00:17:18.0172300Z + eslint 10.1.0
+2026-11-18T00:17:18.0172586Z + eslint-config-react-app 7.0.1
+2026-11-18T00:17:18.0172872Z + eslint-plugin-flowtype 8.0.3
+2026-11-18T00:17:18.0173151Z + eslint-plugin-import 2.32.0
+2026-11-18T00:17:18.0173415Z + eslint-plugin-jest 29.15.0
+2026-11-18T00:17:18.0174211Z + eslint-plugin-jsdoc 62.8.0
+2026-11-18T00:17:18.0174522Z + eslint-plugin-jsx-a11y 6.10.2
+2026-11-18T00:17:18.0174757Z + eslint-plugin-react 7.37.5
+2026-11-18T00:17:18.0175114Z + eslint-plugin-react-hooks 7.1.1-canary-d1727fbf-20260417
+2026-11-18T00:17:18.0175494Z + fast-glob 3.2.11
+2026-11-18T00:17:18.0175711Z + isbot 5.1.11
+2026-11-18T00:17:18.0175947Z + jest 29.7.0
+2026-11-18T00:17:18.0176154Z + jsonfile 6.1.0
+2026-11-18T00:17:18.0176351Z + picocolors 1.1.1
+2026-11-18T00:17:18.0176640Z + prettier 3.6.2
+2026-11-18T00:17:18.0176874Z + prompts 2.4.2
+2026-11-18T00:17:18.0177120Z + remark-gfm 3.0.1
+2026-11-18T00:17:18.0177342Z + remark-parse 10.0.2
+2026-11-18T00:17:18.0177550Z + remark-stringify 10.0.3
+2026-11-18T00:17:18.0177813Z + semver 7.7.4
+2026-11-18T00:17:18.0178047Z + typedoc 0.28.7
+2026-11-18T00:17:18.0178288Z + typescript 5.4.5
+2026-11-18T00:17:18.0178494Z + unified 10.1.2
+2026-11-18T00:17:18.0178694Z + unist-util-remove 3.1.1
+2026-11-18T00:17:18.0178977Z + vite 6.4.1
+2026-11-18T00:17:18.0179289Z + vitest 4.1.0
+2026-11-18T00:17:18.0179433Z 
+2026-11-18T00:17:18.1331990Z Done in 6s
+2026-11-18T00:17:18.2347126Z ##[group]Run npx playwright install --with-deps chromium
+2026-11-18T00:17:18.2347543Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-11-18T00:17:18.2359563Z shell: /usr/bin/bash -e {0}
+2026-11-18T00:17:18.2359796Z env:
+2026-11-18T00:17:18.2360004Z   CI: true
+2026-11-18T00:17:18.2360269Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T00:17:18.2360571Z ##[endgroup]
+2026-11-18T00:17:18.8789675Z Installing dependencies...
+2026-11-18T00:17:18.8830821Z Switching to root user to install dependencies...
+2026-11-18T00:17:18.9743875Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-18T00:17:19.0105578Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-18T00:17:19.0166111Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-18T00:17:19.0417552Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-18T00:17:19.0470484Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-18T00:17:19.1119457Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1455 kB]
+2026-11-18T00:17:19.1425129Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [317 kB]
+2026-11-18T00:17:19.1515070Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1715 kB]
+2026-11-18T00:17:19.1753954Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [345 kB]
+2026-11-18T00:17:19.1904980Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1887 kB]
+2026-11-18T00:17:19.2137158Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [433 kB]
+2026-11-18T00:17:19.2232256Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.6 kB]
+2026-11-18T00:17:19.2293350Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1196 kB]
+2026-11-18T00:17:19.2464102Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [238 kB]
+2026-11-18T00:17:19.2564197Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1229 kB]
+2026-11-18T00:17:19.3234310Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [248 kB]
+2026-11-18T00:17:19.3316000Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.7 kB]
+2026-11-18T00:17:19.3332569Z Get:18 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-18T00:17:19.3729663Z Get:19 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [792 kB]
+2026-11-18T00:17:19.4132157Z Get:20 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [722 kB]
+2026-11-18T00:17:21.9688310Z Fetched 11.0 MB in 1s (14.7 MB/s)
+2026-11-18T00:17:22.6782900Z Reading package lists...
+2026-11-18T00:17:22.7073857Z Reading package lists...
+2026-11-18T00:17:22.8659238Z Building dependency tree...
+2026-11-18T00:17:22.8662846Z Reading state information...
+2026-11-18T00:17:22.9643118Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-11-18T00:17:22.9643608Z libasound2t64 set to manually installed.
+2026-11-18T00:17:22.9644035Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-18T00:17:22.9644464Z libatk-bridge2.0-0t64 set to manually installed.
+2026-11-18T00:17:22.9644856Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-18T00:17:22.9645215Z libatk1.0-0t64 set to manually installed.
+2026-11-18T00:17:22.9645594Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-18T00:17:22.9646806Z libatspi2.0-0t64 set to manually installed.
+2026-11-18T00:17:22.9647247Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-11-18T00:17:22.9647606Z libcairo2 set to manually installed.
+2026-11-18T00:17:22.9648031Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-11-18T00:17:22.9648998Z libcups2t64 set to manually installed.
+2026-11-18T00:17:22.9649381Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-11-18T00:17:22.9649768Z libdbus-1-3 set to manually installed.
+2026-11-18T00:17:22.9650173Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-11-18T00:17:22.9650544Z libdrm2 set to manually installed.
+2026-11-18T00:17:22.9650927Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.10).
+2026-11-18T00:17:22.9651304Z libglib2.0-0t64 set to manually installed.
+2026-11-18T00:17:22.9651683Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-11-18T00:17:22.9652038Z libnspr4 set to manually installed.
+2026-11-18T00:17:22.9652402Z libnss3 is already the newest version (2:3.98-1ubuntu0.3).
+2026-11-18T00:17:22.9652735Z libnss3 set to manually installed.
+2026-11-18T00:17:22.9653101Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-18T00:17:22.9653368Z libpango-1.0-0 set to manually installed.
+2026-11-18T00:17:22.9653586Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-18T00:17:22.9653800Z libx11-6 set to manually installed.
+2026-11-18T00:17:22.9653989Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-11-18T00:17:22.9654177Z libxcb1 set to manually installed.
+2026-11-18T00:17:22.9654390Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-11-18T00:17:22.9654603Z libxcomposite1 set to manually installed.
+2026-11-18T00:17:22.9654814Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-11-18T00:17:22.9655024Z libxdamage1 set to manually installed.
+2026-11-18T00:17:22.9655225Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-11-18T00:17:22.9655418Z libxext6 set to manually installed.
+2026-11-18T00:17:22.9655686Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-11-18T00:17:22.9655893Z libxfixes3 set to manually installed.
+2026-11-18T00:17:22.9656104Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-11-18T00:17:22.9656321Z libxkbcommon0 set to manually installed.
+2026-11-18T00:17:22.9656995Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-11-18T00:17:22.9657229Z libxrandr2 set to manually installed.
+2026-11-18T00:17:22.9657455Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+2026-11-18T00:17:22.9657747Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-18T00:17:22.9658048Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-18T00:17:22.9658274Z libfontconfig1 set to manually installed.
+2026-11-18T00:17:22.9658508Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+2026-11-18T00:17:22.9658733Z libfreetype6 set to manually installed.
+2026-11-18T00:17:22.9658948Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-18T00:17:22.9659296Z fonts-liberation set to manually installed.
+2026-11-18T00:17:22.9659707Z The following additional packages will be installed:
+2026-11-18T00:17:22.9659974Z   libgl1-mesa-dri libglx-mesa0 mesa-libgallium xfonts-encodings xfonts-utils
+2026-11-18T00:17:22.9660208Z Recommended packages:
+2026-11-18T00:17:22.9660369Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-11-18T00:17:22.9790485Z The following NEW packages will be installed:
+2026-11-18T00:17:22.9790788Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-18T00:17:22.9793945Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-11-18T00:17:22.9794146Z   xfonts-utils
+2026-11-18T00:17:22.9797330Z The following packages will be upgraded:
+2026-11-18T00:17:22.9799112Z   libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-11-18T00:17:22.9933458Z 4 upgraded, 9 newly installed, 0 to remove and 20 not upgraded.
+2026-11-18T00:17:22.9933700Z Need to get 32.1 MB of archives.
+2026-11-18T00:17:22.9933947Z After this operation, 79.7 MB of additional disk space will be used.
+2026-11-18T00:17:22.9934238Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-18T00:17:23.0385442Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-11-18T00:17:23.1116922Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-11-18T00:17:23.1771411Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-11-18T00:17:23.1914496Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-11-18T00:17:23.2319016Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-11-18T00:17:23.3276716Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.5 [38.0 kB]
+2026-11-18T00:17:23.3419013Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.5 [110 kB]
+2026-11-18T00:17:23.3569764Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.5 [34.2 kB]
+2026-11-18T00:17:23.3717665Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.5 [10.8 MB]
+2026-11-18T00:17:23.4801375Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-11-18T00:17:23.4999980Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-11-18T00:17:23.5147234Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-11-18T00:17:23.5324723Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-11-18T00:17:23.7246381Z Fetched 32.1 MB in 1s (58.2 MB/s)
+2026-11-18T00:17:23.7436591Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-11-18T00:17:23.7788632Z (Reading database ... 
+2026-11-18T00:17:23.7788824Z (Reading database ... 5%
+2026-11-18T00:17:23.7788973Z (Reading database ... 10%
+2026-11-18T00:17:23.7789115Z (Reading database ... 15%
+2026-11-18T00:17:23.7789249Z (Reading database ... 20%
+2026-11-18T00:17:23.7789382Z (Reading database ... 25%
+2026-11-18T00:17:23.7789515Z (Reading database ... 30%
+2026-11-18T00:17:23.7789650Z (Reading database ... 35%
+2026-11-18T00:17:23.7789778Z (Reading database ... 40%
+2026-11-18T00:17:23.7789906Z (Reading database ... 45%
+2026-11-18T00:17:23.7790029Z (Reading database ... 50%
+2026-11-18T00:17:23.7808892Z (Reading database ... 55%
+2026-11-18T00:17:23.8040404Z (Reading database ... 60%
+2026-11-18T00:17:23.8272571Z (Reading database ... 65%
+2026-11-18T00:17:23.8394377Z (Reading database ... 70%
+2026-11-18T00:17:23.8532012Z (Reading database ... 75%
+2026-11-18T00:17:23.8673754Z (Reading database ... 80%
+2026-11-18T00:17:23.9000344Z (Reading database ... 85%
+2026-11-18T00:17:23.9168807Z (Reading database ... 90%
+2026-11-18T00:17:23.9342357Z (Reading database ... 95%
+2026-11-18T00:17:23.9342607Z (Reading database ... 100%
+2026-11-18T00:17:23.9342968Z (Reading database ... 210270 files and directories currently installed.)
+2026-11-18T00:17:23.9375478Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-11-18T00:17:23.9431717Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-18T00:17:24.0944308Z Selecting previously unselected package fonts-freefont-ttf.
+2026-11-18T00:17:24.1049554Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-11-18T00:17:24.1056759Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-18T00:17:24.1690811Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-11-18T00:17:24.1802814Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-11-18T00:17:24.1808725Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-18T00:17:24.1942122Z Selecting previously unselected package fonts-unifont.
+2026-11-18T00:17:24.2049627Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-11-18T00:17:24.2057004Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-11-18T00:17:24.3106469Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-11-18T00:17:24.3213683Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-11-18T00:17:24.3292054Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-18T00:17:24.6099090Z Preparing to unpack .../05-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-18T00:17:24.6197971Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-18T00:17:24.6571652Z Preparing to unpack .../06-libglx-mesa0_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-18T00:17:24.6590891Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-18T00:17:24.6857107Z Preparing to unpack .../07-libgbm1_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-18T00:17:24.6876672Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-18T00:17:24.7136611Z Preparing to unpack .../08-mesa-libgallium_25.2.8-0ubuntu0.24.04.5_amd64.deb ...
+2026-11-18T00:17:24.7152084Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.5) over (25.2.8-0ubuntu0.24.04.4) ...
+2026-11-18T00:17:24.8557502Z Selecting previously unselected package xfonts-encodings.
+2026-11-18T00:17:24.8669516Z Preparing to unpack .../09-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-11-18T00:17:24.8675143Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-18T00:17:24.8867642Z Selecting previously unselected package xfonts-utils.
+2026-11-18T00:17:24.8970080Z Preparing to unpack .../10-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-11-18T00:17:24.8975884Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-11-18T00:17:24.9218405Z Selecting previously unselected package xfonts-cyrillic.
+2026-11-18T00:17:24.9320700Z Preparing to unpack .../11-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-11-18T00:17:24.9328594Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-18T00:17:24.9552147Z Selecting previously unselected package xfonts-scalable.
+2026-11-18T00:17:24.9650425Z Preparing to unpack .../12-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-11-18T00:17:24.9657862Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-18T00:17:24.9991248Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-18T00:17:25.0006599Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-18T00:17:25.0018311Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-18T00:17:25.0067397Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-11-18T00:17:25.0144546Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-11-18T00:17:25.0159640Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-11-18T00:17:25.0171487Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-11-18T00:17:25.0182850Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-11-18T00:17:25.0227034Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-11-18T00:17:25.0237545Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-11-18T00:17:25.0248934Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.5) ...
+2026-11-18T00:17:25.0260743Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-11-18T00:17:25.0287756Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-11-18T00:17:25.0508054Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-11-18T00:17:25.0705601Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-11-18T00:17:25.1849036Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-11-18T00:17:25.1866828Z Not building database; man-db/auto-update is not 'true'.
+2026-11-18T00:17:25.1874209Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-11-18T00:17:25.6364191Z 
+2026-11-18T00:17:25.6364659Z Failed to retrieve available kernel versions.
+2026-11-18T00:17:25.6364876Z 
+2026-11-18T00:17:25.6365279Z No services need to be restarted.
+2026-11-18T00:17:25.6365381Z 
+2026-11-18T00:17:25.6365467Z No containers need to be restarted.
+2026-11-18T00:17:25.6365568Z 
+2026-11-18T00:17:25.6365669Z No user sessions are running outdated binaries.
+2026-11-18T00:17:25.6365791Z 
+2026-11-18T00:17:25.6365994Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-18T00:17:26.2847192Z Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+2026-11-18T00:17:26.5580645Z |                                                                                |   0% of 167.3 MiB
+2026-11-18T00:17:27.8548417Z |■■■■■■■■                                                                        |  10% of 167.3 MiB
+2026-11-18T00:17:28.3509703Z |■■■■■■■■■■■■■■■■                                                                |  20% of 167.3 MiB
+2026-11-18T00:17:28.8596380Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 167.3 MiB
+2026-11-18T00:17:29.3624125Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 167.3 MiB
+2026-11-18T00:17:29.8644303Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 167.3 MiB
+2026-11-18T00:17:30.3704147Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 167.3 MiB
+2026-11-18T00:17:30.8681362Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 167.3 MiB
+2026-11-18T00:17:31.3852466Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 167.3 MiB
+2026-11-18T00:17:31.8808758Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 167.3 MiB
+2026-11-18T00:17:32.3946280Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 167.3 MiB
+2026-11-18T00:17:33.6031439Z Chrome for Testing 145.0.7632.6 (playwright chromium v1208) downloaded to /home/runner/.cache/ms-playwright/chromium-1208
+2026-11-18T00:17:33.6035035Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-11-18T00:17:33.7233865Z |                                                                                |   0% of 2.3 MiB
+2026-11-18T00:17:33.7350689Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-11-18T00:17:33.7401266Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-11-18T00:17:33.7434782Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-11-18T00:17:33.7456351Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-11-18T00:17:33.7477875Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-11-18T00:17:33.7495650Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-11-18T00:17:33.7516544Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-11-18T00:17:33.7536986Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-11-18T00:17:33.7556259Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-11-18T00:17:33.7576295Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-11-18T00:17:33.7873011Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-11-18T00:17:33.7874670Z Downloading Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-headless-shell-linux64.zip
+2026-11-18T00:17:34.0547117Z |                                                                                |   0% of 110.9 MiB
+2026-11-18T00:17:34.7872271Z |■■■■■■■■                                                                        |  10% of 110.9 MiB
+2026-11-18T00:17:35.1107235Z |■■■■■■■■■■■■■■■■                                                                |  20% of 110.9 MiB
+2026-11-18T00:17:35.4436989Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 110.9 MiB
+2026-11-18T00:17:35.7593980Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 110.9 MiB
+2026-11-18T00:17:36.0990215Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 110.9 MiB
+2026-11-18T00:17:36.4132248Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 110.9 MiB
+2026-11-18T00:17:36.7357353Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 110.9 MiB
+2026-11-18T00:17:37.0510457Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 110.9 MiB
+2026-11-18T00:17:37.3741997Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 110.9 MiB
+2026-11-18T00:17:37.6894437Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 110.9 MiB
+2026-11-18T00:17:38.6780535Z Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1208
+2026-11-18T00:17:38.7256328Z ##[group]Run pnpm build
+2026-11-18T00:17:38.7256503Z [36;1mpnpm build[0m
+2026-11-18T00:17:38.7271108Z shell: /usr/bin/bash -e {0}
+2026-11-18T00:17:38.7271255Z env:
+2026-11-18T00:17:38.7271368Z   CI: true
+2026-11-18T00:17:38.7271519Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T00:17:38.7271704Z ##[endgroup]
+2026-11-18T00:17:38.9576357Z 
+2026-11-18T00:17:38.9576960Z > @remix-run/react-router@ build /home/runner/work/react-router/react-router
+2026-11-18T00:17:38.9577423Z > pnpm run --filter="./packages/**/*" build
+2026-11-18T00:17:38.9577599Z 
+2026-11-18T00:17:39.2218158Z Scope: 11 of 37 workspace projects
+2026-11-18T00:17:39.2218512Z packages/create-react-router build$ wireit
+2026-11-18T00:17:39.2219291Z packages/react-router build$ wireit
+2026-11-18T00:17:39.2939566Z packages/create-react-router build: Analyzing
+2026-11-18T00:17:39.2975188Z packages/react-router build: Analyzing
+2026-11-18T00:17:39.5364247Z packages/create-react-router build: [34mCLI[39m Building entry: cli.ts
+2026-11-18T00:17:39.5366661Z packages/create-react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:39.5370682Z packages/create-react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:39.5373651Z packages/create-react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/create-react-router/tsup.config.ts
+2026-11-18T00:17:39.5399208Z packages/create-react-router build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:39.5413418Z packages/create-react-router build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:39.5421788Z packages/create-react-router build: [34mCJS[39m Build start
+2026-11-18T00:17:39.5677454Z packages/create-react-router build: [32mCJS[39m [1mdist/cli.js [22m[32m62.89 KB[39m
+2026-11-18T00:17:39.5677917Z packages/create-react-router build: [32mCJS[39m ⚡️ Build success in 24ms
+2026-11-18T00:17:39.5706527Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-18T00:17:39.5719992Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:39.5720492Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:39.5721073Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-18T00:17:39.5729247Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-18T00:17:39.5730523Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:39.5733719Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:39.5735468Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-18T00:17:39.5743218Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-18T00:17:39.5745192Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:39.5745874Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:39.5746823Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-18T00:17:39.5753446Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-18T00:17:39.5754846Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:39.5806796Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:39.5807496Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-18T00:17:39.5825140Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:39.5887596Z packages/react-router build: [34mCJS[39m Build start
+2026-11-18T00:17:39.5937783Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:39.5938237Z packages/react-router build: [34mESM[39m Build start
+2026-11-18T00:17:39.5960824Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:39.5961251Z packages/react-router build: [34mCJS[39m Build start
+2026-11-18T00:17:39.5975296Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:39.5975700Z packages/react-router build: [34mESM[39m Build start
+2026-11-18T00:17:39.7741222Z packages/create-react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:40.3070742Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:40.3071503Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:40.3071931Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:40.3072333Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:40.3246627Z packages/react-router build: [32mCJS[39m [1mdist/development/dom-export.js                [22m[32m36.03 KB[39m
+2026-11-18T00:17:40.3247420Z packages/react-router build: [32mCJS[39m [1mdist/development/index-react-server-client.js [22m[32m1.63 KB[39m
+2026-11-18T00:17:40.3248044Z packages/react-router build: [32mCJS[39m [1mdist/development/index.js                     [22m[32m83.36 KB[39m
+2026-11-18T00:17:40.3248667Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-IFHLIXZW.js            [22m[32m5.74 KB[39m
+2026-11-18T00:17:40.3249248Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-NDF5KBLP.js            [22m[32m45.05 KB[39m
+2026-11-18T00:17:40.3249813Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-2ZBLYC7V.js            [22m[32m339.52 KB[39m
+2026-11-18T00:17:40.3250393Z packages/react-router build: [32mCJS[39m [1mdist/development/lib/types/internal.js        [22m[32m236.00 B[39m
+2026-11-18T00:17:40.3250865Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 729ms
+2026-11-18T00:17:40.5212941Z packages/react-router build: [32mESM[39m [1mdist/development/dom-export.mjs                [22m[32m33.00 KB[39m
+2026-11-18T00:17:40.5214045Z packages/react-router build: [32mESM[39m [1mdist/development/index-react-server-client.mjs [22m[32m1.09 KB[39m
+2026-11-18T00:17:40.5214780Z packages/react-router build: [32mESM[39m [1mdist/development/index.mjs                     [22m[32m6.39 KB[39m
+2026-11-18T00:17:40.5222533Z packages/react-router build: [32mESM[39m [1mdist/development/chunk-RDEHLYZQ.mjs            [22m[32m77.09 KB[39m
+2026-11-18T00:17:40.5223132Z packages/react-router build: [32mESM[39m [1mdist/development/chunk-6KYCQHYJ.mjs            [22m[32m367.82 KB[39m
+2026-11-18T00:17:40.5223657Z packages/react-router build: [32mESM[39m [1mdist/development/lib/types/internal.mjs        [22m[32m223.00 B[39m
+2026-11-18T00:17:40.5224112Z packages/react-router build: [32mESM[39m ⚡️ Build success in 924ms
+2026-11-18T00:17:40.5224559Z packages/react-router build: [32mCJS[39m [1mdist/production/dom-export.js                [22m[32m36.03 KB[39m
+2026-11-18T00:17:40.5225062Z packages/react-router build: [32mCJS[39m [1mdist/production/index-react-server-client.js [22m[32m1.63 KB[39m
+2026-11-18T00:17:40.5225931Z packages/react-router build: [32mCJS[39m [1mdist/production/index.js                     [22m[32m83.36 KB[39m
+2026-11-18T00:17:40.5226407Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-K3NA4NUH.js            [22m[32m5.74 KB[39m
+2026-11-18T00:17:40.5226893Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-75HN637G.js            [22m[32m45.05 KB[39m
+2026-11-18T00:17:40.5227398Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-HNBICOIU.js            [22m[32m339.52 KB[39m
+2026-11-18T00:17:40.5228106Z packages/react-router build: [32mCJS[39m [1mdist/production/lib/types/internal.js        [22m[32m236.00 B[39m
+2026-11-18T00:17:40.5228503Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 935ms
+2026-11-18T00:17:40.5228928Z packages/react-router build: [32mESM[39m [1mdist/production/dom-export.mjs                [22m[32m33.00 KB[39m
+2026-11-18T00:17:40.5229446Z packages/react-router build: [32mESM[39m [1mdist/production/index-react-server-client.mjs [22m[32m1.09 KB[39m
+2026-11-18T00:17:40.5229943Z packages/react-router build: [32mESM[39m [1mdist/production/index.mjs                     [22m[32m6.39 KB[39m
+2026-11-18T00:17:40.5230437Z packages/react-router build: [32mESM[39m [1mdist/production/chunk-2C5754TP.mjs            [22m[32m77.09 KB[39m
+2026-11-18T00:17:40.5230939Z packages/react-router build: [32mESM[39m [1mdist/production/chunk-7RTFRKQW.mjs            [22m[32m367.82 KB[39m
+2026-11-18T00:17:40.5231434Z packages/react-router build: [32mESM[39m [1mdist/production/lib/types/internal.mjs        [22m[32m223.00 B[39m
+2026-11-18T00:17:40.5231879Z packages/react-router build: [32mESM[39m ⚡️ Build success in 929ms
+2026-11-18T00:17:41.7931462Z packages/create-react-router build: [32mDTS[39m ⚡️ Build success in 2020ms
+2026-11-18T00:17:41.7941243Z packages/create-react-router build: [32mDTS[39m [1mdist/cli.d.ts [22m[32m20.00 B[39m
+2026-11-18T00:17:41.8790503Z packages/create-react-router build: ✅ Ran 1 script and skipped 0 in 2.6s.
+2026-11-18T00:17:41.8843441Z packages/create-react-router build: Done
+2026-11-18T00:17:50.0268304Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 9884ms
+2026-11-18T00:17:50.0268862Z packages/react-router build: [32mDTS[39m [1mdist/production/dom-export.d.mts                         [22m[32m6.79 KB[39m
+2026-11-18T00:17:50.0269429Z packages/react-router build: [32mDTS[39m [1mdist/production/lib/types/internal.d.mts                 [22m[32m8.78 KB[39m
+2026-11-18T00:17:50.0270001Z packages/react-router build: [32mDTS[39m [1mdist/production/index.d.mts                              [22m[32m58.87 KB[39m
+2026-11-18T00:17:50.0270546Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client.d.mts          [22m[32m590.00 B[39m
+2026-11-18T00:17:50.0271092Z packages/react-router build: [32mDTS[39m [1mdist/production/register-CmkRspdl.d.mts                  [22m[32m1.10 KB[39m
+2026-11-18T00:17:50.0271660Z packages/react-router build: [32mDTS[39m [1mdist/production/browser-CiGxXXOl.d.mts                   [22m[32m12.74 KB[39m
+2026-11-18T00:17:50.0272194Z packages/react-router build: [32mDTS[39m [1mdist/production/context-BlYKn1tE.d.mts                   [22m[32m62.33 KB[39m
+2026-11-18T00:17:50.0272839Z packages/react-router build: [32mDTS[39m [1mdist/production/data-DEjBmEfD.d.mts                      [22m[32m67.14 KB[39m
+2026-11-18T00:17:50.0273425Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client-KK-TR-t7.d.mts [22m[32m95.85 KB[39m
+2026-11-18T00:17:50.3512293Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10170ms
+2026-11-18T00:17:50.3512851Z packages/react-router build: [32mDTS[39m [1mdist/development/dom-export.d.ts                         [22m[32m6.83 KB[39m
+2026-11-18T00:17:50.3517800Z packages/react-router build: [32mDTS[39m [1mdist/development/lib/types/internal.d.ts                 [22m[32m8.78 KB[39m
+2026-11-18T00:17:50.3518757Z packages/react-router build: [32mDTS[39m [1mdist/development/index.d.ts                              [22m[32m58.90 KB[39m
+2026-11-18T00:17:50.3524499Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client.d.ts          [22m[32m592.00 B[39m
+2026-11-18T00:17:50.3525119Z packages/react-router build: [32mDTS[39m [1mdist/development/register-roq_0qYo.d.ts                  [22m[32m1.10 KB[39m
+2026-11-18T00:17:50.3525701Z packages/react-router build: [32mDTS[39m [1mdist/development/browser-7x6a6gQP.d.ts                   [22m[32m12.75 KB[39m
+2026-11-18T00:17:50.3530498Z packages/react-router build: [32mDTS[39m [1mdist/development/instrumentation-CPkMwccd.d.ts           [22m[32m23.38 KB[39m
+2026-11-18T00:17:50.3531140Z packages/react-router build: [32mDTS[39m [1mdist/development/data-CjO11-hU.d.ts                      [22m[32m67.14 KB[39m
+2026-11-18T00:17:50.3623991Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client-BaaZU3sM.d.ts [22m[32m134.83 KB[39m
+2026-11-18T00:17:50.4157371Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10172ms
+2026-11-18T00:17:50.4170040Z packages/react-router build: [32mDTS[39m [1mdist/production/dom-export.d.ts                         [22m[32m6.83 KB[39m
+2026-11-18T00:17:50.4170829Z packages/react-router build: [32mDTS[39m [1mdist/production/lib/types/internal.d.ts                 [22m[32m8.78 KB[39m
+2026-11-18T00:17:50.4171528Z packages/react-router build: [32mDTS[39m [1mdist/production/index.d.ts                              [22m[32m58.90 KB[39m
+2026-11-18T00:17:50.4172147Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client.d.ts          [22m[32m592.00 B[39m
+2026-11-18T00:17:50.4172762Z packages/react-router build: [32mDTS[39m [1mdist/production/register-roq_0qYo.d.ts                  [22m[32m1.10 KB[39m
+2026-11-18T00:17:50.4173384Z packages/react-router build: [32mDTS[39m [1mdist/production/browser-7x6a6gQP.d.ts                   [22m[32m12.75 KB[39m
+2026-11-18T00:17:50.4173995Z packages/react-router build: [32mDTS[39m [1mdist/production/instrumentation-CPkMwccd.d.ts           [22m[32m23.38 KB[39m
+2026-11-18T00:17:50.4174592Z packages/react-router build: [32mDTS[39m [1mdist/production/data-CjO11-hU.d.ts                      [22m[32m67.14 KB[39m
+2026-11-18T00:17:50.4175207Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client-BaaZU3sM.d.ts [22m[32m134.83 KB[39m
+2026-11-18T00:17:50.4758478Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10224ms
+2026-11-18T00:17:50.4759102Z packages/react-router build: [32mDTS[39m [1mdist/development/dom-export.d.mts                         [22m[32m6.79 KB[39m
+2026-11-18T00:17:50.4759709Z packages/react-router build: [32mDTS[39m [1mdist/development/lib/types/internal.d.mts                 [22m[32m8.78 KB[39m
+2026-11-18T00:17:50.4760293Z packages/react-router build: [32mDTS[39m [1mdist/development/index.d.mts                              [22m[32m58.87 KB[39m
+2026-11-18T00:17:50.4760882Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client.d.mts          [22m[32m590.00 B[39m
+2026-11-18T00:17:50.4761445Z packages/react-router build: [32mDTS[39m [1mdist/development/register-CmkRspdl.d.mts                  [22m[32m1.10 KB[39m
+2026-11-18T00:17:50.4762007Z packages/react-router build: [32mDTS[39m [1mdist/development/browser-CiGxXXOl.d.mts                   [22m[32m12.74 KB[39m
+2026-11-18T00:17:50.4769184Z packages/react-router build: [32mDTS[39m [1mdist/development/context-BlYKn1tE.d.mts                   [22m[32m62.33 KB[39m
+2026-11-18T00:17:50.4770007Z packages/react-router build: [32mDTS[39m [1mdist/development/data-DEjBmEfD.d.mts                      [22m[32m67.14 KB[39m
+2026-11-18T00:17:50.4770671Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client-KK-TR-t7.d.mts [22m[32m95.85 KB[39m
+2026-11-18T00:17:50.8886133Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-18T00:17:50.8886675Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:50.8887319Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:50.8888085Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-18T00:17:50.8906250Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-18T00:17:50.8908054Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:50.8908366Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:50.8908871Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-18T00:17:50.8921584Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-18T00:17:50.8922000Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:50.8922307Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:50.8922818Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-18T00:17:50.8927501Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-18T00:17:50.8931169Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:50.8931494Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:50.8932035Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-18T00:17:50.8945553Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:50.8988473Z packages/react-router build: [34mCJS[39m Build start
+2026-11-18T00:17:50.9038594Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:50.9046940Z packages/react-router build: [34mESM[39m Build start
+2026-11-18T00:17:50.9057114Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:50.9057614Z packages/react-router build: [34mCJS[39m Build start
+2026-11-18T00:17:50.9063675Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:50.9066856Z packages/react-router build: [34mESM[39m Build start
+2026-11-18T00:17:51.3038707Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:51.3039390Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:51.9074728Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:51.9075348Z packages/react-router build: [34mDTS[39m Build start
+2026-11-18T00:17:51.9089214Z packages/react-router build: [32mCJS[39m [1mdist/development/index-react-server.js [22m[32m122.13 KB[39m
+2026-11-18T00:17:51.9089904Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 1003ms
+2026-11-18T00:17:51.9097367Z packages/react-router build: [32mCJS[39m [1mdist/production/index-react-server.js [22m[32m122.13 KB[39m
+2026-11-18T00:17:51.9097935Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 1010ms
+2026-11-18T00:17:51.9098520Z packages/react-router build: [32mESM[39m [1mdist/development/index-react-server.mjs [22m[32m118.96 KB[39m
+2026-11-18T00:17:51.9099259Z packages/react-router build: [32mESM[39m ⚡️ Build success in 1002ms
+2026-11-18T00:17:51.9134041Z packages/react-router build: [32mESM[39m [1mdist/production/index-react-server.mjs [22m[32m118.96 KB[39m
+2026-11-18T00:17:51.9134655Z packages/react-router build: [32mESM[39m ⚡️ Build success in 1004ms
+2026-11-18T00:17:55.9546360Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 4730ms
+2026-11-18T00:17:55.9546877Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server.d.mts [22m[32m96.43 KB[39m
+2026-11-18T00:17:56.1171899Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 4771ms
+2026-11-18T00:17:56.1180635Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server.d.mts [22m[32m96.43 KB[39m
+2026-11-18T00:17:56.1357499Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 4860ms
+2026-11-18T00:17:56.1364963Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server.d.ts [22m[32m96.43 KB[39m
+2026-11-18T00:17:56.2496450Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 4930ms
+2026-11-18T00:17:56.2497251Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server.d.ts [22m[32m96.43 KB[39m
+2026-11-18T00:17:56.3498268Z packages/react-router build: ✅ Ran 1 script and skipped 0 in 17.1s.
+2026-11-18T00:17:56.3561228Z packages/react-router build: Done
+2026-11-18T00:17:56.3565105Z packages/react-router-cloudflare build$ wireit
+2026-11-18T00:17:56.3566136Z packages/react-router-dom build$ wireit
+2026-11-18T00:17:56.3567338Z packages/react-router-node build$ wireit
+2026-11-18T00:17:56.4289944Z packages/react-router-node build: Analyzing
+2026-11-18T00:17:56.4292303Z packages/react-router-dom build: Analyzing
+2026-11-18T00:17:56.4395171Z packages/react-router-cloudflare build: Analyzing
+2026-11-18T00:17:56.6586246Z packages/react-router-dom build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:17:56.6586711Z packages/react-router-dom build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:56.6588967Z packages/react-router-dom build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:56.6589625Z packages/react-router-dom build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-dom/tsup.config.ts
+2026-11-18T00:17:56.6609603Z packages/react-router-dom build: [34mCLI[39m Target: es2020
+2026-11-18T00:17:56.6639572Z packages/react-router-dom build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:56.6640146Z packages/react-router-dom build: [34mCJS[39m Build start
+2026-11-18T00:17:56.6640434Z packages/react-router-dom build: [34mESM[39m Build start
+2026-11-18T00:17:56.6717266Z packages/react-router-dom build: [32mESM[39m [1mdist/index.mjs [22m[32m384.00 B[39m
+2026-11-18T00:17:56.6719374Z packages/react-router-dom build: [32mESM[39m ⚡️ Build success in 8ms
+2026-11-18T00:17:56.6719764Z packages/react-router-dom build: [32mCJS[39m [1mdist/index.js [22m[32m1.62 KB[39m
+2026-11-18T00:17:56.6720771Z packages/react-router-dom build: [32mCJS[39m ⚡️ Build success in 9ms
+2026-11-18T00:17:56.6809780Z packages/react-router-node build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:17:56.6810390Z packages/react-router-node build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:56.6810955Z packages/react-router-node build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:56.6811765Z packages/react-router-node build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-node/tsup.config.ts
+2026-11-18T00:17:56.6829430Z packages/react-router-node build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:56.6839091Z packages/react-router-node build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:56.6846074Z packages/react-router-node build: [34mCJS[39m Build start
+2026-11-18T00:17:56.6846917Z packages/react-router-node build: [34mESM[39m Build start
+2026-11-18T00:17:56.7002615Z packages/react-router-cloudflare build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:17:56.7007411Z packages/react-router-cloudflare build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:56.7007961Z packages/react-router-cloudflare build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:56.7008745Z packages/react-router-cloudflare build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-cloudflare/tsup.config.ts
+2026-11-18T00:17:56.7026195Z packages/react-router-node build: [32mCJS[39m [1mdist/index.js [22m[32m11.73 KB[39m
+2026-11-18T00:17:56.7029307Z packages/react-router-node build: [32mCJS[39m ⚡️ Build success in 18ms
+2026-11-18T00:17:56.7032612Z packages/react-router-node build: [32mESM[39m [1mdist/index.mjs [22m[32m9.58 KB[39m
+2026-11-18T00:17:56.7038807Z packages/react-router-node build: [32mESM[39m ⚡️ Build success in 19ms
+2026-11-18T00:17:56.7070632Z packages/react-router-cloudflare build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:56.7080263Z packages/react-router-cloudflare build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:56.7086901Z packages/react-router-cloudflare build: [34mCJS[39m Build start
+2026-11-18T00:17:56.7088571Z packages/react-router-cloudflare build: [34mESM[39m Build start
+2026-11-18T00:17:56.7377777Z packages/react-router-cloudflare build: [32mCJS[39m [1mdist/index.js [22m[32m4.40 KB[39m
+2026-11-18T00:17:56.7385472Z packages/react-router-cloudflare build: [32mCJS[39m ⚡️ Build success in 30ms
+2026-11-18T00:17:56.7391602Z packages/react-router-cloudflare build: [32mESM[39m [1mdist/index.mjs [22m[32m3.25 KB[39m
+2026-11-18T00:17:56.7396291Z packages/react-router-cloudflare build: [32mESM[39m ⚡️ Build success in 31ms
+2026-11-18T00:17:56.8644033Z packages/react-router-dom build: [34mDTS[39m Build start
+2026-11-18T00:17:56.8704668Z packages/react-router-node build: [34mDTS[39m Build start
+2026-11-18T00:17:56.8999080Z packages/react-router-cloudflare build: [34mDTS[39m Build start
+2026-11-18T00:17:57.7577237Z packages/react-router-cloudflare build: [32mDTS[39m ⚡️ Build success in 858ms
+2026-11-18T00:17:57.7586893Z packages/react-router-cloudflare build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.59 KB[39m
+2026-11-18T00:17:57.7593750Z packages/react-router-cloudflare build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.59 KB[39m
+2026-11-18T00:17:57.8110957Z packages/react-router-cloudflare build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-18T00:17:57.8154419Z packages/react-router-cloudflare build: Done
+2026-11-18T00:17:57.9163538Z packages/react-router-dom build: [32mDTS[39m ⚡️ Build success in 1051ms
+2026-11-18T00:17:57.9164414Z packages/react-router-dom build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m118.00 B[39m
+2026-11-18T00:17:57.9164892Z packages/react-router-dom build: [32mDTS[39m [1mdist/index.d.mts [22m[32m118.00 B[39m
+2026-11-18T00:17:57.9661733Z packages/react-router-dom build: ✅ Ran 1 script and skipped 0 in 1.5s.
+2026-11-18T00:17:57.9726500Z packages/react-router-dom build: Done
+2026-11-18T00:17:58.1099890Z packages/react-router-node build: [32mDTS[39m ⚡️ Build success in 1240ms
+2026-11-18T00:17:58.1100385Z packages/react-router-node build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.38 KB[39m
+2026-11-18T00:17:58.1100799Z packages/react-router-node build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.38 KB[39m
+2026-11-18T00:17:58.1605983Z packages/react-router-node build: ✅ Ran 1 script and skipped 0 in 1.7s.
+2026-11-18T00:17:58.1674300Z packages/react-router-node build: Done
+2026-11-18T00:17:58.1677470Z packages/react-router-architect build$ wireit
+2026-11-18T00:17:58.1679523Z packages/react-router-express build$ wireit
+2026-11-18T00:17:58.2311470Z packages/react-router-architect build: Analyzing
+2026-11-18T00:17:58.2318636Z packages/react-router-express build: Analyzing
+2026-11-18T00:17:58.4580663Z packages/react-router-express build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:17:58.4581624Z packages/react-router-express build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:58.4582355Z packages/react-router-express build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:58.4584467Z packages/react-router-express build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-express/tsup.config.ts
+2026-11-18T00:17:58.4608117Z packages/react-router-express build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:58.4618433Z packages/react-router-express build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:58.4626283Z packages/react-router-express build: [34mCJS[39m Build start
+2026-11-18T00:17:58.4627135Z packages/react-router-architect build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:17:58.4629321Z packages/react-router-express build: [34mESM[39m Build start
+2026-11-18T00:17:58.4630504Z packages/react-router-architect build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:58.4632137Z packages/react-router-architect build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:58.4633163Z packages/react-router-architect build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-architect/tsup.config.ts
+2026-11-18T00:17:58.4661486Z packages/react-router-architect build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:58.4664964Z packages/react-router-architect build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:58.4672169Z packages/react-router-architect build: [34mCJS[39m Build start
+2026-11-18T00:17:58.4673059Z packages/react-router-architect build: [34mESM[39m Build start
+2026-11-18T00:17:58.4732042Z packages/react-router-express build: [32mESM[39m [1mdist/index.mjs [22m[32m3.05 KB[39m
+2026-11-18T00:17:58.4734625Z packages/react-router-express build: [32mESM[39m ⚡️ Build success in 10ms
+2026-11-18T00:17:58.4739455Z packages/react-router-express build: [32mCJS[39m [1mdist/index.js [22m[32m4.04 KB[39m
+2026-11-18T00:17:58.4742783Z packages/react-router-express build: [32mCJS[39m ⚡️ Build success in 11ms
+2026-11-18T00:17:58.4779596Z packages/react-router-architect build: [32mESM[39m [1mdist/index.mjs [22m[32m6.41 KB[39m
+2026-11-18T00:17:58.4782038Z packages/react-router-architect build: [32mESM[39m ⚡️ Build success in 10ms
+2026-11-18T00:17:58.4828330Z packages/react-router-architect build: [32mCJS[39m [1mdist/index.js [22m[32m8.13 KB[39m
+2026-11-18T00:17:58.4828764Z packages/react-router-architect build: [32mCJS[39m ⚡️ Build success in 15ms
+2026-11-18T00:17:58.6356608Z packages/react-router-express build: [34mDTS[39m Build start
+2026-11-18T00:17:58.6452575Z packages/react-router-architect build: [34mDTS[39m Build start
+2026-11-18T00:17:59.5846580Z packages/react-router-architect build: [32mDTS[39m ⚡️ Build success in 939ms
+2026-11-18T00:17:59.5847182Z packages/react-router-architect build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.34 KB[39m
+2026-11-18T00:17:59.5847753Z packages/react-router-architect build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.34 KB[39m
+2026-11-18T00:17:59.6023518Z packages/react-router-express build: [32mDTS[39m ⚡️ Build success in 967ms
+2026-11-18T00:17:59.6024403Z packages/react-router-express build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m1.21 KB[39m
+2026-11-18T00:17:59.6025112Z packages/react-router-express build: [32mDTS[39m [1mdist/index.d.mts [22m[32m1.21 KB[39m
+2026-11-18T00:17:59.6403965Z packages/react-router-architect build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-18T00:17:59.6475993Z packages/react-router-architect build: Done
+2026-11-18T00:17:59.6589210Z packages/react-router-express build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-18T00:17:59.6661554Z packages/react-router-express build: Done
+2026-11-18T00:17:59.6664535Z packages/react-router-serve build$ wireit
+2026-11-18T00:17:59.7283298Z packages/react-router-serve build: Analyzing
+2026-11-18T00:17:59.9414967Z packages/react-router-serve build: [34mCLI[39m Building entry: cli.ts
+2026-11-18T00:17:59.9415719Z packages/react-router-serve build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:17:59.9416406Z packages/react-router-serve build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:17:59.9417024Z packages/react-router-serve build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-serve/tsup.config.ts
+2026-11-18T00:17:59.9431590Z packages/react-router-serve build: [34mCLI[39m Target: es2022
+2026-11-18T00:17:59.9441668Z packages/react-router-serve build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:17:59.9447652Z packages/react-router-serve build: [34mCJS[39m Build start
+2026-11-18T00:17:59.9561461Z packages/react-router-serve build: [32mCJS[39m [1mdist/cli.js [22m[32m5.57 KB[39m
+2026-11-18T00:17:59.9561891Z packages/react-router-serve build: [32mCJS[39m ⚡️ Build success in 11ms
+2026-11-18T00:18:00.1093791Z packages/react-router-serve build: [34mDTS[39m Build start
+2026-11-18T00:18:00.8310457Z packages/react-router-serve build: [32mDTS[39m ⚡️ Build success in 722ms
+2026-11-18T00:18:00.8310918Z packages/react-router-serve build: [32mDTS[39m [1mdist/cli.d.ts [22m[32m20.00 B[39m
+2026-11-18T00:18:00.8878781Z packages/react-router-serve build: ✅ Ran 1 script and skipped 0 in 1.2s.
+2026-11-18T00:18:00.8949333Z packages/react-router-serve build: Done
+2026-11-18T00:18:00.8952833Z packages/react-router-dev build$ wireit
+2026-11-18T00:18:00.9600596Z packages/react-router-dev build: Analyzing
+2026-11-18T00:18:01.1798850Z packages/react-router-dev build: [34mCLI[39m Building entry: config.ts, routes.ts, vite.ts, cli/index.ts, vite/cloudflare.ts
+2026-11-18T00:18:01.1799973Z packages/react-router-dev build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:18:01.1802550Z packages/react-router-dev build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:18:01.1803244Z packages/react-router-dev build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-dev/tsup.config.ts
+2026-11-18T00:18:01.1825228Z packages/react-router-dev build: [34mCLI[39m Target: es2022
+2026-11-18T00:18:01.1837059Z packages/react-router-dev build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:18:01.1838907Z packages/react-router-dev build: [34mCJS[39m Build start
+2026-11-18T00:18:01.2210616Z packages/react-router-dev build: [32mCJS[39m [1mdist/config.js          [22m[32m985.00 B[39m
+2026-11-18T00:18:01.2215191Z packages/react-router-dev build: [32mCJS[39m [1mdist/vite/cloudflare.js [22m[32m30.94 KB[39m
+2026-11-18T00:18:01.2215761Z packages/react-router-dev build: [32mCJS[39m [1mdist/routes.js          [22m[32m6.23 KB[39m
+2026-11-18T00:18:01.2216340Z packages/react-router-dev build: [32mCJS[39m [1mdist/cli/index.js       [22m[32m86.01 KB[39m
+2026-11-18T00:18:01.2216870Z packages/react-router-dev build: [32mCJS[39m [1mdist/vite.js            [22m[32m246.98 KB[39m
+2026-11-18T00:18:01.2234153Z packages/react-router-dev build: [32mCJS[39m ⚡️ Build success in 37ms
+2026-11-18T00:18:01.3569549Z packages/react-router-dev build: [34mDTS[39m Build start
+2026-11-18T00:18:05.5199988Z packages/react-router-dev build: [32mDTS[39m ⚡️ Build success in 4164ms
+2026-11-18T00:18:05.5200507Z packages/react-router-dev build: [32mDTS[39m [1mdist/cli/index.d.ts       [22m[32m20.00 B[39m
+2026-11-18T00:18:05.5200937Z packages/react-router-dev build: [32mDTS[39m [1mdist/config.d.ts          [22m[32m9.69 KB[39m
+2026-11-18T00:18:05.5201439Z packages/react-router-dev build: [32mDTS[39m [1mdist/vite/cloudflare.d.ts [22m[32m1.08 KB[39m
+2026-11-18T00:18:05.5201877Z packages/react-router-dev build: [32mDTS[39m [1mdist/vite.d.ts            [22m[32m444.00 B[39m
+2026-11-18T00:18:05.5202309Z packages/react-router-dev build: [32mDTS[39m [1mdist/routes.d.ts          [22m[32m185.00 B[39m
+2026-11-18T00:18:05.5202769Z packages/react-router-dev build: [32mDTS[39m [1mdist/routes-CZR-bKRt.d.ts [22m[32m4.49 KB[39m
+2026-11-18T00:18:05.6764764Z packages/react-router-dev build: ✅ Ran 1 script and skipped 0 in 4.7s.
+2026-11-18T00:18:05.6843336Z packages/react-router-dev build: Done
+2026-11-18T00:18:05.6848463Z packages/react-router-fs-routes build$ wireit
+2026-11-18T00:18:05.6850094Z ...ct-router-remix-routes-option-adapter build$ wireit
+2026-11-18T00:18:05.7504950Z packages/react-router-fs-routes build: Analyzing
+2026-11-18T00:18:05.7510236Z ...ct-router-remix-routes-option-adapter build: Analyzing
+2026-11-18T00:18:05.9722043Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:18:05.9723572Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:18:05.9724659Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:18:05.9725776Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-remix-routes-option-adapter/tsup.config.ts
+2026-11-18T00:18:05.9764778Z packages/react-router-fs-routes build: [34mCLI[39m Building entry: index.ts
+2026-11-18T00:18:05.9765221Z packages/react-router-fs-routes build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-18T00:18:05.9765579Z packages/react-router-fs-routes build: [34mCLI[39m tsup v8.5.0
+2026-11-18T00:18:05.9766379Z packages/react-router-fs-routes build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-fs-routes/tsup.config.ts
+2026-11-18T00:18:05.9766910Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Target: es2022
+2026-11-18T00:18:05.9767288Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:18:05.9773367Z ...ct-router-remix-routes-option-adapter build: [34mCJS[39m Build start
+2026-11-18T00:18:05.9775172Z packages/react-router-fs-routes build: [34mCLI[39m Target: es2022
+2026-11-18T00:18:05.9806983Z packages/react-router-fs-routes build: [34mCLI[39m Cleaning output folder
+2026-11-18T00:18:05.9807582Z packages/react-router-fs-routes build: [34mCJS[39m Build start
+2026-11-18T00:18:05.9870017Z packages/react-router-fs-routes build: [32mCJS[39m [1mdist/index.js [22m[32m16.44 KB[39m
+2026-11-18T00:18:05.9871066Z packages/react-router-fs-routes build: [32mCJS[39m ⚡️ Build success in 8ms
+2026-11-18T00:18:05.9871732Z ...ct-router-remix-routes-option-adapter build: [32mCJS[39m [1mdist/index.js [22m[32m4.47 KB[39m
+2026-11-18T00:18:05.9872273Z ...ct-router-remix-routes-option-adapter build: [32mCJS[39m ⚡️ Build success in 10ms
+2026-11-18T00:18:06.1496504Z ...ct-router-remix-routes-option-adapter build: [34mDTS[39m Build start
+2026-11-18T00:18:06.1550380Z packages/react-router-fs-routes build: [34mDTS[39m Build start
+2026-11-18T00:18:07.0862619Z ...ct-router-remix-routes-option-adapter build: [32mDTS[39m ⚡️ Build success in 937ms
+2026-11-18T00:18:07.0863373Z ...ct-router-remix-routes-option-adapter build: [32mDTS[39m [1mdist/index.d.ts [22m[32m1.94 KB[39m
+2026-11-18T00:18:07.1367928Z ...ct-router-remix-routes-option-adapter build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-18T00:18:07.1443046Z ...ct-router-remix-routes-option-adapter build: Done
+2026-11-18T00:18:07.1460722Z packages/react-router-fs-routes build: [32mDTS[39m ⚡️ Build success in 991ms
+2026-11-18T00:18:07.1461400Z packages/react-router-fs-routes build: [32mDTS[39m [1mdist/index.d.ts [22m[32m705.00 B[39m
+2026-11-18T00:18:07.1985269Z packages/react-router-fs-routes build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-18T00:18:07.2053039Z packages/react-router-fs-routes build: Done
+2026-11-18T00:18:07.2373601Z ##[group]Run coldteadotai/boba@v1
+2026-11-18T00:18:07.2373775Z with:
+2026-11-18T00:18:07.2373905Z   config: integration/playwright.config.ts
+2026-11-18T00:18:07.2374062Z   project: chromium
+2026-11-18T00:18:07.2374183Z   turbo: false
+2026-11-18T00:18:07.2374298Z   fail-fast: false
+2026-11-18T00:18:07.2375545Z   github-token: ***
+2026-11-18T00:18:07.2375669Z   timeout-minutes: 60
+2026-11-18T00:18:07.2375794Z   check-name: Boba
+2026-11-18T00:18:07.2375912Z   post: true
+2026-11-18T00:18:07.2376021Z env:
+2026-11-18T00:18:07.2376127Z   CI: true
+2026-11-18T00:18:07.2376264Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-18T00:18:07.2376440Z ##[endgroup]
+2026-11-18T00:18:10.0613450Z Waiting for Boba job bj_1899d42708a0b02c
+2026-11-18T00:18:10.3907956Z Boba history read in 329 ms
+2026-11-18T00:18:11.5433483Z Boba job bj_1899d42708a0b02c: running, building
+2026-11-18T00:18:23.3526240Z Boba job bj_1899d42708a0b02c: running, resolving
+2026-11-18T00:18:24.7705380Z Boba job bj_1899d42708a0b02c: running, building
+2026-11-18T00:18:25.9733178Z Boba job bj_1899d42708a0b02c: running, listing
+2026-11-18T00:18:28.3762056Z Boba job bj_1899d42708a0b02c: running, running
+2026-11-18T00:27:19.3864729Z Boba job bj_1899d42708a0b02c: done
+2026-11-18T00:27:19.4311902Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-18T00:27:20.5940508Z Check run: https://github.com/boba-benchmarks/react-router/runs/134478628918
+2026-11-18T00:27:20.6225641Z Post job cleanup.
+2026-11-18T00:27:20.7110929Z Pruning is unnecessary.
+2026-11-18T00:27:20.7235118Z Post job cleanup.
+2026-11-18T00:27:20.7790033Z [command]/usr/bin/git version
+2026-11-18T00:27:20.7815183Z git version 2.56.1
+2026-11-18T00:27:20.7835265Z Temporarily overriding HOME='/home/runner/work/_temp/7511c70f-5d2d-43eb-9c0d-7b8c2960ba75' before making global git config changes
+2026-11-18T00:27:20.7835845Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T00:27:20.7838174Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-router/react-router
+2026-11-18T00:27:20.7858635Z Removing SSH command configuration
+2026-11-18T00:27:20.7862092Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T00:27:20.7908416Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T00:27:20.8099296Z Removing HTTP extra header
+2026-11-18T00:27:20.8101820Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T00:27:20.8123732Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T00:27:20.8296131Z Removing includeIf entries pointing to credentials config files
+2026-11-18T00:27:20.8300008Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T00:27:20.8316285Z includeif.gitdir:/home/runner/work/react-router/react-router/.git.path
+2026-11-18T00:27:20.8316921Z includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path
+2026-11-18T00:27:20.8317315Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T00:27:20.8317642Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T00:27:20.8322962Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-router/react-router/.git.path
+2026-11-18T00:27:20.8339161Z /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8346933Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-router/react-router/.git.path /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8368757Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path
+2026-11-18T00:27:20.8384538Z /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8388911Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8411697Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T00:27:20.8425543Z /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8430223Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8450392Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T00:27:20.8464434Z /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8469957Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config
+2026-11-18T00:27:20.8492777Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T00:27:20.8663486Z Removing credentials config '/home/runner/work/_temp/git-credentials-dabf3ce5-450a-45e2-9ce1-808a7e02ce0f.config'
+2026-11-18T00:27:20.8802535Z Cleaning up orphan processes
