@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/134498127717",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T01:00:31Z",
+  "completed_at": "2026-11-18T01:10:06Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`should scroll to hash locations with URL encoded characters` fails on this commit every time\n\n<!-- boba-card:90f50ee4cd93bdfc -->\n\n> The page said \u201c0\u201d The test expected \u201c\\> 0\u201d\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/react-router, at commit 10b87ff. It fails on this push, and Boba has no run of main to compare with.\n\n1. integration/scroll-test.ts \u203a with JavaScript \u203a should scroll to hash locations with URL encoded characters\n   The page said \u201c0\u201d The test expected \u201c> 0\u201d\n\nCheck your fixes: npx playwright test integration/scroll-test.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_ba6bd0db8c01af7a/5053f6a26fe7a1ef27784c5ad4707a42/html/index.html#?testId=aec06b489b9c94bb03bd-fe953a48ddb7ee264787) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ba6bd0db8c01af7a/5053f6a26fe7a1ef27784c5ad4707a42/html/index.html)\n\n<details>\n<summary>5 flaky tests, not blocking \u00b7 1244 passed \u00b7 44 skipped \u00b7 9 min 35 s</summary>\n\n`child.clientAction` failed twice here, then passed on retry\n`child.clientAction/parent.childLoader` failed once here, then passed on retry\n`allows fine-grained revalidation` failed twice here, then passed on retry\n`Vite / NODE_ENV / dev` failed once here, then passed on retry\n`Vite / NODE_ENV / build` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
