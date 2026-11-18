@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/135180356649",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T22:20:20Z",
+  "completed_at": "2026-11-18T22:25:26Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`should scroll to hash locations` fails on this commit every time\n\n<!-- boba-card:44f2933bbcf1c74b -->\n\n> The page said \u201c0\u201d The test expected \u201c\\> 0\u201d\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/react-router, at commit 10b87ff. It fails on this push, and Boba has no run of main to compare with.\n\n1. integration/scroll-test.ts \u203a with JavaScript \u203a should scroll to hash locations\n   The page said \u201c0\u201d The test expected \u201c> 0\u201d\n\nCheck your fixes: npx playwright test integration/scroll-test.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_19740771474bd2dd/d32b0a888cfda58c9826327281067490/html/index.html#?testId=aec06b489b9c94bb03bd-f04639cbed21e2b8d1b7) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_19740771474bd2dd/d32b0a888cfda58c9826327281067490/html/index.html)\n\n<details>\n<summary>2 flaky tests, not blocking \u00b7 1247 passed \u00b7 44 skipped \u00b7 5 min 6 s</summary>\n\n`sends proper arguments to loaders when future.v8_passThroughRequests is enabled` failed once here, then passed on retry\n`child.clientAction/parent.childLoader/child.clientLoader` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
