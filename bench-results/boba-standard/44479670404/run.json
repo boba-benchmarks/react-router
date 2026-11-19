@@ -1,0 +1,13 @@
+{
+ "id": 44479670404,
+ "html_url": "https://github.com/boba-benchmarks/react-router/actions/runs/44479670404",
+ "head_sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "failure",
+ "created_at": "2026-11-19T07:26:47Z",
+ "updated_at": "2026-11-19T07:33:34Z",
+ "run_started_at": "2026-11-19T07:26:47Z",
+ "run_attempt": 1
+}
