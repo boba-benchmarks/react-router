@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/136406658986",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:05:37Z",
+  "completed_at": "2026-11-20T16:09:32Z",
+  "title": "1250 passed, 6 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 3 min 54 s\n\nOn 10b87ff \u00b7 4 min 53 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_fe6804723511210b/86369290b31d5447f4be545167114e34/html/index.html)\n\n<details>\n<summary>6 flaky tests, not blocking</summary>\n\n`express` failed once here, then passed on retry\n`handles CSS side effects during SSR in dev with plugin order reversed` failed once here, then passed on retry\n`Prerenders a static array of routes with server bundles` failed once here, then passed on retry\n`does not call actions on cross-origin document POST requests` failed once here, then passed on retry\n`Vite / NODE_ENV / dev` failed once here, then passed on retry\n`child.clientAction/parent.childLoader` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
