@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/136324944123",
+  "conclusion": "success",
+  "started_at": "2026-11-20T13:42:29Z",
+  "completed_at": "2026-11-20T13:44:56Z",
+  "title": "1250 passed, 5 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 2 min 27 s\n\nOn 10b87ff \u00b7 3 min 35 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_e63af1aeafc623b9/d526cbcb60486ba2cce32c937129cf7f/html/index.html)\n\n<details>\n<summary>5 flaky tests, not blocking</summary>\n\n`allows fine-grained revalidation` failed once here, then passed on retry\n`Prerenders a static array of routes with server bundles` failed once here, then passed on retry\n`handles Cloudflare env with plugin order reversed` failed once here, then passed on retry\n`no client loaders or fallbacks` failed once here, then passed on retry\n`parent.clientLoader` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
