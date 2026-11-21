@@ -1,0 +1,52 @@
+{
+ "at": "2026-11-21T00:49:55+00:00",
+ "suite": "react-router",
+ "repo": "boba-benchmarks/react-router",
+ "runner": "boba-standard",
+ "shards": "1",
+ "note": "after-peer-start",
+ "run": "https://github.com/boba-benchmarks/react-router/actions/runs/44845830379",
+ "run_id": 44845830379,
+ "sha": "10b87ff62714e588c23c2aa57bf158d60e8b5d12",
+ "conclusion": "success",
+ "wall_s": 296,
+ "queue_s": 9,
+ "job_s": 296,
+ "jobs": 1,
+ "job_max_s": 296,
+ "vcpu_min": 82.73,
+ "billed_min": null,
+ "usd": 0.083,
+ "tests": {
+  "passed": 1250,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 44,
+  "checks": 1,
+  "conclusions": [
+   "success"
+  ],
+  "failed_titles": []
+ },
+ "boba_jobs": [
+  {
+   "boba_job_id": "bj_7ccd5f4a3e9ec6b6",
+   "tier": "standard",
+   "warm": true,
+   "outcome": "done",
+   "forks": 6,
+   "start_plan_forks": 4,
+   "start_plan_reason": "split",
+   "start_plan_granted": 4,
+   "start_plan_error": null,
+   "vcpu_minutes": 82.73,
+   "billed_vcpu_minutes": 82.73,
+   "billing_status": "reported",
+   "duration_ms": 300030,
+   "hosts": 1,
+   "split_declined_reason": null,
+   "tests_ms": 225927
+  }
+ ],
+ "price_basis": "billed"
+}
