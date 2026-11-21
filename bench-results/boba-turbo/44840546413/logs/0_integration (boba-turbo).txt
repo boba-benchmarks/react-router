@@ -1,0 +1,1906 @@
+﻿2026-11-20T23:58:00.5537015Z Current runner version: '2.338.2'
+2026-11-20T23:58:00.5542193Z Runner name: 'boba-136647535968-1'
+2026-11-20T23:58:00.5542932Z Runner group name: 'coldtea boba - react-router'
+2026-11-20T23:58:00.5543906Z Machine name: 'ubuntu'
+2026-11-20T23:58:00.5546645Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T23:58:00.5548390Z Actions: read
+2026-11-20T23:58:00.5549048Z Checks: write
+2026-11-20T23:58:00.5549628Z Contents: read
+2026-11-20T23:58:00.5550219Z Metadata: read
+2026-11-20T23:58:00.5550949Z PullRequests: write
+2026-11-20T23:58:00.5551575Z ##[endgroup]
+2026-11-20T23:58:00.5553319Z Secret source: Actions
+2026-11-20T23:58:00.5554217Z Cache mode: write
+2026-11-20T23:58:00.5555072Z Prepare workflow directory
+2026-11-20T23:58:00.6001840Z Prepare all required actions
+2026-11-20T23:58:00.6031040Z Getting action download info
+2026-11-20T23:58:01.0816234Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-20T23:58:01.1343570Z Download action repository 'pnpm/action-setup@v6' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+2026-11-20T23:58:01.4426515Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+2026-11-20T23:58:01.5231503Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-20T23:58:01.8500522Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-20T23:58:02.0377692Z Complete job name: integration (boba-turbo)
+2026-11-20T23:58:02.0817710Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-20T23:58:02.1021822Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-20T23:58:02.1034603Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T23:58:02.1035588Z ##[endgroup]
+2026-11-20T23:58:02.2495449Z Boba checked this job in 134 ms; dependency cache: box disk; databases: fresh
+2026-11-20T23:58:02.2711265Z ##[group]Run actions/checkout@v6
+2026-11-20T23:58:02.2711979Z with:
+2026-11-20T23:58:02.2712646Z   repository: boba-benchmarks/react-router
+2026-11-20T23:58:02.2717692Z   token: ***
+2026-11-20T23:58:02.2718296Z   ssh-strict: true
+2026-11-20T23:58:02.2718899Z   ssh-user: git
+2026-11-20T23:58:02.2719515Z   persist-credentials: true
+2026-11-20T23:58:02.2720137Z   clean: true
+2026-11-20T23:58:02.2720704Z   sparse-checkout-cone-mode: true
+2026-11-20T23:58:02.2721396Z   fetch-depth: 1
+2026-11-20T23:58:02.2721966Z   fetch-tags: false
+2026-11-20T23:58:02.2722520Z   show-progress: true
+2026-11-20T23:58:02.2723145Z   lfs: false
+2026-11-20T23:58:02.2723861Z   submodules: false
+2026-11-20T23:58:02.2724472Z   set-safe-directory: true
+2026-11-20T23:58:02.2725145Z   allow-unsafe-pr-checkout: false
+2026-11-20T23:58:02.2725800Z env:
+2026-11-20T23:58:02.2726337Z   CI: true
+2026-11-20T23:58:02.2726907Z ##[endgroup]
+2026-11-20T23:58:02.4572608Z Syncing repository: boba-benchmarks/react-router
+2026-11-20T23:58:02.4575357Z ##[group]Getting Git version info
+2026-11-20T23:58:02.4576850Z Working directory is '/home/runner/work/react-router/react-router'
+2026-11-20T23:58:02.4578692Z [command]/usr/bin/git version
+2026-11-20T23:58:02.4630652Z git version 2.56.1
+2026-11-20T23:58:02.4645689Z ##[endgroup]
+2026-11-20T23:58:02.4653822Z Temporarily overriding HOME='/home/runner/work/_temp/633557b2-914d-4283-9ed3-b5886dabed84' before making global git config changes
+2026-11-20T23:58:02.4655856Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T23:58:02.4657364Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-router/react-router
+2026-11-20T23:58:02.4695129Z [command]/usr/bin/git config --local --get remote.origin.url
+2026-11-20T23:58:02.4711042Z https://github.com/boba-benchmarks/react-router
+2026-11-20T23:58:02.4718853Z ##[group]Removing previously created refs, to avoid conflicts
+2026-11-20T23:58:02.4720525Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+2026-11-20T23:58:02.4750920Z refs/heads/main
+2026-11-20T23:58:02.4756205Z [command]/usr/bin/git checkout --detach
+2026-11-20T23:58:02.4876631Z D	.agents/skills/fix-bug/SKILL.md
+2026-11-20T23:58:02.4878441Z D	.agents/skills/implement-rfc/SKILL.md
+2026-11-20T23:58:02.4880039Z D	.agents/skills/react-router/SKILL.md
+2026-11-20T23:58:02.4882380Z D	.agents/skills/react-router/references/data-mode.md
+2026-11-20T23:58:02.4884775Z D	.agents/skills/react-router/references/declarative-mode.md
+2026-11-20T23:58:02.4886990Z D	.agents/skills/react-router/references/framework-mode.md
+2026-11-20T23:58:02.4888414Z D	.agents/skills/react-router/references/rsc.md
+2026-11-20T23:58:02.4889477Z D	.browserslistrc
+2026-11-20T23:58:02.4890247Z D	.github/FUNDING.yml
+2026-11-20T23:58:02.4891069Z D	.github/ISSUE_TEMPLATE/bug_report.yml
+2026-11-20T23:58:02.4892052Z D	.github/ISSUE_TEMPLATE/config.yml
+2026-11-20T23:58:02.4893037Z D	.github/ISSUE_TEMPLATE/documentation_isse.yml
+2026-11-20T23:58:02.4894466Z D	.github/workflows/bench.yml
+2026-11-20T23:58:02.4895456Z D	.gitignore
+2026-11-20T23:58:02.4896255Z D	.npmrc
+2026-11-20T23:58:02.4897080Z D	.nvmrc
+2026-11-20T23:58:02.4897805Z D	.prettierignore
+2026-11-20T23:58:02.4898524Z D	.vscode/settings.json
+2026-11-20T23:58:02.4899521Z D	AGENTS.md
+2026-11-20T23:58:02.4900438Z D	CHANGELOG.md
+2026-11-20T23:58:02.4901378Z D	CLA.md
+2026-11-20T23:58:02.4902124Z D	CLAUDE.md
+2026-11-20T23:58:02.4902936Z D	CODE_OF_CONDUCT.md
+2026-11-20T23:58:02.4903985Z D	CONTRIBUTING.md
+2026-11-20T23:58:02.4904938Z D	DEVELOPMENT.md
+2026-11-20T23:58:02.4905741Z D	GOVERNANCE.md
+2026-11-20T23:58:02.4906621Z D	LICENSE.md
+2026-11-20T23:58:02.4907450Z D	README.md
+2026-11-20T23:58:02.4908257Z D	SECURITY.md
+2026-11-20T23:58:02.4909238Z D	build.utils.ts
+2026-11-20T23:58:02.4910395Z D	contributors.yml
+2026-11-20T23:58:02.4911270Z D	decisions/0001-use-blocker.md
+2026-11-20T23:58:02.4912330Z D	decisions/0001-use-npm-to-manage-npm-dependencies-for-deno-projects.md
+2026-11-20T23:58:02.4913898Z D	decisions/0002-do-not-clone-request.md
+2026-11-20T23:58:02.4914858Z D	decisions/0002-lazy-route-modules.md
+2026-11-20T23:58:02.4915774Z D	decisions/0003-data-strategy.md
+2026-11-20T23:58:02.4917296Z D	decisions/0003-infer-types-for-useloaderdata-and-useactiondata-from-loader-and-action-via-generics.md
+2026-11-20T23:58:02.4918797Z D	decisions/0004-streaming-apis.md
+2026-11-20T23:58:02.4919774Z D	decisions/0005-remixing-react-router.md
+2026-11-20T23:58:02.4921262Z D	decisions/0006-linear-workflow.md
+2026-11-20T23:58:02.4922368Z D	decisions/0007-remix-on-react-router-6-4-0.md
+2026-11-20T23:58:02.4923932Z D	decisions/0008-only-support-js-conversion-for-app-code.md
+2026-11-20T23:58:02.4925299Z D	decisions/0009-do-not-rely-on-treeshaking-for-correctness.md
+2026-11-20T23:58:02.4926589Z D	decisions/0010-splitting-up-client-and-server-code-in-vite.md
+2026-11-20T23:58:02.4927702Z D	decisions/0011-routes-ts.md
+2026-11-20T23:58:02.4928555Z D	decisions/0012-type-inference.md
+2026-11-20T23:58:02.4929634Z D	decisions/0013-react-router-config-ts.md
+2026-11-20T23:58:02.4930898Z D	decisions/0014-context-middleware.md
+2026-11-20T23:58:02.4931858Z D	decisions/0015-observability.md
+2026-11-20T23:58:02.4932789Z D	decisions/0016-plan-remove-agnostic-types.md
+2026-11-20T23:58:02.4933796Z D	decisions/template.md
+2026-11-20T23:58:02.4934844Z D	docs/api/components/Await.md
+2026-11-20T23:58:02.4935698Z D	docs/api/components/Form.md
+2026-11-20T23:58:02.4936663Z D	docs/api/components/Link.md
+2026-11-20T23:58:02.4937849Z D	docs/api/components/Links.md
+2026-11-20T23:58:02.4938873Z D	docs/api/components/Meta.md
+2026-11-20T23:58:02.4939880Z D	docs/api/components/NavLink.md
+2026-11-20T23:58:02.4940751Z D	docs/api/components/Navigate.md
+2026-11-20T23:58:02.4941632Z D	docs/api/components/Outlet.md
+2026-11-20T23:58:02.4942638Z D	docs/api/components/PrefetchPageLinks.md
+2026-11-20T23:58:02.4943651Z D	docs/api/components/Route.md
+2026-11-20T23:58:02.4944635Z D	docs/api/components/Routes.md
+2026-11-20T23:58:02.4945503Z D	docs/api/components/Scripts.md
+2026-11-20T23:58:02.4946430Z D	docs/api/components/ScrollRestoration.md
+2026-11-20T23:58:02.4948035Z D	docs/api/components/index.md
+2026-11-20T23:58:02.4948904Z D	docs/api/data-routers/RouterProvider.md
+2026-11-20T23:58:02.4950050Z D	docs/api/data-routers/StaticRouterProvider.md
+2026-11-20T23:58:02.4951070Z D	docs/api/data-routers/createBrowserRouter.md
+2026-11-20T23:58:02.4952010Z D	docs/api/data-routers/createHashRouter.md
+2026-11-20T23:58:02.4953086Z D	docs/api/data-routers/createMemoryRouter.md
+2026-11-20T23:58:02.4954082Z D	docs/api/data-routers/createStaticHandler.md
+2026-11-20T23:58:02.4955134Z D	docs/api/data-routers/createStaticRouter.md
+2026-11-20T23:58:02.4956140Z D	docs/api/data-routers/index.md
+2026-11-20T23:58:02.4957070Z D	docs/api/declarative-routers/BrowserRouter.md
+2026-11-20T23:58:02.4958259Z D	docs/api/declarative-routers/HashRouter.md
+2026-11-20T23:58:02.4959259Z D	docs/api/declarative-routers/HistoryRouter.md
+2026-11-20T23:58:02.4960270Z D	docs/api/declarative-routers/MemoryRouter.md
+2026-11-20T23:58:02.4961311Z D	docs/api/declarative-routers/Router.md
+2026-11-20T23:58:02.4962283Z D	docs/api/declarative-routers/StaticRouter.md
+2026-11-20T23:58:02.4963386Z D	docs/api/declarative-routers/index.md
+2026-11-20T23:58:02.4964766Z D	docs/api/framework-conventions/client-modules.md
+2026-11-20T23:58:02.4965925Z D	docs/api/framework-conventions/entry.client.tsx.md
+2026-11-20T23:58:02.4967197Z D	docs/api/framework-conventions/entry.server.tsx.md
+2026-11-20T23:58:02.4968655Z D	docs/api/framework-conventions/index.md
+2026-11-20T23:58:02.4969875Z D	docs/api/framework-conventions/react-router.config.ts.md
+2026-11-20T23:58:02.4970962Z D	docs/api/framework-conventions/root.tsx.md
+2026-11-20T23:58:02.4971923Z D	docs/api/framework-conventions/routes.ts.md
+2026-11-20T23:58:02.4973198Z D	docs/api/framework-conventions/server-modules.md
+2026-11-20T23:58:02.4974659Z D	docs/api/framework-routers/HydratedRouter.md
+2026-11-20T23:58:02.4975744Z D	docs/api/framework-routers/ServerRouter.md
+2026-11-20T23:58:02.4977145Z D	docs/api/framework-routers/index.md
+2026-11-20T23:58:02.4978111Z D	docs/api/hooks/index.md
+2026-11-20T23:58:02.4979056Z D	docs/api/hooks/useActionData.md
+2026-11-20T23:58:02.4979989Z D	docs/api/hooks/useAsyncError.md
+2026-11-20T23:58:02.4980849Z D	docs/api/hooks/useAsyncValue.md
+2026-11-20T23:58:02.4981779Z D	docs/api/hooks/useBeforeUnload.md
+2026-11-20T23:58:02.4982649Z D	docs/api/hooks/useBlocker.md
+2026-11-20T23:58:02.4983641Z D	docs/api/hooks/useFetcher.md
+2026-11-20T23:58:02.4984475Z D	docs/api/hooks/useFetchers.md
+2026-11-20T23:58:02.4985317Z D	docs/api/hooks/useFormAction.md
+2026-11-20T23:58:02.4986242Z D	docs/api/hooks/useHref.md
+2026-11-20T23:58:02.4987126Z D	docs/api/hooks/useInRouterContext.md
+2026-11-20T23:58:02.4988182Z D	docs/api/hooks/useLinkClickHandler.md
+2026-11-20T23:58:02.4989094Z D	docs/api/hooks/useLoaderData.md
+2026-11-20T23:58:02.4989911Z D	docs/api/hooks/useLocation.md
+2026-11-20T23:58:02.4990861Z D	docs/api/hooks/useMatch.md
+2026-11-20T23:58:02.4991777Z D	docs/api/hooks/useMatches.md
+2026-11-20T23:58:02.4992845Z D	docs/api/hooks/useNavigate.md
+2026-11-20T23:58:02.4993732Z D	docs/api/hooks/useNavigation.md
+2026-11-20T23:58:02.4994642Z D	docs/api/hooks/useNavigationType.md
+2026-11-20T23:58:02.4995642Z D	docs/api/hooks/useOutlet.md
+2026-11-20T23:58:02.4996622Z D	docs/api/hooks/useOutletContext.md
+2026-11-20T23:58:02.4997736Z D	docs/api/hooks/useParams.md
+2026-11-20T23:58:02.4998691Z D	docs/api/hooks/usePrompt.md
+2026-11-20T23:58:02.4999688Z D	docs/api/hooks/useResolvedPath.md
+2026-11-20T23:58:02.5000760Z D	docs/api/hooks/useRevalidator.md
+2026-11-20T23:58:02.5001778Z D	docs/api/hooks/useRouteError.md
+2026-11-20T23:58:02.5002842Z D	docs/api/hooks/useRouteLoaderData.md
+2026-11-20T23:58:02.5004056Z D	docs/api/hooks/useRouterState.md
+2026-11-20T23:58:02.5004944Z D	docs/api/hooks/useRoutes.md
+2026-11-20T23:58:02.5006106Z D	docs/api/hooks/useSearchParams.md
+2026-11-20T23:58:02.5007045Z D	docs/api/hooks/useSubmit.md
+2026-11-20T23:58:02.5007914Z D	docs/api/hooks/useViewTransitionState.md
+2026-11-20T23:58:02.5008980Z D	docs/api/index.md
+2026-11-20T23:58:02.5009781Z D	docs/api/other-api/adapter.md
+2026-11-20T23:58:02.5011004Z D	docs/api/other-api/dev.md
+2026-11-20T23:58:02.5011844Z D	docs/api/other-api/index.md
+2026-11-20T23:58:02.5012629Z D	docs/api/other-api/serve.md
+2026-11-20T23:58:02.5013576Z D	docs/api/rsc/RSCHydratedRouter.md
+2026-11-20T23:58:02.5014498Z D	docs/api/rsc/RSCStaticRouter.md
+2026-11-20T23:58:02.5015401Z D	docs/api/rsc/createCallServer.md
+2026-11-20T23:58:02.5016590Z D	docs/api/rsc/getRSCStream.md
+2026-11-20T23:58:02.5017533Z D	docs/api/rsc/index.md
+2026-11-20T23:58:02.5018544Z D	docs/api/rsc/matchRSCServerRequest.md
+2026-11-20T23:58:02.5019795Z D	docs/api/rsc/routeRSCServerRequest.md
+2026-11-20T23:58:02.5020708Z D	docs/api/utils/IsCookieFunction.md
+2026-11-20T23:58:02.5021669Z D	docs/api/utils/IsSessionFunction.md
+2026-11-20T23:58:02.5022598Z D	docs/api/utils/RouterContextProvider.md
+2026-11-20T23:58:02.5023598Z D	docs/api/utils/createContext.md
+2026-11-20T23:58:02.5024474Z D	docs/api/utils/createCookie.md
+2026-11-20T23:58:02.5025340Z D	docs/api/utils/createCookieSessionStorage.md
+2026-11-20T23:58:02.5026507Z D	docs/api/utils/createMemorySessionStorage.md
+2026-11-20T23:58:02.5027457Z D	docs/api/utils/createPath.md
+2026-11-20T23:58:02.5028497Z D	docs/api/utils/createRequestHandler.md
+2026-11-20T23:58:02.5029492Z D	docs/api/utils/createRoutesFromElements.md
+2026-11-20T23:58:02.5030578Z D	docs/api/utils/createRoutesStub.md
+2026-11-20T23:58:02.5031781Z D	docs/api/utils/createSearchParams.md
+2026-11-20T23:58:02.5032694Z D	docs/api/utils/createSession.md
+2026-11-20T23:58:02.5033596Z D	docs/api/utils/createSessionStorage.md
+2026-11-20T23:58:02.5034541Z D	docs/api/utils/data.md
+2026-11-20T23:58:02.5035451Z D	docs/api/utils/generatePath.md
+2026-11-20T23:58:02.5036478Z D	docs/api/utils/href.md
+2026-11-20T23:58:02.5037390Z D	docs/api/utils/index.md
+2026-11-20T23:58:02.5038220Z D	docs/api/utils/isCookie.md
+2026-11-20T23:58:02.5039188Z D	docs/api/utils/isRouteErrorResponse.md
+2026-11-20T23:58:02.5040523Z D	docs/api/utils/isSession.md
+2026-11-20T23:58:02.5041487Z D	docs/api/utils/matchPath.md
+2026-11-20T23:58:02.5042360Z D	docs/api/utils/matchRoutes.md
+2026-11-20T23:58:02.5043153Z D	docs/api/utils/parsePath.md
+2026-11-20T23:58:02.5044206Z D	docs/api/utils/redirect.md
+2026-11-20T23:58:02.5045076Z D	docs/api/utils/redirectDocument.md
+2026-11-20T23:58:02.5046141Z D	docs/api/utils/renderMatches.md
+2026-11-20T23:58:02.5047018Z D	docs/api/utils/replace.md
+2026-11-20T23:58:02.5047795Z D	docs/api/utils/resolvePath.md
+2026-11-20T23:58:02.5048837Z D	docs/community/api-development-strategy.md
+2026-11-20T23:58:02.5049927Z D	docs/community/contributing.md
+2026-11-20T23:58:02.5050862Z D	docs/community/index.md
+2026-11-20T23:58:02.5051724Z D	docs/elements.md
+2026-11-20T23:58:02.5052655Z D	docs/explanation/README
+2026-11-20T23:58:02.5053608Z D	docs/explanation/backend-for-frontend.md
+2026-11-20T23:58:02.5054632Z D	docs/explanation/code-splitting.md
+2026-11-20T23:58:02.5055649Z D	docs/explanation/concurrency.md
+2026-11-20T23:58:02.5056622Z D	docs/explanation/form-vs-fetcher.md
+2026-11-20T23:58:02.5057608Z D	docs/explanation/hot-module-replacement.md
+2026-11-20T23:58:02.5058644Z D	docs/explanation/hydration.md
+2026-11-20T23:58:02.5059663Z D	docs/explanation/index-query-param.md
+2026-11-20T23:58:02.5060508Z D	docs/explanation/index.md
+2026-11-20T23:58:02.5061606Z D	docs/explanation/lazy-route-discovery.md
+2026-11-20T23:58:02.5062618Z D	docs/explanation/location.md
+2026-11-20T23:58:02.5063525Z D	docs/explanation/progressive-enhancement.md
+2026-11-20T23:58:02.5064889Z D	docs/explanation/race-conditions.md
+2026-11-20T23:58:02.5065820Z D	docs/explanation/react-transitions.md
+2026-11-20T23:58:02.5066837Z D	docs/explanation/route-matching.md
+2026-11-20T23:58:02.5067770Z D	docs/explanation/server-client-execution.md
+2026-11-20T23:58:02.5068752Z D	docs/explanation/sessions-and-cookies.md
+2026-11-20T23:58:02.5070072Z D	docs/explanation/special-files.md
+2026-11-20T23:58:02.5071060Z D	docs/explanation/state-management.md
+2026-11-20T23:58:02.5072003Z D	docs/explanation/styling.md
+2026-11-20T23:58:02.5073026Z D	docs/explanation/type-safety.md
+2026-11-20T23:58:02.5074274Z D	docs/how-to/README
+2026-11-20T23:58:02.5075204Z D	docs/how-to/accessibility.md
+2026-11-20T23:58:02.5076204Z D	docs/how-to/client-data.md
+2026-11-20T23:58:02.5077176Z D	docs/how-to/data-strategy.md
+2026-11-20T23:58:02.5078037Z D	docs/how-to/error-boundary.md
+2026-11-20T23:58:02.5078851Z D	docs/how-to/error-reporting.md
+2026-11-20T23:58:02.5079841Z D	docs/how-to/fetchers.md
+2026-11-20T23:58:02.5080811Z D	docs/how-to/file-route-conventions.md
+2026-11-20T23:58:02.5081751Z D	docs/how-to/file-uploads.md
+2026-11-20T23:58:02.5082801Z D	docs/how-to/form-validation.md
+2026-11-20T23:58:02.5083759Z D	docs/how-to/headers.md
+2026-11-20T23:58:02.5084666Z D	docs/how-to/index.md
+2026-11-20T23:58:02.5085713Z D	docs/how-to/instrumentation.md
+2026-11-20T23:58:02.5086553Z D	docs/how-to/meta.md
+2026-11-20T23:58:02.5087511Z D	docs/how-to/middleware.md
+2026-11-20T23:58:02.5088400Z D	docs/how-to/navigation-blocking.md
+2026-11-20T23:58:02.5089487Z D	docs/how-to/optimize-revalidation.md
+2026-11-20T23:58:02.5090586Z D	docs/how-to/pre-rendering.md
+2026-11-20T23:58:02.5091554Z D	docs/how-to/presets.md
+2026-11-20T23:58:02.5092458Z D	docs/how-to/react-server-components.md
+2026-11-20T23:58:02.5093369Z D	docs/how-to/resource-routes.md
+2026-11-20T23:58:02.5094351Z D	docs/how-to/route-module-type-safety.md
+2026-11-20T23:58:02.5095436Z D	docs/how-to/search-params.md
+2026-11-20T23:58:02.5096387Z D	docs/how-to/security.md
+2026-11-20T23:58:02.5097242Z D	docs/how-to/server-bundles.md
+2026-11-20T23:58:02.5098075Z D	docs/how-to/spa.md
+2026-11-20T23:58:02.5098888Z D	docs/how-to/status.md
+2026-11-20T23:58:02.5099949Z D	docs/how-to/suspense.md
+2026-11-20T23:58:02.5100802Z D	docs/how-to/using-handle.md
+2026-11-20T23:58:02.5101867Z D	docs/how-to/view-transitions.md
+2026-11-20T23:58:02.5102955Z D	docs/how-to/webhook.md
+2026-11-20T23:58:02.5103934Z D	docs/index.md
+2026-11-20T23:58:02.5105027Z D	docs/prettier.config.js
+2026-11-20T23:58:02.5106051Z D	docs/start/README
+2026-11-20T23:58:02.5106963Z D	docs/start/data/actions.md
+2026-11-20T23:58:02.5107849Z D	docs/start/data/custom.md
+2026-11-20T23:58:02.5108691Z D	docs/start/data/data-loading.md
+2026-11-20T23:58:02.5109659Z D	docs/start/data/index.md
+2026-11-20T23:58:02.5110493Z D	docs/start/data/installation.md
+2026-11-20T23:58:02.5111390Z D	docs/start/data/navigating.md
+2026-11-20T23:58:02.5112250Z D	docs/start/data/pending-ui.md
+2026-11-20T23:58:02.5113191Z D	docs/start/data/route-object.md
+2026-11-20T23:58:02.5114151Z D	docs/start/data/routing.md
+2026-11-20T23:58:02.5114975Z D	docs/start/data/testing.md
+2026-11-20T23:58:02.5116032Z D	docs/start/declarative/index.md
+2026-11-20T23:58:02.5117181Z D	docs/start/declarative/installation.md
+2026-11-20T23:58:02.5118058Z D	docs/start/declarative/navigating.md
+2026-11-20T23:58:02.5119096Z D	docs/start/declarative/routing.md
+2026-11-20T23:58:02.5120035Z D	docs/start/declarative/url-values.md
+2026-11-20T23:58:02.5120943Z D	docs/start/framework/actions.md
+2026-11-20T23:58:02.5121995Z D	docs/start/framework/data-loading.md
+2026-11-20T23:58:02.5122996Z D	docs/start/framework/deploying.md
+2026-11-20T23:58:02.5124146Z D	docs/start/framework/index.md
+2026-11-20T23:58:02.5125052Z D	docs/start/framework/installation.md
+2026-11-20T23:58:02.5125950Z D	docs/start/framework/navigating.md
+2026-11-20T23:58:02.5126897Z D	docs/start/framework/pending-ui.md
+2026-11-20T23:58:02.5127901Z D	docs/start/framework/rendering.md
+2026-11-20T23:58:02.5129045Z D	docs/start/framework/route-module.md
+2026-11-20T23:58:02.5130169Z D	docs/start/framework/routing.md
+2026-11-20T23:58:02.5131035Z D	docs/start/framework/testing.md
+2026-11-20T23:58:02.5132079Z D	docs/start/index.md
+2026-11-20T23:58:02.5132859Z D	docs/start/modes.md
+2026-11-20T23:58:02.5133712Z D	docs/tutorials/README
+2026-11-20T23:58:02.5134510Z D	docs/tutorials/address-book.md
+2026-11-20T23:58:02.5135552Z D	docs/tutorials/advanced-data-fetching.md
+2026-11-20T23:58:02.5136695Z D	docs/tutorials/index.md
+2026-11-20T23:58:02.5137544Z D	docs/tutorials/quickstart.md
+2026-11-20T23:58:02.5138499Z D	docs/upgrading/README
+2026-11-20T23:58:02.5139647Z D	docs/upgrading/component-routes.md
+2026-11-20T23:58:02.5140633Z D	docs/upgrading/future.md
+2026-11-20T23:58:02.5141555Z D	docs/upgrading/index.md
+2026-11-20T23:58:02.5142376Z D	docs/upgrading/remix.md
+2026-11-20T23:58:02.5143233Z D	docs/upgrading/router-provider.md
+2026-11-20T23:58:02.5144186Z D	docs/upgrading/v6.md
+2026-11-20T23:58:02.5144964Z D	eslint.config.ts
+2026-11-20T23:58:02.5145774Z D	examples/README.md
+2026-11-20T23:58:02.5146604Z D	integration/CHANGELOG.md
+2026-11-20T23:58:02.5147553Z D	integration/abort-signal-test.ts
+2026-11-20T23:58:02.5148761Z D	integration/action-test.ts
+2026-11-20T23:58:02.5149801Z D	integration/assets/toupload.txt
+2026-11-20T23:58:02.5150795Z D	integration/assets/touploadtoobig.txt
+2026-11-20T23:58:02.5151709Z D	integration/blocking-test.ts
+2026-11-20T23:58:02.5152547Z D	integration/browser-entry-test.ts
+2026-11-20T23:58:02.5153577Z D	integration/bug-report-test.ts
+2026-11-20T23:58:02.5154461Z D	integration/catch-boundary-data-test.ts
+2026-11-20T23:58:02.5155393Z D	integration/catch-boundary-test.ts
+2026-11-20T23:58:02.5156346Z D	integration/cli-test.ts
+2026-11-20T23:58:02.5157291Z D	integration/client-data-test.ts
+2026-11-20T23:58:02.5158415Z D	integration/custom-entry-server-test.ts
+2026-11-20T23:58:02.5159364Z D	integration/deduped-route-modules-test.ts
+2026-11-20T23:58:02.5160360Z D	integration/defer-loader-test.ts
+2026-11-20T23:58:02.5161289Z D	integration/defer-test.ts
+2026-11-20T23:58:02.5162488Z D	integration/error-boundary-test.ts
+2026-11-20T23:58:02.5163658Z D	integration/error-boundary-v2-test.ts
+2026-11-20T23:58:02.5164580Z D	integration/error-data-request-test.ts
+2026-11-20T23:58:02.5165614Z D	integration/error-sanitization-test.ts
+2026-11-20T23:58:02.5166624Z D	integration/fetch-globals-test.ts
+2026-11-20T23:58:02.5167628Z D	integration/fetcher-layout-test.ts
+2026-11-20T23:58:02.5168544Z D	integration/fetcher-test.ts
+2026-11-20T23:58:02.5169619Z D	integration/fog-of-war-test.ts
+2026-11-20T23:58:02.5170471Z D	integration/form-data-test.ts
+2026-11-20T23:58:02.5171427Z D	integration/form-test.ts
+2026-11-20T23:58:02.5172287Z D	integration/fs-routes-test.ts
+2026-11-20T23:58:02.5173131Z D	integration/headers-test.ts
+2026-11-20T23:58:02.5174046Z D	integration/helpers/cleanup.mjs
+2026-11-20T23:58:02.5175132Z D	integration/helpers/cloudflare-dev-proxy-template/.gitignore
+2026-11-20T23:58:02.5176554Z D	integration/helpers/cloudflare-dev-proxy-template/app/entry.server.tsx
+2026-11-20T23:58:02.5178025Z D	integration/helpers/cloudflare-dev-proxy-template/app/root.tsx
+2026-11-20T23:58:02.5179368Z D	integration/helpers/cloudflare-dev-proxy-template/app/routes.ts
+2026-11-20T23:58:02.5180935Z D	integration/helpers/cloudflare-dev-proxy-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5182223Z D	integration/helpers/cloudflare-dev-proxy-template/package.json
+2026-11-20T23:58:02.5183543Z D	integration/helpers/cloudflare-dev-proxy-template/public/favicon.ico
+2026-11-20T23:58:02.5184978Z D	integration/helpers/cloudflare-dev-proxy-template/tsconfig.json
+2026-11-20T23:58:02.5186499Z D	integration/helpers/cloudflare-dev-proxy-template/vite.config.ts
+2026-11-20T23:58:02.5187686Z D	integration/helpers/create-fixture.ts
+2026-11-20T23:58:02.5188769Z D	integration/helpers/express.ts
+2026-11-20T23:58:02.5189906Z D	integration/helpers/fixtures.ts
+2026-11-20T23:58:02.5190947Z D	integration/helpers/playwright-fixture.ts
+2026-11-20T23:58:02.5191889Z D	integration/helpers/rsc-vite-framework/.gitignore
+2026-11-20T23:58:02.5193070Z D	integration/helpers/rsc-vite-framework/app/root.tsx
+2026-11-20T23:58:02.5194280Z D	integration/helpers/rsc-vite-framework/app/routes.ts
+2026-11-20T23:58:02.5196530Z D	integration/helpers/rsc-vite-framework/app/routes/_index.tsx
+2026-11-20T23:58:02.5197646Z D	integration/helpers/rsc-vite-framework/package.json
+2026-11-20T23:58:02.5198785Z D	integration/helpers/rsc-vite-framework/public/favicon.ico
+2026-11-20T23:58:02.5199858Z D	integration/helpers/rsc-vite-framework/start.js
+2026-11-20T23:58:02.5200875Z D	integration/helpers/rsc-vite-framework/tsconfig.json
+2026-11-20T23:58:02.5202370Z D	integration/helpers/rsc-vite-framework/vite.config.ts
+2026-11-20T23:58:02.5203594Z D	integration/helpers/rsc-vite/.gitignore
+2026-11-20T23:58:02.5204532Z D	integration/helpers/rsc-vite/package.json
+2026-11-20T23:58:02.5205673Z D	integration/helpers/rsc-vite/public/favicon.ico
+2026-11-20T23:58:02.5206601Z D	integration/helpers/rsc-vite/server.js
+2026-11-20T23:58:02.5207723Z D	integration/helpers/rsc-vite/src/config/basename.ts
+2026-11-20T23:58:02.5208785Z D	integration/helpers/rsc-vite/src/config/get-context.ts
+2026-11-20T23:58:02.5209887Z D	integration/helpers/rsc-vite/src/config/request-context.ts
+2026-11-20T23:58:02.5211088Z D	integration/helpers/rsc-vite/src/entry.browser.tsx
+2026-11-20T23:58:02.5212102Z D	integration/helpers/rsc-vite/src/entry.rsc.tsx
+2026-11-20T23:58:02.5213156Z D	integration/helpers/rsc-vite/src/entry.ssr.tsx
+2026-11-20T23:58:02.5214250Z D	integration/helpers/rsc-vite/src/routes.ts
+2026-11-20T23:58:02.5215227Z D	integration/helpers/rsc-vite/src/routes/home.tsx
+2026-11-20T23:58:02.5216322Z D	integration/helpers/rsc-vite/src/routes/root.tsx
+2026-11-20T23:58:02.5217433Z D	integration/helpers/rsc-vite/tsconfig.json
+2026-11-20T23:58:02.5218515Z D	integration/helpers/rsc-vite/vite.config.ts
+2026-11-20T23:58:02.5219457Z D	integration/helpers/stream.ts
+2026-11-20T23:58:02.5220260Z D	integration/helpers/templates.ts
+2026-11-20T23:58:02.5221327Z D	integration/helpers/vite-5-template/.gitignore
+2026-11-20T23:58:02.5222353Z D	integration/helpers/vite-5-template/app/root.tsx
+2026-11-20T23:58:02.5223614Z D	integration/helpers/vite-5-template/app/routes.ts
+2026-11-20T23:58:02.5224685Z D	integration/helpers/vite-5-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5225822Z D	integration/helpers/vite-5-template/env.d.ts
+2026-11-20T23:58:02.5226828Z D	integration/helpers/vite-5-template/package.json
+2026-11-20T23:58:02.5228053Z D	integration/helpers/vite-5-template/public/favicon.ico
+2026-11-20T23:58:02.5229257Z D	integration/helpers/vite-5-template/tsconfig.json
+2026-11-20T23:58:02.5230307Z D	integration/helpers/vite-5-template/vite.config.ts
+2026-11-20T23:58:02.5231535Z D	integration/helpers/vite-6-template/.gitignore
+2026-11-20T23:58:02.5232548Z D	integration/helpers/vite-6-template/app/root.tsx
+2026-11-20T23:58:02.5233532Z D	integration/helpers/vite-6-template/app/routes.ts
+2026-11-20T23:58:02.5234706Z D	integration/helpers/vite-6-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5235769Z D	integration/helpers/vite-6-template/env.d.ts
+2026-11-20T23:58:02.5236774Z D	integration/helpers/vite-6-template/package.json
+2026-11-20T23:58:02.5237873Z D	integration/helpers/vite-6-template/public/favicon.ico
+2026-11-20T23:58:02.5238936Z D	integration/helpers/vite-6-template/tsconfig.json
+2026-11-20T23:58:02.5240144Z D	integration/helpers/vite-6-template/vite.config.ts
+2026-11-20T23:58:02.5241204Z D	integration/helpers/vite-7-beta-template/.gitignore
+2026-11-20T23:58:02.5242348Z D	integration/helpers/vite-7-beta-template/app/root.tsx
+2026-11-20T23:58:02.5243619Z D	integration/helpers/vite-7-beta-template/app/routes.ts
+2026-11-20T23:58:02.5244794Z D	integration/helpers/vite-7-beta-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5245956Z D	integration/helpers/vite-7-beta-template/env.d.ts
+2026-11-20T23:58:02.5247053Z D	integration/helpers/vite-7-beta-template/package.json
+2026-11-20T23:58:02.5248198Z D	integration/helpers/vite-7-beta-template/public/favicon.ico
+2026-11-20T23:58:02.5249533Z D	integration/helpers/vite-7-beta-template/tsconfig.json
+2026-11-20T23:58:02.5250629Z D	integration/helpers/vite-7-beta-template/vite.config.ts
+2026-11-20T23:58:02.5251826Z D	integration/helpers/vite-8-template/.gitignore
+2026-11-20T23:58:02.5253007Z D	integration/helpers/vite-8-template/app/root.tsx
+2026-11-20T23:58:02.5254206Z D	integration/helpers/vite-8-template/app/routes.ts
+2026-11-20T23:58:02.5255422Z D	integration/helpers/vite-8-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5256568Z D	integration/helpers/vite-8-template/env.d.ts
+2026-11-20T23:58:02.5257608Z D	integration/helpers/vite-8-template/package.json
+2026-11-20T23:58:02.5258991Z D	integration/helpers/vite-8-template/public/favicon.ico
+2026-11-20T23:58:02.5260134Z D	integration/helpers/vite-8-template/tsconfig.json
+2026-11-20T23:58:02.5261198Z D	integration/helpers/vite-8-template/vite.config.ts
+2026-11-20T23:58:02.5262399Z D	integration/helpers/vite-plugin-cloudflare-template/.gitignore
+2026-11-20T23:58:02.5264043Z D	integration/helpers/vite-plugin-cloudflare-template/app/entry.server.tsx
+2026-11-20T23:58:02.5269263Z D	integration/helpers/vite-plugin-cloudflare-template/app/root.tsx
+2026-11-20T23:58:02.5270824Z D	integration/helpers/vite-plugin-cloudflare-template/app/routes.ts
+2026-11-20T23:58:02.5272259Z D	integration/helpers/vite-plugin-cloudflare-template/app/routes/_index.tsx
+2026-11-20T23:58:02.5273657Z D	integration/helpers/vite-plugin-cloudflare-template/package.json
+2026-11-20T23:58:02.5275166Z D	integration/helpers/vite-plugin-cloudflare-template/public/favicon.ico
+2026-11-20T23:58:02.5277384Z D	integration/helpers/vite-plugin-cloudflare-template/react-router.config.ts
+2026-11-20T23:58:02.5278991Z D	integration/helpers/vite-plugin-cloudflare-template/tsconfig.cloudflare.json
+2026-11-20T23:58:02.5280406Z D	integration/helpers/vite-plugin-cloudflare-template/tsconfig.json
+2026-11-20T23:58:02.5281906Z D	integration/helpers/vite-plugin-cloudflare-template/tsconfig.node.json
+2026-11-20T23:58:02.5283487Z D	integration/helpers/vite-plugin-cloudflare-template/vite.config.ts
+2026-11-20T23:58:02.5284881Z D	integration/helpers/vite-plugin-cloudflare-template/workers/app.ts
+2026-11-20T23:58:02.5286275Z D	integration/helpers/vite-plugin-cloudflare-template/wrangler.toml
+2026-11-20T23:58:02.5287333Z D	integration/helpers/vite.ts
+2026-11-20T23:58:02.5288277Z D	integration/hook-useSubmit-test.ts
+2026-11-20T23:58:02.5289130Z D	integration/http-test.ts
+2026-11-20T23:58:02.5290039Z D	integration/layout-route-test.ts
+2026-11-20T23:58:02.5291262Z D	integration/link-test.ts
+2026-11-20T23:58:02.5292389Z D	integration/loader-test.ts
+2026-11-20T23:58:02.5293431Z D	integration/matches-test.ts
+2026-11-20T23:58:02.5294466Z D	integration/mdx-test.ts
+2026-11-20T23:58:02.5295324Z D	integration/middleware-test.ts
+2026-11-20T23:58:02.5296302Z D	integration/multiple-cookies-test.ts
+2026-11-20T23:58:02.5297465Z D	integration/navigation-state-test.ts
+2026-11-20T23:58:02.5298418Z D	integration/package.json
+2026-11-20T23:58:02.5299397Z D	integration/passthrough-requests-test.ts
+2026-11-20T23:58:02.5300773Z D	integration/playwright.config.ts
+2026-11-20T23:58:02.5301913Z D	integration/prefetch-test.ts
+2026-11-20T23:58:02.5302921Z D	integration/react-router-serve-test.ts
+2026-11-20T23:58:02.5303878Z D	integration/redirects-test.ts
+2026-11-20T23:58:02.5304811Z D	integration/rendering-test.ts
+2026-11-20T23:58:02.5305687Z D	integration/request-test.ts
+2026-11-20T23:58:02.5306595Z D	integration/resource-routes-test.ts
+2026-11-20T23:58:02.5307537Z D	integration/revalidate-test.ts
+2026-11-20T23:58:02.5308558Z D	integration/root-route-test.ts
+2026-11-20T23:58:02.5309921Z D	integration/route-collisions-test.ts
+2026-11-20T23:58:02.5310854Z D	integration/route-config-test.ts
+2026-11-20T23:58:02.5311812Z D	integration/rsc-csrf-action-test.ts
+2026-11-20T23:58:02.5312802Z D	integration/rsc/route-discovery-test.ts
+2026-11-20T23:58:02.5313723Z D	integration/rsc/rsc-nojs-test.ts
+2026-11-20T23:58:02.5314776Z D	integration/rsc/rsc-prerender-test.ts
+2026-11-20T23:58:02.5315906Z D	integration/rsc/rsc-test.ts
+2026-11-20T23:58:02.5316788Z D	integration/rsc/utils.ts
+2026-11-20T23:58:02.5317683Z D	integration/scroll-test.ts
+2026-11-20T23:58:02.5318586Z D	integration/server-entry-test.ts
+2026-11-20T23:58:02.5319619Z D	integration/session-storage-denied-test.ts
+2026-11-20T23:58:02.5320602Z D	integration/set-cookie-revalidation-test.ts
+2026-11-20T23:58:02.5321581Z D	integration/single-fetch-test.ts
+2026-11-20T23:58:02.5322587Z D	integration/splat-routes-test.ts
+2026-11-20T23:58:02.5323726Z D	integration/split-route-modules-test.ts
+2026-11-20T23:58:02.5324720Z D	integration/sri-test.ts
+2026-11-20T23:58:02.5326013Z D	integration/transition-test.ts
+2026-11-20T23:58:02.5327010Z D	integration/tsconfig.json
+2026-11-20T23:58:02.5328176Z D	integration/typegen-test.ts
+2026-11-20T23:58:02.5329149Z D	integration/use-route-test.ts
+2026-11-20T23:58:02.5330265Z D	integration/vite-absolute-base-test.ts
+2026-11-20T23:58:02.5331407Z D	integration/vite-basename-test.ts
+2026-11-20T23:58:02.5332299Z D	integration/vite-build-test.ts
+2026-11-20T23:58:02.5333304Z D	integration/vite-cloudflare-test.ts
+2026-11-20T23:58:02.5334282Z D	integration/vite-critical-css-test.ts
+2026-11-20T23:58:02.5335221Z D	integration/vite-css-lazy-loading-test.ts
+2026-11-20T23:58:02.5336219Z D	integration/vite-css-test.ts
+2026-11-20T23:58:02.5337171Z D	integration/vite-dev-custom-entry-test.ts
+2026-11-20T23:58:02.5338256Z D	integration/vite-dev-test.ts
+2026-11-20T23:58:02.5339377Z D	integration/vite-dot-client-test.ts
+2026-11-20T23:58:02.5340304Z D	integration/vite-dot-server-test.ts
+2026-11-20T23:58:02.5341274Z D	integration/vite-dotenv-test.ts
+2026-11-20T23:58:02.5342247Z D	integration/vite-extra-server-environment-test.ts
+2026-11-20T23:58:02.5343357Z D	integration/vite-hmr-hdr-rsc-test.ts
+2026-11-20T23:58:02.5344338Z D	integration/vite-hmr-hdr-test.ts
+2026-11-20T23:58:02.5345195Z D	integration/vite-loader-context-test.ts
+2026-11-20T23:58:02.5346347Z D	integration/vite-manifests-test.ts
+2026-11-20T23:58:02.5347297Z D	integration/vite-node-env-test.ts
+2026-11-20T23:58:02.5348742Z D	integration/vite-plugin-cloudflare-test.ts
+2026-11-20T23:58:02.5350009Z D	integration/vite-plugin-order-validation-test.ts
+2026-11-20T23:58:02.5351321Z D	integration/vite-prerender-test.ts
+2026-11-20T23:58:02.5352377Z D	integration/vite-presets-test.ts
+2026-11-20T23:58:02.5353684Z D	integration/vite-preview-test.ts
+2026-11-20T23:58:02.5354642Z D	integration/vite-route-added-test.ts
+2026-11-20T23:58:02.5355941Z D	integration/vite-route-exports-modified-offscreen-test.ts
+2026-11-20T23:58:02.5357212Z D	integration/vite-server-bundles-test.ts
+2026-11-20T23:58:02.5358270Z D	integration/vite-server-fs-allow-test.ts
+2026-11-20T23:58:02.5359218Z D	integration/vite-spa-mode-test.ts
+2026-11-20T23:58:02.5360221Z D	integration/vite-unused-route-exports-test.ts
+2026-11-20T23:58:02.5361439Z D	jest/jest.config.shared.js
+2026-11-20T23:58:02.5362389Z D	jest/transform.js
+2026-11-20T23:58:02.5363328Z D	package.json
+2026-11-20T23:58:02.5364160Z D	packages/create-react-router/.changes/.gitkeep
+2026-11-20T23:58:02.5365398Z D	packages/create-react-router/CHANGELOG.md
+2026-11-20T23:58:02.5366444Z D	packages/create-react-router/README.md
+2026-11-20T23:58:02.5367545Z D	packages/create-react-router/__tests__/create-react-router-test.ts
+2026-11-20T23:58:02.5369078Z D	packages/create-react-router/__tests__/fixtures/basic/.gitignore
+2026-11-20T23:58:02.5370396Z D	packages/create-react-router/__tests__/fixtures/basic/README.md
+2026-11-20T23:58:02.5371608Z D	packages/create-react-router/__tests__/fixtures/basic/app/root.tsx
+2026-11-20T23:58:02.5372975Z D	packages/create-react-router/__tests__/fixtures/basic/app/routes.ts
+2026-11-20T23:58:02.5374359Z D	packages/create-react-router/__tests__/fixtures/basic/app/routes/home.tsx
+2026-11-20T23:58:02.5376260Z D	packages/create-react-router/__tests__/fixtures/basic/package.json
+2026-11-20T23:58:02.5377700Z D	packages/create-react-router/__tests__/fixtures/basic/public/favicon.ico
+2026-11-20T23:58:02.5379055Z D	packages/create-react-router/__tests__/fixtures/basic/tsconfig.json
+2026-11-20T23:58:02.5380492Z D	packages/create-react-router/__tests__/fixtures/basic/vite.config.ts
+2026-11-20T23:58:02.5381780Z D	packages/create-react-router/__tests__/fixtures/blank/package.json
+2026-11-20T23:58:02.5383154Z D	packages/create-react-router/__tests__/fixtures/nested-dir-repo.tar.gz
+2026-11-20T23:58:02.5384520Z D	packages/create-react-router/__tests__/fixtures/template.tar.gz
+2026-11-20T23:58:02.5385841Z D	packages/create-react-router/__tests__/fixtures/template.tgz
+2026-11-20T23:58:02.5387174Z D	packages/create-react-router/__tests__/fixtures/templates-repo.tar.gz
+2026-11-20T23:58:02.5388923Z D	packages/create-react-router/__tests__/fixtures/with-ignored-dir/package.json
+2026-11-20T23:58:02.5390440Z D	packages/create-react-router/__tests__/github-mocks.ts
+2026-11-20T23:58:02.5391559Z D	packages/create-react-router/__tests__/msw-register.ts
+2026-11-20T23:58:02.5392585Z D	packages/create-react-router/__tests__/msw.ts
+2026-11-20T23:58:02.5393827Z D	packages/create-react-router/__tests__/setupAfterEnv.ts
+2026-11-20T23:58:02.5394878Z D	packages/create-react-router/cli.ts
+2026-11-20T23:58:02.5395995Z D	packages/create-react-router/copy-template.ts
+2026-11-20T23:58:02.5397013Z D	packages/create-react-router/index.ts
+2026-11-20T23:58:02.5397919Z D	packages/create-react-router/jest.config.js
+2026-11-20T23:58:02.5399017Z D	packages/create-react-router/loading-indicator.ts
+2026-11-20T23:58:02.5400029Z D	packages/create-react-router/package.json
+2026-11-20T23:58:02.5400999Z D	packages/create-react-router/prompt.ts
+2026-11-20T23:58:02.5402023Z D	packages/create-react-router/prompts-confirm.ts
+2026-11-20T23:58:02.5403095Z D	packages/create-react-router/prompts-multi-select.ts
+2026-11-20T23:58:02.5404555Z D	packages/create-react-router/prompts-prompt-base.ts
+2026-11-20T23:58:02.5405614Z D	packages/create-react-router/prompts-select.ts
+2026-11-20T23:58:02.5406732Z D	packages/create-react-router/prompts-text.ts
+2026-11-20T23:58:02.5407950Z D	packages/create-react-router/tsconfig.json
+2026-11-20T23:58:02.5408933Z D	packages/create-react-router/tsup.config.ts
+2026-11-20T23:58:02.5409945Z D	packages/create-react-router/utils.ts
+2026-11-20T23:58:02.5410933Z D	packages/react-router-architect/.changes/.gitkeep
+2026-11-20T23:58:02.5411904Z D	packages/react-router-architect/CHANGELOG.md
+2026-11-20T23:58:02.5412974Z D	packages/react-router-architect/README.md
+2026-11-20T23:58:02.5414132Z D	packages/react-router-architect/__tests__/554828.jpeg
+2026-11-20T23:58:02.5415554Z D	packages/react-router-architect/__tests__/binaryTypes-test.ts
+2026-11-20T23:58:02.5416796Z D	packages/react-router-architect/__tests__/server-test.ts
+2026-11-20T23:58:02.5417856Z D	packages/react-router-architect/binaryTypes.ts
+2026-11-20T23:58:02.5418969Z D	packages/react-router-architect/index.ts
+2026-11-20T23:58:02.5419954Z D	packages/react-router-architect/jest.config.js
+2026-11-20T23:58:02.5420983Z D	packages/react-router-architect/package.json
+2026-11-20T23:58:02.5422036Z D	packages/react-router-architect/server.ts
+2026-11-20T23:58:02.5423225Z D	packages/react-router-architect/sessions/arcTableSessionStorage.ts
+2026-11-20T23:58:02.5424629Z D	packages/react-router-architect/tsconfig.json
+2026-11-20T23:58:02.5425846Z D	packages/react-router-architect/tsup.config.ts
+2026-11-20T23:58:02.5426896Z D	packages/react-router-architect/typedoc.mjs
+2026-11-20T23:58:02.5428063Z D	packages/react-router-cloudflare/.changes/.gitkeep
+2026-11-20T23:58:02.5429309Z D	packages/react-router-cloudflare/CHANGELOG.md
+2026-11-20T23:58:02.5430564Z D	packages/react-router-cloudflare/README.md
+2026-11-20T23:58:02.5431628Z D	packages/react-router-cloudflare/index.ts
+2026-11-20T23:58:02.5432769Z D	packages/react-router-cloudflare/package.json
+2026-11-20T23:58:02.5433975Z D	packages/react-router-cloudflare/sessions/workersKVStorage.ts
+2026-11-20T23:58:02.5435208Z D	packages/react-router-cloudflare/tsconfig.json
+2026-11-20T23:58:02.5436287Z D	packages/react-router-cloudflare/tsup.config.ts
+2026-11-20T23:58:02.5437321Z D	packages/react-router-cloudflare/typedoc.mjs
+2026-11-20T23:58:02.5438320Z D	packages/react-router-cloudflare/worker.ts
+2026-11-20T23:58:02.5439384Z D	packages/react-router-dev/.changes/.gitkeep
+2026-11-20T23:58:02.5440412Z D	packages/react-router-dev/.gitignore
+2026-11-20T23:58:02.5441543Z D	packages/react-router-dev/CHANGELOG.md
+2026-11-20T23:58:02.5442482Z D	packages/react-router-dev/README.md
+2026-11-20T23:58:02.5443718Z D	packages/react-router-dev/__tests__/fixtures/basic/.gitignore
+2026-11-20T23:58:02.5445152Z D	packages/react-router-dev/__tests__/fixtures/basic/app/root.tsx
+2026-11-20T23:58:02.5446503Z D	packages/react-router-dev/__tests__/fixtures/basic/app/routes.ts
+2026-11-20T23:58:02.5448055Z D	packages/react-router-dev/__tests__/fixtures/basic/app/routes/_index.tsx
+2026-11-20T23:58:02.5449495Z D	packages/react-router-dev/__tests__/fixtures/basic/package.json
+2026-11-20T23:58:02.5450841Z D	packages/react-router-dev/__tests__/fixtures/basic/public/favicon.ico
+2026-11-20T23:58:02.5452309Z D	packages/react-router-dev/__tests__/fixtures/basic/tsconfig.json
+2026-11-20T23:58:02.5453501Z D	packages/react-router-dev/__tests__/future-flags-test.ts
+2026-11-20T23:58:02.5454689Z D	packages/react-router-dev/__tests__/route-config-test.ts
+2026-11-20T23:58:02.5455993Z D	packages/react-router-dev/__tests__/rsc-virtual-route-modules-test.ts
+2026-11-20T23:58:02.5457265Z D	packages/react-router-dev/__tests__/setupAfterEnv.ts
+2026-11-20T23:58:02.5458396Z D	packages/react-router-dev/__tests__/styles-test.ts
+2026-11-20T23:58:02.5459507Z D	packages/react-router-dev/__tests__/utils/captureError.ts
+2026-11-20T23:58:02.5460690Z D	packages/react-router-dev/__tests__/utils/cli.ts
+2026-11-20T23:58:02.5462152Z D	packages/react-router-dev/__tests__/utils/eol.ts
+2026-11-20T23:58:02.5463187Z D	packages/react-router-dev/__tests__/utils/git.ts
+2026-11-20T23:58:02.5464352Z D	packages/react-router-dev/__tests__/utils/withApp.ts
+2026-11-20T23:58:02.5465572Z D	packages/react-router-dev/__tests__/watcher-ignored-test.ts
+2026-11-20T23:58:02.5466631Z D	packages/react-router-dev/bin.js
+2026-11-20T23:58:02.5467645Z D	packages/react-router-dev/cli/commands.ts
+2026-11-20T23:58:02.5468778Z D	packages/react-router-dev/cli/detectPackageManager.ts
+2026-11-20T23:58:02.5469823Z D	packages/react-router-dev/cli/index.ts
+2026-11-20T23:58:02.5470906Z D	packages/react-router-dev/cli/run.ts
+2026-11-20T23:58:02.5471904Z D	packages/react-router-dev/cli/useJavascript.ts
+2026-11-20T23:58:02.5473210Z D	packages/react-router-dev/config.ts
+2026-11-20T23:58:02.5474155Z D	packages/react-router-dev/config/config.ts
+2026-11-20T23:58:02.5475585Z D	packages/react-router-dev/config/default-rsc-entries/entry.client.tsx
+2026-11-20T23:58:02.5477016Z D	packages/react-router-dev/config/default-rsc-entries/entry.rsc.tsx
+2026-11-20T23:58:02.5478373Z D	packages/react-router-dev/config/default-rsc-entries/entry.ssr.tsx
+2026-11-20T23:58:02.5479643Z D	packages/react-router-dev/config/defaults/entry.client.tsx
+2026-11-20T23:58:02.5481228Z D	packages/react-router-dev/config/defaults/entry.server.node.tsx
+2026-11-20T23:58:02.5482507Z D	packages/react-router-dev/config/format.ts
+2026-11-20T23:58:02.5483805Z D	packages/react-router-dev/config/is-react-router-repo.ts
+2026-11-20T23:58:02.5485054Z D	packages/react-router-dev/config/routes.ts
+2026-11-20T23:58:02.5486245Z D	packages/react-router-dev/invariant.ts
+2026-11-20T23:58:02.5487361Z D	packages/react-router-dev/jest.config.js
+2026-11-20T23:58:02.5488357Z D	packages/react-router-dev/manifest.ts
+2026-11-20T23:58:02.5489555Z D	packages/react-router-dev/module-sync-enabled/false.cjs
+2026-11-20T23:58:02.5490916Z D	packages/react-router-dev/module-sync-enabled/index.d.mts
+2026-11-20T23:58:02.5492236Z D	packages/react-router-dev/module-sync-enabled/index.mjs
+2026-11-20T23:58:02.5493536Z D	packages/react-router-dev/module-sync-enabled/true.mjs
+2026-11-20T23:58:02.5494628Z D	packages/react-router-dev/package.json
+2026-11-20T23:58:02.5495817Z D	packages/react-router-dev/routes.ts
+2026-11-20T23:58:02.5496732Z D	packages/react-router-dev/rsc-types.d.ts
+2026-11-20T23:58:02.5497764Z D	packages/react-router-dev/tsconfig.json
+2026-11-20T23:58:02.5498837Z D	packages/react-router-dev/tsup.config.ts
+2026-11-20T23:58:02.5499874Z D	packages/react-router-dev/typedoc.mjs
+2026-11-20T23:58:02.5501271Z D	packages/react-router-dev/typegen/context.ts
+2026-11-20T23:58:02.5502332Z D	packages/react-router-dev/typegen/generate.ts
+2026-11-20T23:58:02.5503363Z D	packages/react-router-dev/typegen/index.ts
+2026-11-20T23:58:02.5504453Z D	packages/react-router-dev/typegen/params.ts
+2026-11-20T23:58:02.5505503Z D	packages/react-router-dev/typegen/route.ts
+2026-11-20T23:58:02.5506503Z D	packages/react-router-dev/vite.ts
+2026-11-20T23:58:02.5507537Z D	packages/react-router-dev/vite/babel.ts
+2026-11-20T23:58:02.5509004Z D	packages/react-router-dev/vite/build.ts
+2026-11-20T23:58:02.5510170Z D	packages/react-router-dev/vite/cache.ts
+2026-11-20T23:58:02.5511580Z D	packages/react-router-dev/vite/cloudflare-dev-proxy.ts
+2026-11-20T23:58:02.5512915Z D	packages/react-router-dev/vite/cloudflare.ts
+2026-11-20T23:58:02.5514009Z D	packages/react-router-dev/vite/combine-urls-test.ts
+2026-11-20T23:58:02.5515032Z D	packages/react-router-dev/vite/combine-urls.ts
+2026-11-20T23:58:02.5516142Z D	packages/react-router-dev/vite/dev.ts
+2026-11-20T23:58:02.5517166Z D	packages/react-router-dev/vite/has-dependency.ts
+2026-11-20T23:58:02.5518277Z D	packages/react-router-dev/vite/has-rsc-plugin.ts
+2026-11-20T23:58:02.5519457Z D	packages/react-router-dev/vite/load-dotenv.ts
+2026-11-20T23:58:02.5520729Z D	packages/react-router-dev/vite/node-adapter.ts
+2026-11-20T23:58:02.5521901Z D	packages/react-router-dev/vite/optimize-deps-entries.ts
+2026-11-20T23:58:02.5523084Z D	packages/react-router-dev/vite/plugin.ts
+2026-11-20T23:58:02.5524257Z D	packages/react-router-dev/vite/plugins/prerender.ts
+2026-11-20T23:58:02.5525693Z D	packages/react-router-dev/vite/plugins/validate-plugin-order.ts
+2026-11-20T23:58:02.5526987Z D	packages/react-router-dev/vite/plugins/warn-on-client-source-maps.ts
+2026-11-20T23:58:02.5528205Z D	packages/react-router-dev/vite/profiler.ts
+2026-11-20T23:58:02.5529244Z D	packages/react-router-dev/vite/remove-exports-test.ts
+2026-11-20T23:58:02.5530415Z D	packages/react-router-dev/vite/remove-exports.ts
+2026-11-20T23:58:02.5531523Z D	packages/react-router-dev/vite/resolve-file-url.ts
+2026-11-20T23:58:02.5532812Z D	packages/react-router-dev/vite/resolve-relative-route-file-path.ts
+2026-11-20T23:58:02.5534145Z D	packages/react-router-dev/vite/route-chunks-test.ts
+2026-11-20T23:58:02.5535219Z D	packages/react-router-dev/vite/route-chunks.ts
+2026-11-20T23:58:02.5536453Z D	packages/react-router-dev/vite/rsc/plugin.ts
+2026-11-20T23:58:02.5537659Z D	packages/react-router-dev/vite/rsc/virtual-route-config.ts
+2026-11-20T23:58:02.5538978Z D	packages/react-router-dev/vite/rsc/virtual-route-modules.ts
+2026-11-20T23:58:02.5540334Z D	packages/react-router-dev/vite/ssr-externals.ts
+2026-11-20T23:58:02.5541413Z D	packages/react-router-dev/vite/static/refresh-utils.mjs
+2026-11-20T23:58:02.5542502Z D	packages/react-router-dev/vite/static/rsc-refresh-utils.mjs
+2026-11-20T23:58:02.5662248Z D	packages/react-router-dev/vite/styles.ts
+2026-11-20T23:58:02.5662986Z D	packages/react-router-dev/vite/virtual-module.ts
+2026-11-20T23:58:02.5663797Z D	packages/react-router-dev/vite/vite-node.ts
+2026-11-20T23:58:02.5664502Z D	packages/react-router-dev/vite/vite.ts
+2026-11-20T23:58:02.5665183Z D	packages/react-router-dev/vite/with-props.ts
+2026-11-20T23:58:02.5665877Z D	packages/react-router-dom/.changes/.gitkeep
+2026-11-20T23:58:02.5666625Z D	packages/react-router-dom/CHANGELOG.md
+2026-11-20T23:58:02.5667384Z D	packages/react-router-dom/README.md
+2026-11-20T23:58:02.5667993Z D	packages/react-router-dom/index.ts
+2026-11-20T23:58:02.5668621Z D	packages/react-router-dom/package.json
+2026-11-20T23:58:02.5669280Z D	packages/react-router-dom/tsconfig.json
+2026-11-20T23:58:02.5669918Z D	packages/react-router-dom/tsup.config.ts
+2026-11-20T23:58:02.5670658Z D	packages/react-router-express/.changes/.gitkeep
+2026-11-20T23:58:02.5671343Z D	packages/react-router-express/CHANGELOG.md
+2026-11-20T23:58:02.5672006Z D	packages/react-router-express/README.md
+2026-11-20T23:58:02.5672770Z D	packages/react-router-express/__tests__/server-test.ts
+2026-11-20T23:58:02.5673502Z D	packages/react-router-express/index.ts
+2026-11-20T23:58:02.5674158Z D	packages/react-router-express/jest.config.js
+2026-11-20T23:58:02.5674835Z D	packages/react-router-express/package.json
+2026-11-20T23:58:02.5675484Z D	packages/react-router-express/server.ts
+2026-11-20T23:58:02.5676136Z D	packages/react-router-express/tsconfig.json
+2026-11-20T23:58:02.5676836Z D	packages/react-router-express/tsup.config.ts
+2026-11-20T23:58:02.5677564Z D	packages/react-router-express/typedoc.mjs
+2026-11-20T23:58:02.5678559Z D	packages/react-router-fs-routes/.changes/.gitkeep
+2026-11-20T23:58:02.5679351Z D	packages/react-router-fs-routes/CHANGELOG.md
+2026-11-20T23:58:02.5680040Z D	packages/react-router-fs-routes/README.md
+2026-11-20T23:58:02.5680834Z D	packages/react-router-fs-routes/__tests__/flatRoutes-test.ts
+2026-11-20T23:58:02.5681894Z D	packages/react-router-fs-routes/__tests__/routeManifestToRouteConfig-test.ts
+2026-11-20T23:58:02.5682817Z D	packages/react-router-fs-routes/flatRoutes.ts
+2026-11-20T23:58:02.5683664Z D	packages/react-router-fs-routes/index.ts
+2026-11-20T23:58:02.5684336Z D	packages/react-router-fs-routes/jest.config.js
+2026-11-20T23:58:02.5685030Z D	packages/react-router-fs-routes/manifest.ts
+2026-11-20T23:58:02.5685741Z D	packages/react-router-fs-routes/normalizeSlashes.ts
+2026-11-20T23:58:02.5686467Z D	packages/react-router-fs-routes/package.json
+2026-11-20T23:58:02.5687186Z D	packages/react-router-fs-routes/tsconfig.json
+2026-11-20T23:58:02.5687948Z D	packages/react-router-fs-routes/tsup.config.ts
+2026-11-20T23:58:02.5688712Z D	packages/react-router-fs-routes/typedoc.mjs
+2026-11-20T23:58:02.5689416Z D	packages/react-router-node/.changes/.gitkeep
+2026-11-20T23:58:02.5690388Z D	packages/react-router-node/.changes/patch.handle-request-listener-errors.md
+2026-11-20T23:58:02.5691350Z D	packages/react-router-node/.gitignore
+2026-11-20T23:58:02.5691990Z D	packages/react-router-node/CHANGELOG.md
+2026-11-20T23:58:02.5692628Z D	packages/react-router-node/README.md
+2026-11-20T23:58:02.5693489Z D	packages/react-router-node/__tests__/fixtures/stream-cancelled-node-readable.mjs
+2026-11-20T23:58:02.5694616Z D	packages/react-router-node/__tests__/fixtures/stream-closed-writable.mjs
+2026-11-20T23:58:02.5695711Z D	packages/react-router-node/__tests__/fixtures/stream-pending-writable-error.mjs
+2026-11-20T23:58:02.5696689Z D	packages/react-router-node/__tests__/sessions-test.ts
+2026-11-20T23:58:02.5697737Z D	packages/react-router-node/__tests__/stream-test.ts
+2026-11-20T23:58:02.5698438Z D	packages/react-router-node/index.ts
+2026-11-20T23:58:02.5699064Z D	packages/react-router-node/jest.config.js
+2026-11-20T23:58:02.5699778Z D	packages/react-router-node/package.json
+2026-11-20T23:58:02.5700412Z D	packages/react-router-node/server.ts
+2026-11-20T23:58:02.5701188Z D	packages/react-router-node/sessions/fileStorage.ts
+2026-11-20T23:58:02.5701989Z D	packages/react-router-node/stream.ts
+2026-11-20T23:58:02.5702617Z D	packages/react-router-node/tsconfig.json
+2026-11-20T23:58:02.5703257Z D	packages/react-router-node/tsup.config.ts
+2026-11-20T23:58:02.5703895Z D	packages/react-router-node/typedoc.mjs
+2026-11-20T23:58:02.5704732Z D	packages/react-router-remix-routes-option-adapter/.changes/.gitkeep
+2026-11-20T23:58:02.5705749Z D	packages/react-router-remix-routes-option-adapter/CHANGELOG.md
+2026-11-20T23:58:02.5706703Z D	packages/react-router-remix-routes-option-adapter/README.md
+2026-11-20T23:58:02.5707758Z D	packages/react-router-remix-routes-option-adapter/__tests__/defineRoutes-test.ts
+2026-11-20T23:58:02.5709253Z D	packages/react-router-remix-routes-option-adapter/__tests__/routeManifestToRouteConfig-test.ts
+2026-11-20T23:58:02.5710455Z D	packages/react-router-remix-routes-option-adapter/defineRoutes.ts
+2026-11-20T23:58:02.5711435Z D	packages/react-router-remix-routes-option-adapter/index.ts
+2026-11-20T23:58:02.5712362Z D	packages/react-router-remix-routes-option-adapter/jest.config.js
+2026-11-20T23:58:02.5713313Z D	packages/react-router-remix-routes-option-adapter/manifest.ts
+2026-11-20T23:58:02.5714312Z D	packages/react-router-remix-routes-option-adapter/normalizeSlashes.ts
+2026-11-20T23:58:02.5715311Z D	packages/react-router-remix-routes-option-adapter/package.json
+2026-11-20T23:58:02.5716269Z D	packages/react-router-remix-routes-option-adapter/tsconfig.json
+2026-11-20T23:58:02.5717248Z D	packages/react-router-remix-routes-option-adapter/tsup.config.ts
+2026-11-20T23:58:02.5718228Z D	packages/react-router-remix-routes-option-adapter/typedoc.mjs
+2026-11-20T23:58:02.5719049Z D	packages/react-router-serve/.changes/.gitkeep
+2026-11-20T23:58:02.5720181Z D	packages/react-router-serve/.changes/patch.handle-request-listener-errors.md
+2026-11-20T23:58:02.5721127Z D	packages/react-router-serve/CHANGELOG.md
+2026-11-20T23:58:02.5721770Z D	packages/react-router-serve/README.md
+2026-11-20T23:58:02.5722376Z D	packages/react-router-serve/bin.js
+2026-11-20T23:58:02.5722972Z D	packages/react-router-serve/cli.ts
+2026-11-20T23:58:02.5723692Z D	packages/react-router-serve/package.json
+2026-11-20T23:58:02.5724340Z D	packages/react-router-serve/tsconfig.json
+2026-11-20T23:58:02.5725017Z D	packages/react-router-serve/tsup.config.ts
+2026-11-20T23:58:02.5725686Z D	packages/react-router-serve/typedoc.mjs
+2026-11-20T23:58:02.5726328Z D	packages/react-router/.changes/.gitkeep
+2026-11-20T23:58:02.5727235Z D	packages/react-router/.changes/patch.critical-css-streamed-suspense-hydration.md
+2026-11-20T23:58:02.5728387Z D	packages/react-router/.changes/patch.preserve-data-route-params.md
+2026-11-20T23:58:02.5729182Z D	packages/react-router/CHANGELOG.md
+2026-11-20T23:58:02.5729767Z D	packages/react-router/README.md
+2026-11-20T23:58:02.5730367Z D	packages/react-router/__tests__/Route-test.tsx
+2026-11-20T23:58:02.5731175Z D	packages/react-router/__tests__/Router-basename-test.tsx
+2026-11-20T23:58:02.5732004Z D	packages/react-router/__tests__/Router-test.tsx
+2026-11-20T23:58:02.5732766Z D	packages/react-router/__tests__/Routes-location-test.tsx
+2026-11-20T23:58:02.5733557Z D	packages/react-router/__tests__/Routes-test.tsx
+2026-11-20T23:58:02.5734433Z D	packages/react-router/__tests__/__snapshots__/route-matching-test.tsx.snap
+2026-11-20T23:58:02.5735428Z D	packages/react-router/__tests__/absolute-path-matching-test.tsx
+2026-11-20T23:58:02.5736387Z D	packages/react-router/__tests__/createRoutesFromChildren-test.tsx
+2026-11-20T23:58:02.5737305Z D	packages/react-router/__tests__/data-memory-router-test.tsx
+2026-11-20T23:58:02.5738409Z D	packages/react-router/__tests__/data-router-no-dom-test.tsx
+2026-11-20T23:58:02.5739313Z D	packages/react-router/__tests__/descendant-routes-params-test.tsx
+2026-11-20T23:58:02.5740325Z D	packages/react-router/__tests__/descendant-routes-splat-matching-test.tsx
+2026-11-20T23:58:02.5741453Z D	packages/react-router/__tests__/descendant-routes-warning-test.tsx
+2026-11-20T23:58:02.5742402Z D	packages/react-router/__tests__/dom/client-on-error-test.tsx
+2026-11-20T23:58:02.5743308Z D	packages/react-router/__tests__/dom/components/LazyComponent.tsx
+2026-11-20T23:58:02.5744327Z D	packages/react-router/__tests__/dom/concurrent-mode-navigations-test.tsx
+2026-11-20T23:58:02.5745469Z D	packages/react-router/__tests__/dom/data-browser-router-legacy-formdata-test.tsx
+2026-11-20T23:58:02.5746582Z D	packages/react-router/__tests__/dom/data-browser-router-test.tsx
+2026-11-20T23:58:02.5747545Z D	packages/react-router/__tests__/dom/data-static-router-test.tsx
+2026-11-20T23:58:02.5748487Z D	packages/react-router/__tests__/dom/dom-export-test.tsx
+2026-11-20T23:58:02.5749393Z D	packages/react-router/__tests__/dom/fetcher-submit-tagname-test.tsx
+2026-11-20T23:58:02.5750352Z D	packages/react-router/__tests__/dom/flush-sync-navigations-test.tsx
+2026-11-20T23:58:02.5751224Z D	packages/react-router/__tests__/dom/link-click-test.tsx
+2026-11-20T23:58:02.5752013Z D	packages/react-router/__tests__/dom/link-href-test.tsx
+2026-11-20T23:58:02.5752882Z D	packages/react-router/__tests__/dom/link-push-test.tsx
+2026-11-20T23:58:02.5753695Z D	packages/react-router/__tests__/dom/nav-link-active-test.tsx
+2026-11-20T23:58:02.5754617Z D	packages/react-router/__tests__/dom/navigate-encode-params-test.tsx
+2026-11-20T23:58:02.5755550Z D	packages/react-router/__tests__/dom/partial-hydration-test.tsx
+2026-11-20T23:58:02.5756515Z D	packages/react-router/__tests__/dom/polyfills/drop-FormData-submitter.ts
+2026-11-20T23:58:02.5757500Z D	packages/react-router/__tests__/dom/scroll-restoration-test.tsx
+2026-11-20T23:58:02.5758393Z D	packages/react-router/__tests__/dom/search-params-test.tsx
+2026-11-20T23:58:02.5759545Z D	packages/react-router/__tests__/dom/special-characters-test.tsx
+2026-11-20T23:58:02.5760863Z D	packages/react-router/__tests__/dom/ssr/components-test.tsx
+2026-11-20T23:58:02.5761698Z D	packages/react-router/__tests__/dom/ssr/fog-of-war-test.ts
+2026-11-20T23:58:02.5762535Z D	packages/react-router/__tests__/dom/ssr/links-test.tsx
+2026-11-20T23:58:02.5763666Z D	packages/react-router/__tests__/dom/ssr/meta-test.tsx
+2026-11-20T23:58:02.5764453Z D	packages/react-router/__tests__/dom/static-link-test.tsx
+2026-11-20T23:58:02.5765283Z D	packages/react-router/__tests__/dom/static-location-test.tsx
+2026-11-20T23:58:02.5766141Z D	packages/react-router/__tests__/dom/static-navigate-test.tsx
+2026-11-20T23:58:02.5766926Z D	packages/react-router/__tests__/dom/stub-test.tsx
+2026-11-20T23:58:02.5767713Z D	packages/react-router/__tests__/dom/trailing-slashes-test.tsx
+2026-11-20T23:58:02.5768549Z D	packages/react-router/__tests__/dom/use-blocker-test.tsx
+2026-11-20T23:58:02.5769496Z D	packages/react-router/__tests__/dom/use-prompt-test.tsx
+2026-11-20T23:58:02.5770357Z D	packages/react-router/__tests__/dom/useLinkClickHandler-test.tsx
+2026-11-20T23:58:02.5771257Z D	packages/react-router/__tests__/external-navigation-test.tsx
+2026-11-20T23:58:02.5772110Z D	packages/react-router/__tests__/generatePath-test.tsx
+2026-11-20T23:58:02.5772911Z D	packages/react-router/__tests__/gh-issue-8127-test.tsx
+2026-11-20T23:58:02.5773688Z D	packages/react-router/__tests__/gh-issue-8165-test.tsx
+2026-11-20T23:58:02.5774483Z D	packages/react-router/__tests__/greedy-matching-test.tsx
+2026-11-20T23:58:02.5775223Z D	packages/react-router/__tests__/href-test.ts
+2026-11-20T23:58:02.5775934Z D	packages/react-router/__tests__/index-routes-test.tsx
+2026-11-20T23:58:02.5776783Z D	packages/react-router/__tests__/layout-routes-test.tsx
+2026-11-20T23:58:02.5777556Z D	packages/react-router/__tests__/matchPath-test.tsx
+2026-11-20T23:58:02.5778297Z D	packages/react-router/__tests__/matchRoutes-test.tsx
+2026-11-20T23:58:02.5779272Z D	packages/react-router/__tests__/navigate-test.tsx
+2026-11-20T23:58:02.5780026Z D	packages/react-router/__tests__/params-decode-test.tsx
+2026-11-20T23:58:02.5780816Z D	packages/react-router/__tests__/path-matching-test.tsx
+2026-11-20T23:58:02.5781705Z D	packages/react-router/__tests__/react-transitions-test.tsx
+2026-11-20T23:58:02.5782632Z D	packages/react-router/__tests__/resolvePath-test.tsx
+2026-11-20T23:58:02.5783586Z D	packages/react-router/__tests__/route-depth-order-matching-test.tsx
+2026-11-20T23:58:02.5784498Z D	packages/react-router/__tests__/route-matching-test.tsx
+2026-11-20T23:58:02.5785446Z D	packages/react-router/__tests__/router/TestSequences/EncodedReservedCharacters.ts
+2026-11-20T23:58:02.5786463Z D	packages/react-router/__tests__/router/TestSequences/GoBack.ts
+2026-11-20T23:58:02.5787358Z D	packages/react-router/__tests__/router/TestSequences/GoForward.ts
+2026-11-20T23:58:02.5788376Z D	packages/react-router/__tests__/router/TestSequences/InitialLocationDefaultKey.ts
+2026-11-20T23:58:02.5789545Z D	packages/react-router/__tests__/router/TestSequences/InitialLocationHasKey.ts
+2026-11-20T23:58:02.5790535Z D	packages/react-router/__tests__/router/TestSequences/Listen.ts
+2026-11-20T23:58:02.5791480Z D	packages/react-router/__tests__/router/TestSequences/ListenPopOnly.ts
+2026-11-20T23:58:02.5792551Z D	packages/react-router/__tests__/router/TestSequences/PushMissingPathname.ts
+2026-11-20T23:58:02.5793579Z D	packages/react-router/__tests__/router/TestSequences/PushNewLocation.ts
+2026-11-20T23:58:02.5794612Z D	packages/react-router/__tests__/router/TestSequences/PushRelativePathname.ts
+2026-11-20T23:58:02.5795724Z D	packages/react-router/__tests__/router/TestSequences/PushRelativePathnameWarning.ts
+2026-11-20T23:58:02.5796807Z D	packages/react-router/__tests__/router/TestSequences/PushSamePath.ts
+2026-11-20T23:58:02.5797753Z D	packages/react-router/__tests__/router/TestSequences/PushState.ts
+2026-11-20T23:58:02.5798711Z D	packages/react-router/__tests__/router/TestSequences/PushStateInvalid.ts
+2026-11-20T23:58:02.5799796Z D	packages/react-router/__tests__/router/TestSequences/ReplaceNewLocation.ts
+2026-11-20T23:58:02.5801028Z D	packages/react-router/__tests__/router/TestSequences/ReplaceSamePath.ts
+2026-11-20T23:58:02.5802010Z D	packages/react-router/__tests__/router/TestSequences/ReplaceState.ts
+2026-11-20T23:58:02.5802946Z D	packages/react-router/__tests__/router/browser-test.ts
+2026-11-20T23:58:02.5803885Z D	packages/react-router/__tests__/router/context-middleware-test.tsx
+2026-11-20T23:58:02.5804772Z D	packages/react-router/__tests__/router/create-path-test.ts
+2026-11-20T23:58:02.5805609Z D	packages/react-router/__tests__/router/data-strategy-test.ts
+2026-11-20T23:58:02.5806433Z D	packages/react-router/__tests__/router/fetchers-test.ts
+2026-11-20T23:58:02.5807228Z D	packages/react-router/__tests__/router/flush-sync-test.ts
+2026-11-20T23:58:02.5808030Z D	packages/react-router/__tests__/router/hash-base-test.ts
+2026-11-20T23:58:02.5808790Z D	packages/react-router/__tests__/router/hash-test.ts
+2026-11-20T23:58:02.5809659Z D	packages/react-router/__tests__/router/instrumentation-test.ts
+2026-11-20T23:58:02.5810533Z D	packages/react-router/__tests__/router/interruptions-test.ts
+2026-11-20T23:58:02.5811390Z D	packages/react-router/__tests__/router/lazy-discovery-test.ts
+2026-11-20T23:58:02.5812279Z D	packages/react-router/__tests__/router/lazy-test.ts
+2026-11-20T23:58:02.5813026Z D	packages/react-router/__tests__/router/mask-test.ts
+2026-11-20T23:58:02.5813763Z D	packages/react-router/__tests__/router/memory-test.ts
+2026-11-20T23:58:02.5814600Z D	packages/react-router/__tests__/router/navigation-blocking-test.ts
+2026-11-20T23:58:02.5815475Z D	packages/react-router/__tests__/router/navigation-test.ts
+2026-11-20T23:58:02.5816327Z D	packages/react-router/__tests__/router/path-resolution-test.ts
+2026-11-20T23:58:02.5817183Z D	packages/react-router/__tests__/router/redirects-test.ts
+2026-11-20T23:58:02.5817985Z D	packages/react-router/__tests__/router/resolveTo-test.tsx
+2026-11-20T23:58:02.5818998Z D	packages/react-router/__tests__/router/revalidate-test.ts
+2026-11-20T23:58:02.5819875Z D	packages/react-router/__tests__/router/route-fallback-test.ts
+2026-11-20T23:58:02.5820754Z D	packages/react-router/__tests__/router/router-memory-test.ts
+2026-11-20T23:58:02.5821580Z D	packages/react-router/__tests__/router/router-test.ts
+2026-11-20T23:58:02.5822496Z D	packages/react-router/__tests__/router/scroll-restoration-test.ts
+2026-11-20T23:58:02.5823418Z D	packages/react-router/__tests__/router/should-revalidate-test.ts
+2026-11-20T23:58:02.5824280Z D	packages/react-router/__tests__/router/ssr-test.ts
+2026-11-20T23:58:02.5825060Z D	packages/react-router/__tests__/router/submission-test.ts
+2026-11-20T23:58:02.5825952Z D	packages/react-router/__tests__/router/utils/custom-matchers.ts
+2026-11-20T23:58:02.5826892Z D	packages/react-router/__tests__/router/utils/data-router-setup.ts
+2026-11-20T23:58:02.5827796Z D	packages/react-router/__tests__/router/utils/urlDataStrategy.ts
+2026-11-20T23:58:02.5828627Z D	packages/react-router/__tests__/router/utils/utils.ts
+2026-11-20T23:58:02.5829440Z D	packages/react-router/__tests__/router/view-transition-test.ts
+2026-11-20T23:58:02.5830314Z D	packages/react-router/__tests__/rsc/server-test.ts
+2026-11-20T23:58:02.5831138Z D	packages/react-router/__tests__/same-component-lifecycle-test.tsx
+2026-11-20T23:58:02.5832048Z D	packages/react-router/__tests__/server-runtime/actions-test.ts
+2026-11-20T23:58:02.5832985Z D	packages/react-router/__tests__/server-runtime/cookies-test.ts
+2026-11-20T23:58:02.5833840Z D	packages/react-router/__tests__/server-runtime/data-test.ts
+2026-11-20T23:58:02.5834719Z D	packages/react-router/__tests__/server-runtime/handle-error-test.ts
+2026-11-20T23:58:02.5835629Z D	packages/react-router/__tests__/server-runtime/handler-test.ts
+2026-11-20T23:58:02.5836496Z D	packages/react-router/__tests__/server-runtime/markup-test.ts
+2026-11-20T23:58:02.5837368Z D	packages/react-router/__tests__/server-runtime/responses-test.ts
+2026-11-20T23:58:02.5838272Z D	packages/react-router/__tests__/server-runtime/server-test.ts
+2026-11-20T23:58:02.5839153Z D	packages/react-router/__tests__/server-runtime/sessions-test.ts
+2026-11-20T23:58:02.5840248Z D	packages/react-router/__tests__/server-runtime/utils.ts
+2026-11-20T23:58:02.5840958Z D	packages/react-router/__tests__/setup.ts
+2026-11-20T23:58:02.5841709Z D	packages/react-router/__tests__/unstable-useRouterState-test.tsx
+2026-11-20T23:58:02.5842566Z D	packages/react-router/__tests__/use-revalidator-test.tsx
+2026-11-20T23:58:02.5843455Z D	packages/react-router/__tests__/useHref-basename-test.tsx
+2026-11-20T23:58:02.5844225Z D	packages/react-router/__tests__/useHref-test.tsx
+2026-11-20T23:58:02.5844951Z D	packages/react-router/__tests__/useLocation-test.tsx
+2026-11-20T23:58:02.5845682Z D	packages/react-router/__tests__/useMatch-test.tsx
+2026-11-20T23:58:02.5846408Z D	packages/react-router/__tests__/useNavigate-test.tsx
+2026-11-20T23:58:02.5847142Z D	packages/react-router/__tests__/useOutlet-test.tsx
+2026-11-20T23:58:02.5847872Z D	packages/react-router/__tests__/useParams-test.tsx
+2026-11-20T23:58:02.5848634Z D	packages/react-router/__tests__/useResolvedPath-test.tsx
+2026-11-20T23:58:02.5849448Z D	packages/react-router/__tests__/useRoutes-test.tsx
+2026-11-20T23:58:02.5850254Z D	packages/react-router/__tests__/utils/MemoryNavigate.tsx
+2026-11-20T23:58:02.5851012Z D	packages/react-router/__tests__/utils/framework.ts
+2026-11-20T23:58:02.5851714Z D	packages/react-router/__tests__/utils/getHtml.ts
+2026-11-20T23:58:02.5852452Z D	packages/react-router/__tests__/utils/getWindow.ts
+2026-11-20T23:58:02.5853259Z D	packages/react-router/__tests__/utils/renderStrict.tsx
+2026-11-20T23:58:02.5853983Z D	packages/react-router/__tests__/utils/tick.ts
+2026-11-20T23:58:02.5854735Z D	packages/react-router/__tests__/utils/waitForRedirect.tsx
+2026-11-20T23:58:02.5855578Z D	packages/react-router/__tests__/vendor/turbo-stream-test.ts
+2026-11-20T23:58:02.5856306Z D	packages/react-router/dom-export.ts
+2026-11-20T23:58:02.5856961Z D	packages/react-router/index-react-server-client.ts
+2026-11-20T23:58:02.5857884Z D	packages/react-router/index-react-server.ts
+2026-11-20T23:58:02.5858531Z D	packages/react-router/index.ts
+2026-11-20T23:58:02.5859106Z D	packages/react-router/jest.config.js
+2026-11-20T23:58:02.5859707Z D	packages/react-router/lib/actions.ts
+2026-11-20T23:58:02.5860360Z D	packages/react-router/lib/components.tsx
+2026-11-20T23:58:02.5860976Z D	packages/react-router/lib/context.ts
+2026-11-20T23:58:02.5861692Z D	packages/react-router/lib/dom-export/dom-router-provider.tsx
+2026-11-20T23:58:02.5862530Z D	packages/react-router/lib/dom-export/hydrated-router.tsx
+2026-11-20T23:58:02.5863294Z D	packages/react-router/lib/dom/dom.ts
+2026-11-20T23:58:02.5863909Z D	packages/react-router/lib/dom/global.ts
+2026-11-20T23:58:02.5864537Z D	packages/react-router/lib/dom/lib.tsx
+2026-11-20T23:58:02.5865183Z D	packages/react-router/lib/dom/node-main.js
+2026-11-20T23:58:02.5865826Z D	packages/react-router/lib/dom/server.tsx
+2026-11-20T23:58:02.5866538Z D	packages/react-router/lib/dom/ssr/components.tsx
+2026-11-20T23:58:02.5867219Z D	packages/react-router/lib/dom/ssr/data.ts
+2026-11-20T23:58:02.5867862Z D	packages/react-router/lib/dom/ssr/entry.ts
+2026-11-20T23:58:02.5868562Z D	packages/react-router/lib/dom/ssr/errorBoundaries.tsx
+2026-11-20T23:58:02.5869286Z D	packages/react-router/lib/dom/ssr/fallback.tsx
+2026-11-20T23:58:02.5870191Z D	packages/react-router/lib/dom/ssr/fog-of-war.ts
+2026-11-20T23:58:02.5870901Z D	packages/react-router/lib/dom/ssr/hydration.tsx
+2026-11-20T23:58:02.5871615Z D	packages/react-router/lib/dom/ssr/invariant.ts
+2026-11-20T23:58:02.5872283Z D	packages/react-router/lib/dom/ssr/links.ts
+2026-11-20T23:58:02.5872936Z D	packages/react-router/lib/dom/ssr/markup.ts
+2026-11-20T23:58:02.5873656Z D	packages/react-router/lib/dom/ssr/routeModules.ts
+2026-11-20T23:58:02.5874398Z D	packages/react-router/lib/dom/ssr/routes-test-stub.tsx
+2026-11-20T23:58:02.5875112Z D	packages/react-router/lib/dom/ssr/routes.tsx
+2026-11-20T23:58:02.5875807Z D	packages/react-router/lib/dom/ssr/server.tsx
+2026-11-20T23:58:02.5876550Z D	packages/react-router/lib/dom/ssr/single-fetch.tsx
+2026-11-20T23:58:02.5877431Z D	packages/react-router/lib/errors.ts
+2026-11-20T23:58:02.5878016Z D	packages/react-router/lib/hooks.tsx
+2026-11-20T23:58:02.5878597Z D	packages/react-router/lib/href.ts
+2026-11-20T23:58:02.5879194Z D	packages/react-router/lib/router/history.ts
+2026-11-20T23:58:02.5879888Z D	packages/react-router/lib/router/instrumentation.ts
+2026-11-20T23:58:02.5880623Z D	packages/react-router/lib/router/links.ts
+2026-11-20T23:58:02.5881287Z D	packages/react-router/lib/router/navigation.ts
+2026-11-20T23:58:02.5881959Z D	packages/react-router/lib/router/router.ts
+2026-11-20T23:58:02.5882593Z D	packages/react-router/lib/router/url.ts
+2026-11-20T23:58:02.5883314Z D	packages/react-router/lib/router/utils.ts
+2026-11-20T23:58:02.5883956Z D	packages/react-router/lib/rsc/browser.tsx
+2026-11-20T23:58:02.5884637Z D	packages/react-router/lib/rsc/errorBoundaries.tsx
+2026-11-20T23:58:02.5885388Z D	packages/react-router/lib/rsc/html-stream/browser.ts
+2026-11-20T23:58:02.5886137Z D	packages/react-router/lib/rsc/html-stream/server.ts
+2026-11-20T23:58:02.5886854Z D	packages/react-router/lib/rsc/route-modules.ts
+2026-11-20T23:58:02.5887537Z D	packages/react-router/lib/rsc/server.rsc.ts
+2026-11-20T23:58:02.5888197Z D	packages/react-router/lib/rsc/server.ssr.tsx
+2026-11-20T23:58:02.5888892Z D	packages/react-router/lib/server-runtime/build.ts
+2026-11-20T23:58:02.5889617Z D	packages/react-router/lib/server-runtime/cookies.ts
+2026-11-20T23:58:02.5890393Z D	packages/react-router/lib/server-runtime/crypto.ts
+2026-11-20T23:58:02.5891111Z D	packages/react-router/lib/server-runtime/data.ts
+2026-11-20T23:58:02.5891811Z D	packages/react-router/lib/server-runtime/dev.ts
+2026-11-20T23:58:02.5892516Z D	packages/react-router/lib/server-runtime/entry.ts
+2026-11-20T23:58:02.5893235Z D	packages/react-router/lib/server-runtime/errors.ts
+2026-11-20T23:58:02.5894005Z D	packages/react-router/lib/server-runtime/headers.ts
+2026-11-20T23:58:02.5895030Z D	packages/react-router/lib/server-runtime/invariant.ts
+2026-11-20T23:58:02.5895783Z D	packages/react-router/lib/server-runtime/mode.ts
+2026-11-20T23:58:02.5896615Z D	packages/react-router/lib/server-runtime/routeMatching.ts
+2026-11-20T23:58:02.5897410Z D	packages/react-router/lib/server-runtime/routes.ts
+2026-11-20T23:58:02.5898145Z D	packages/react-router/lib/server-runtime/server.ts
+2026-11-20T23:58:02.5898922Z D	packages/react-router/lib/server-runtime/serverHandoff.ts
+2026-11-20T23:58:02.5899718Z D	packages/react-router/lib/server-runtime/sessions.ts
+2026-11-20T23:58:02.5900591Z D	packages/react-router/lib/server-runtime/sessions/cookieStorage.ts
+2026-11-20T23:58:02.5901542Z D	packages/react-router/lib/server-runtime/sessions/memoryStorage.ts
+2026-11-20T23:58:02.5902433Z D	packages/react-router/lib/server-runtime/single-fetch.ts
+2026-11-20T23:58:02.5903258Z D	packages/react-router/lib/server-runtime/urls.ts
+2026-11-20T23:58:02.5904045Z D	packages/react-router/lib/server-runtime/warnings.ts
+2026-11-20T23:58:02.5904756Z D	packages/react-router/lib/types/future.ts
+2026-11-20T23:58:02.5905406Z D	packages/react-router/lib/types/internal.ts
+2026-11-20T23:58:02.5906069Z D	packages/react-router/lib/types/params.ts
+2026-11-20T23:58:02.5906714Z D	packages/react-router/lib/types/register.ts
+2026-11-20T23:58:02.5907392Z D	packages/react-router/lib/types/route-data.ts
+2026-11-20T23:58:02.5908164Z D	packages/react-router/lib/types/route-module-annotations.ts
+2026-11-20T23:58:02.5908951Z D	packages/react-router/lib/types/route-module.ts
+2026-11-20T23:58:02.5909665Z D	packages/react-router/lib/types/serializes-to.ts
+2026-11-20T23:58:02.5910344Z D	packages/react-router/lib/types/utils.ts
+2026-11-20T23:58:02.5911067Z D	packages/react-router/node-main-dom-export.js
+2026-11-20T23:58:02.5911724Z D	packages/react-router/node-main.js
+2026-11-20T23:58:02.5912321Z D	packages/react-router/package.json
+2026-11-20T23:58:02.5913309Z D	packages/react-router/scripts/copy-docs.mjs
+2026-11-20T23:58:02.5914257Z D	packages/react-router/tsconfig.dom.json
+2026-11-20T23:58:02.5915057Z D	packages/react-router/tsconfig.json
+2026-11-20T23:58:02.5915677Z D	packages/react-router/tsup.config.rsc.ts
+2026-11-20T23:58:02.5916513Z D	packages/react-router/tsup.config.ts
+2026-11-20T23:58:02.5917130Z D	packages/react-router/typedoc.mjs
+2026-11-20T23:58:02.5917807Z D	packages/react-router/vendor/turbo-stream-v2/flatten.ts
+2026-11-20T23:58:02.5918646Z D	packages/react-router/vendor/turbo-stream-v2/turbo-stream.ts
+2026-11-20T23:58:02.5919495Z D	packages/react-router/vendor/turbo-stream-v2/unflatten.ts
+2026-11-20T23:58:02.5920293Z D	packages/react-router/vendor/turbo-stream-v2/utils.ts
+2026-11-20T23:58:02.5921155Z D	patches/@mdx-js__rollup.patch
+2026-11-20T23:58:02.5921713Z D	playground/data/index.html
+2026-11-20T23:58:02.5922263Z D	playground/data/package.json
+2026-11-20T23:58:02.5922808Z D	playground/data/src/main.tsx
+2026-11-20T23:58:02.5923436Z D	playground/data/tsconfig.json
+2026-11-20T23:58:02.5923989Z D	playground/data/vite.config.ts
+2026-11-20T23:58:02.5924617Z D	playground/framework-express/.gitignore
+2026-11-20T23:58:02.5925257Z D	playground/framework-express/app/root.tsx
+2026-11-20T23:58:02.5925912Z D	playground/framework-express/app/routes.ts
+2026-11-20T23:58:02.5926599Z D	playground/framework-express/app/routes/_index.tsx
+2026-11-20T23:58:02.5927295Z D	playground/framework-express/package.json
+2026-11-20T23:58:02.5927983Z D	playground/framework-express/public/favicon.ico
+2026-11-20T23:58:02.5928712Z D	playground/framework-express/react-router.config.ts
+2026-11-20T23:58:02.5929407Z D	playground/framework-express/server.js
+2026-11-20T23:58:02.5930046Z D	playground/framework-express/tsconfig.json
+2026-11-20T23:58:02.5930715Z D	playground/framework-express/vite.config.ts
+2026-11-20T23:58:02.5931420Z D	playground/framework-spa/.gitignore
+2026-11-20T23:58:02.5932023Z D	playground/framework-spa/app/root.tsx
+2026-11-20T23:58:02.5932638Z D	playground/framework-spa/app/routes.ts
+2026-11-20T23:58:02.5933286Z D	playground/framework-spa/app/routes/_index.tsx
+2026-11-20T23:58:02.5934243Z D	playground/framework-spa/package.json
+2026-11-20T23:58:02.5934901Z D	playground/framework-spa/public/favicon.ico
+2026-11-20T23:58:02.5935595Z D	playground/framework-spa/react-router.config.ts
+2026-11-20T23:58:02.5936284Z D	playground/framework-spa/tsconfig.json
+2026-11-20T23:58:02.5936910Z D	playground/framework-spa/vite.config.ts
+2026-11-20T23:58:02.5937569Z D	playground/framework-vite-5/.gitignore
+2026-11-20T23:58:02.5938212Z D	playground/framework-vite-5/app/root.tsx
+2026-11-20T23:58:02.5938856Z D	playground/framework-vite-5/app/routes.ts
+2026-11-20T23:58:02.5939533Z D	playground/framework-vite-5/app/routes/_index.tsx
+2026-11-20T23:58:02.5940260Z D	playground/framework-vite-5/app/routes/product.tsx
+2026-11-20T23:58:02.5940959Z D	playground/framework-vite-5/package.json
+2026-11-20T23:58:02.5941659Z D	playground/framework-vite-5/public/favicon.ico
+2026-11-20T23:58:02.5942384Z D	playground/framework-vite-5/react-router.config.ts
+2026-11-20T23:58:02.5943079Z D	playground/framework-vite-5/tsconfig.json
+2026-11-20T23:58:02.5943736Z D	playground/framework-vite-5/vite.config.ts
+2026-11-20T23:58:02.5944382Z D	playground/framework-vite-6/.gitignore
+2026-11-20T23:58:02.5945054Z D	playground/framework-vite-6/app/root.tsx
+2026-11-20T23:58:02.5945689Z D	playground/framework-vite-6/app/routes.ts
+2026-11-20T23:58:02.5946341Z D	playground/framework-vite-6/app/routes/$.tsx
+2026-11-20T23:58:02.5947071Z D	playground/framework-vite-6/app/routes/_index.tsx
+2026-11-20T23:58:02.5947809Z D	playground/framework-vite-6/app/routes/product.tsx
+2026-11-20T23:58:02.5948496Z D	playground/framework-vite-6/package.json
+2026-11-20T23:58:02.5949156Z D	playground/framework-vite-6/public/favicon.ico
+2026-11-20T23:58:02.5949876Z D	playground/framework-vite-6/react-router.config.ts
+2026-11-20T23:58:02.5950579Z D	playground/framework-vite-6/tsconfig.json
+2026-11-20T23:58:02.5951352Z D	playground/framework-vite-6/vite.config.ts
+2026-11-20T23:58:02.5952013Z D	playground/framework-vite-7-beta/.gitignore
+2026-11-20T23:58:02.5952690Z D	playground/framework-vite-7-beta/app/root.tsx
+2026-11-20T23:58:02.5953378Z D	playground/framework-vite-7-beta/app/routes.ts
+2026-11-20T23:58:02.5954323Z D	playground/framework-vite-7-beta/app/routes/_index.tsx
+2026-11-20T23:58:02.5955105Z D	playground/framework-vite-7-beta/app/routes/product.tsx
+2026-11-20T23:58:02.5955852Z D	playground/framework-vite-7-beta/package.json
+2026-11-20T23:58:02.5956571Z D	playground/framework-vite-7-beta/public/favicon.ico
+2026-11-20T23:58:02.5957341Z D	playground/framework-vite-7-beta/react-router.config.ts
+2026-11-20T23:58:02.5958100Z D	playground/framework-vite-7-beta/tsconfig.json
+2026-11-20T23:58:02.5958827Z D	playground/framework-vite-7-beta/vite.config.ts
+2026-11-20T23:58:02.5959492Z D	playground/framework/.gitignore
+2026-11-20T23:58:02.5960060Z D	playground/framework/app/root.tsx
+2026-11-20T23:58:02.5960643Z D	playground/framework/app/routes.ts
+2026-11-20T23:58:02.5961248Z D	playground/framework/app/routes/_index.tsx
+2026-11-20T23:58:02.5961975Z D	playground/framework/app/routes/product.tsx
+2026-11-20T23:58:02.5962613Z D	playground/framework/package.json
+2026-11-20T23:58:02.5963304Z D	playground/framework/react-router.config.ts
+2026-11-20T23:58:02.5963956Z D	playground/framework/tsconfig.json
+2026-11-20T23:58:02.5964546Z D	playground/framework/vite.config.ts
+2026-11-20T23:58:02.5965137Z D	playground/middleware/.gitignore
+2026-11-20T23:58:02.5965719Z D	playground/middleware/app/contexts.ts
+2026-11-20T23:58:02.5966321Z D	playground/middleware/app/root.tsx
+2026-11-20T23:58:02.5966910Z D	playground/middleware/app/routes.ts
+2026-11-20T23:58:02.5967530Z D	playground/middleware/app/routes/_index.tsx
+2026-11-20T23:58:02.5968214Z D	playground/middleware/app/routes/client.a.b.tsx
+2026-11-20T23:58:02.5968913Z D	playground/middleware/app/routes/client.a.tsx
+2026-11-20T23:58:02.5969608Z D	playground/middleware/app/routes/server.a.b.tsx
+2026-11-20T23:58:02.5970316Z D	playground/middleware/app/routes/server.a.tsx
+2026-11-20T23:58:02.5970971Z D	playground/middleware/dev-server.ts
+2026-11-20T23:58:02.5971813Z D	playground/middleware/package.json
+2026-11-20T23:58:02.5972431Z D	playground/middleware/public/favicon.ico
+2026-11-20T23:58:02.5973096Z D	playground/middleware/react-router.config.ts
+2026-11-20T23:58:02.5973742Z D	playground/middleware/server.ts
+2026-11-20T23:58:02.5974314Z D	playground/middleware/tsconfig.json
+2026-11-20T23:58:02.5974966Z D	playground/middleware/tsconfig.node.json
+2026-11-20T23:58:02.5975608Z D	playground/middleware/tsconfig.vite.json
+2026-11-20T23:58:02.5976237Z D	playground/middleware/vite.config.ts
+2026-11-20T23:58:02.5976839Z D	playground/performance/.gitignore
+2026-11-20T23:58:02.5977425Z D	playground/performance/app/root.tsx
+2026-11-20T23:58:02.5978028Z D	playground/performance/app/routes.ts
+2026-11-20T23:58:02.5978660Z D	playground/performance/app/routes/route.tsx
+2026-11-20T23:58:02.5978890Z D	playground/performance/package.json
+2026-11-20T23:58:02.5979366Z D	playground/performance/public/.well-known/appspecific/com.chrome.devtools.json
+2026-11-20T23:58:02.5979618Z D	playground/performance/public/favicon.ico
+2026-11-20T23:58:02.5979883Z D	playground/performance/react-router.config.ts
+2026-11-20T23:58:02.5980134Z D	playground/performance/scripts/bench.mjs
+2026-11-20T23:58:02.5980362Z D	playground/performance/tsconfig.json
+2026-11-20T23:58:02.5980599Z D	playground/performance/vite.config.ts
+2026-11-20T23:58:02.5980843Z D	playground/rsc-vite-7-framework/.gitignore
+2026-11-20T23:58:02.5981103Z D	playground/rsc-vite-7-framework/app/root.css
+2026-11-20T23:58:02.5981358Z D	playground/rsc-vite-7-framework/app/root.tsx
+2026-11-20T23:58:02.5981655Z D	playground/rsc-vite-7-framework/app/routes.ts
+2026-11-20T23:58:02.5982010Z D	playground/rsc-vite-7-framework/app/routes/_index/actions.ts
+2026-11-20T23:58:02.5982347Z D	playground/rsc-vite-7-framework/app/routes/_index/route.tsx
+2026-11-20T23:58:02.5982697Z D	playground/rsc-vite-7-framework/app/routes/_index/styles.css
+2026-11-20T23:58:02.5983065Z D	playground/rsc-vite-7-framework/app/routes/_layout-a.route-a.tsx
+2026-11-20T23:58:02.5983392Z D	playground/rsc-vite-7-framework/app/routes/_layout-a.tsx
+2026-11-20T23:58:02.5983809Z D	playground/rsc-vite-7-framework/app/routes/_layout-b.route-b.tsx
+2026-11-20T23:58:02.5984346Z D	playground/rsc-vite-7-framework/app/routes/_layout-b.tsx
+2026-11-20T23:58:02.5984789Z D	playground/rsc-vite-7-framework/app/routes/client-loader-hydrate/route.tsx
+2026-11-20T23:58:02.5985318Z D	playground/rsc-vite-7-framework/app/routes/client-loader-hydrate/styles.module.css
+2026-11-20T23:58:02.5985860Z D	playground/rsc-vite-7-framework/app/routes/client-loader-without-server-loader/route.tsx
+2026-11-20T23:58:02.5986455Z D	playground/rsc-vite-7-framework/app/routes/client-loader-without-server-loader/styles.module.css
+2026-11-20T23:58:02.5986832Z D	playground/rsc-vite-7-framework/app/routes/client-loader/route.tsx
+2026-11-20T23:58:02.5987264Z D	playground/rsc-vite-7-framework/app/routes/client-loader/styles.module.css
+2026-11-20T23:58:02.5987752Z D	playground/rsc-vite-7-framework/app/routes/fixture.client-component/route.tsx
+2026-11-20T23:58:02.5988226Z D	playground/rsc-vite-7-framework/app/routes/fixture.server-component/route.tsx
+2026-11-20T23:58:02.5988845Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/hello/hello-component.module.css
+2026-11-20T23:58:02.5989383Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/hello/hello-component.tsx
+2026-11-20T23:58:02.5989853Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/hello/hello.mdx
+2026-11-20T23:58:02.5990268Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/posts.ts
+2026-11-20T23:58:02.5990852Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/world/world-component.module.css
+2026-11-20T23:58:02.5991382Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/world/world-component.tsx
+2026-11-20T23:58:02.5991894Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/posts/world/world.mdx
+2026-11-20T23:58:02.5992458Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob.$post/route.tsx
+2026-11-20T23:58:02.5992849Z D	playground/rsc-vite-7-framework/app/routes/mdx-glob._index/route.tsx
+2026-11-20T23:58:02.5993191Z D	playground/rsc-vite-7-framework/app/routes/mdx/message.tsx
+2026-11-20T23:58:02.5993502Z D	playground/rsc-vite-7-framework/app/routes/mdx/route.mdx
+2026-11-20T23:58:02.5993874Z D	playground/rsc-vite-7-framework/app/routes/optimistic/actions.ts
+2026-11-20T23:58:02.5994233Z D	playground/rsc-vite-7-framework/app/routes/optimistic/form.tsx
+2026-11-20T23:58:02.5994586Z D	playground/rsc-vite-7-framework/app/routes/optimistic/liked.ts
+2026-11-20T23:58:02.5994951Z D	playground/rsc-vite-7-framework/app/routes/optimistic/route.tsx
+2026-11-20T23:58:02.5995326Z D	playground/rsc-vite-7-framework/app/routes/server-loader/route.tsx
+2026-11-20T23:58:02.5995760Z D	playground/rsc-vite-7-framework/app/routes/server-loader/styles.module.css
+2026-11-20T23:58:02.5995997Z D	playground/rsc-vite-7-framework/mdx.d.ts
+2026-11-20T23:58:02.5996263Z D	playground/rsc-vite-7-framework/package.json
+2026-11-20T23:58:02.5996552Z D	playground/rsc-vite-7-framework/public/favicon.ico
+2026-11-20T23:58:02.5996894Z D	playground/rsc-vite-7-framework/react-router.config.ts
+2026-11-20T23:58:02.5997233Z D	playground/rsc-vite-7-framework/start-vite-middleware.js
+2026-11-20T23:58:02.5997472Z D	playground/rsc-vite-7-framework/start.js
+2026-11-20T23:58:02.5997738Z D	playground/rsc-vite-7-framework/tsconfig.json
+2026-11-20T23:58:02.5997996Z D	playground/rsc-vite-7-framework/vite.config.ts
+2026-11-20T23:58:02.5998243Z D	playground/rsc-vite-framework/.gitignore
+2026-11-20T23:58:02.5998544Z D	playground/rsc-vite-framework/app/entry.client.tsx
+2026-11-20T23:58:02.5998812Z D	playground/rsc-vite-framework/app/entry.rsc.tsx
+2026-11-20T23:58:02.5999085Z D	playground/rsc-vite-framework/app/entry.ssr.tsx
+2026-11-20T23:58:02.5999330Z D	playground/rsc-vite-framework/app/root.css
+2026-11-20T23:58:02.5999580Z D	playground/rsc-vite-framework/app/root.tsx
+2026-11-20T23:58:02.5999830Z D	playground/rsc-vite-framework/app/routes.ts
+2026-11-20T23:58:02.6000167Z D	playground/rsc-vite-framework/app/routes/_index/actions.ts
+2026-11-20T23:58:02.6000687Z D	playground/rsc-vite-framework/app/routes/_index/route.tsx
+2026-11-20T23:58:02.6001015Z D	playground/rsc-vite-framework/app/routes/_index/styles.css
+2026-11-20T23:58:02.6001375Z D	playground/rsc-vite-framework/app/routes/_layout-a.route-a.tsx
+2026-11-20T23:58:02.6001679Z D	playground/rsc-vite-framework/app/routes/_layout-a.tsx
+2026-11-20T23:58:02.6002093Z D	playground/rsc-vite-framework/app/routes/_layout-b.route-b.tsx
+2026-11-20T23:58:02.6002394Z D	playground/rsc-vite-framework/app/routes/_layout-b.tsx
+2026-11-20T23:58:02.6002818Z D	playground/rsc-vite-framework/app/routes/client-loader-hydrate/route.tsx
+2026-11-20T23:58:02.6003396Z D	playground/rsc-vite-framework/app/routes/client-loader-hydrate/styles.module.css
+2026-11-20T23:58:02.6003924Z D	playground/rsc-vite-framework/app/routes/client-loader-without-server-loader/route.tsx
+2026-11-20T23:58:02.6004520Z D	playground/rsc-vite-framework/app/routes/client-loader-without-server-loader/styles.module.css
+2026-11-20T23:58:02.6004904Z D	playground/rsc-vite-framework/app/routes/client-loader/route.tsx
+2026-11-20T23:58:02.6005328Z D	playground/rsc-vite-framework/app/routes/client-loader/styles.module.css
+2026-11-20T23:58:02.6005777Z D	playground/rsc-vite-framework/app/routes/fixture.client-component/route.tsx
+2026-11-20T23:58:02.6006217Z D	playground/rsc-vite-framework/app/routes/fixture.server-component/route.tsx
+2026-11-20T23:58:02.6006785Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/hello/hello-component.module.css
+2026-11-20T23:58:02.6007300Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/hello/hello-component.tsx
+2026-11-20T23:58:02.6007756Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/hello/hello.mdx
+2026-11-20T23:58:02.6008184Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/posts.ts
+2026-11-20T23:58:02.6008946Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/world/world-component.module.css
+2026-11-20T23:58:02.6009475Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/world/world-component.tsx
+2026-11-20T23:58:02.6009930Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/posts/world/world.mdx
+2026-11-20T23:58:02.6010308Z D	playground/rsc-vite-framework/app/routes/mdx-glob.$post/route.tsx
+2026-11-20T23:58:02.6010681Z D	playground/rsc-vite-framework/app/routes/mdx-glob._index/route.tsx
+2026-11-20T23:58:02.6011005Z D	playground/rsc-vite-framework/app/routes/mdx/message.tsx
+2026-11-20T23:58:02.6011314Z D	playground/rsc-vite-framework/app/routes/mdx/route.mdx
+2026-11-20T23:58:02.6011669Z D	playground/rsc-vite-framework/app/routes/optimistic/actions.ts
+2026-11-20T23:58:02.6012198Z D	playground/rsc-vite-framework/app/routes/optimistic/form.tsx
+2026-11-20T23:58:02.6012558Z D	playground/rsc-vite-framework/app/routes/optimistic/liked.ts
+2026-11-20T23:58:02.6012926Z D	playground/rsc-vite-framework/app/routes/optimistic/route.tsx
+2026-11-20T23:58:02.6013302Z D	playground/rsc-vite-framework/app/routes/server-loader/route.tsx
+2026-11-20T23:58:02.6013720Z D	playground/rsc-vite-framework/app/routes/server-loader/styles.module.css
+2026-11-20T23:58:02.6013962Z D	playground/rsc-vite-framework/mdx.d.ts
+2026-11-20T23:58:02.6014209Z D	playground/rsc-vite-framework/package.json
+2026-11-20T23:58:02.6014488Z D	playground/rsc-vite-framework/public/favicon.ico
+2026-11-20T23:58:02.6014782Z D	playground/rsc-vite-framework/react-router.config.ts
+2026-11-20T23:58:02.6015097Z D	playground/rsc-vite-framework/start-vite-middleware.js
+2026-11-20T23:58:02.6015333Z D	playground/rsc-vite-framework/start.js
+2026-11-20T23:58:02.6015626Z D	playground/rsc-vite-framework/tsconfig.json
+2026-11-20T23:58:02.6015889Z D	playground/rsc-vite-framework/vite.config.ts
+2026-11-20T23:58:02.6016108Z D	playground/rsc-vite/.gitignore
+2026-11-20T23:58:02.6016355Z D	playground/rsc-vite/package.json
+2026-11-20T23:58:02.6016588Z D	playground/rsc-vite/public/favicon.ico
+2026-11-20T23:58:02.6016812Z D	playground/rsc-vite/server.js
+2026-11-20T23:58:02.6017042Z D	playground/rsc-vite/src/counter.tsx
+2026-11-20T23:58:02.6017465Z D	playground/rsc-vite/src/entry.browser.tsx
+2026-11-20T23:58:02.6017700Z D	playground/rsc-vite/src/entry.rsc.tsx
+2026-11-20T23:58:02.6017928Z D	playground/rsc-vite/src/entry.ssr.tsx
+2026-11-20T23:58:02.6018152Z D	playground/rsc-vite/src/routes.ts
+2026-11-20T23:58:02.6018445Z D	playground/rsc-vite/src/routes/about/about.client.tsx
+2026-11-20T23:58:02.6018708Z D	playground/rsc-vite/src/routes/about/about.tsx
+2026-11-20T23:58:02.6018974Z D	playground/rsc-vite/src/routes/child/child.tsx
+2026-11-20T23:58:02.6019254Z D	playground/rsc-vite/src/routes/home/home.client.css
+2026-11-20T23:58:02.6019543Z D	playground/rsc-vite/src/routes/home/home.client.tsx
+2026-11-20T23:58:02.6019792Z D	playground/rsc-vite/src/routes/home/home.css
+2026-11-20T23:58:02.6020052Z D	playground/rsc-vite/src/routes/home/home.tsx
+2026-11-20T23:58:02.6020409Z D	playground/rsc-vite/src/routes/parent-index/parent-index.tsx
+2026-11-20T23:58:02.6020691Z D	playground/rsc-vite/src/routes/parent/parent.tsx
+2026-11-20T23:58:02.6020939Z D	playground/rsc-vite/src/routes/redirect.ts
+2026-11-20T23:58:02.6021230Z D	playground/rsc-vite/src/routes/render-redirects.tsx
+2026-11-20T23:58:02.6021528Z D	playground/rsc-vite/src/routes/root/root.client.tsx
+2026-11-20T23:58:02.6021783Z D	playground/rsc-vite/src/routes/root/root.css
+2026-11-20T23:58:02.6022039Z D	playground/rsc-vite/src/routes/root/root.tsx
+2026-11-20T23:58:02.6022300Z D	playground/rsc-vite/tsconfig.json
+2026-11-20T23:58:02.6022528Z D	playground/rsc-vite/vite.config.ts
+2026-11-20T23:58:02.6022808Z D	playground/split-route-modules-spa/.gitignore
+2026-11-20T23:58:02.6023086Z D	playground/split-route-modules-spa/app/root.tsx
+2026-11-20T23:58:02.6023364Z D	playground/split-route-modules-spa/app/routes.ts
+2026-11-20T23:58:02.6023688Z D	playground/split-route-modules-spa/app/routes/_index.tsx
+2026-11-20T23:58:02.6024090Z D	playground/split-route-modules-spa/app/routes/semi-splittable.tsx
+2026-11-20T23:58:02.6024615Z D	playground/split-route-modules-spa/app/routes/splittable.tsx
+2026-11-20T23:58:02.6024996Z D	playground/split-route-modules-spa/app/routes/unsplittable.tsx
+2026-11-20T23:58:02.6025272Z D	playground/split-route-modules-spa/package.json
+2026-11-20T23:58:02.6025576Z D	playground/split-route-modules-spa/public/favicon.ico
+2026-11-20T23:58:02.6025915Z D	playground/split-route-modules-spa/react-router.config.ts
+2026-11-20T23:58:02.6026189Z D	playground/split-route-modules-spa/tsconfig.json
+2026-11-20T23:58:02.6026475Z D	playground/split-route-modules-spa/vite.config.ts
+2026-11-20T23:58:02.6026716Z D	playground/split-route-modules/.gitignore
+2026-11-20T23:58:02.6026975Z D	playground/split-route-modules/app/root.tsx
+2026-11-20T23:58:02.6027236Z D	playground/split-route-modules/app/routes.ts
+2026-11-20T23:58:02.6027526Z D	playground/split-route-modules/app/routes/_index.tsx
+2026-11-20T23:58:02.6027883Z D	playground/split-route-modules/app/routes/semi-splittable.tsx
+2026-11-20T23:58:02.6028220Z D	playground/split-route-modules/app/routes/splittable.tsx
+2026-11-20T23:58:02.6028558Z D	playground/split-route-modules/app/routes/unsplittable.tsx
+2026-11-20T23:58:02.6028816Z D	playground/split-route-modules/package.json
+2026-11-20T23:58:02.6029093Z D	playground/split-route-modules/public/favicon.ico
+2026-11-20T23:58:02.6029396Z D	playground/split-route-modules/react-router.config.ts
+2026-11-20T23:58:02.6029653Z D	playground/split-route-modules/tsconfig.json
+2026-11-20T23:58:02.6029914Z D	playground/split-route-modules/vite.config.ts
+2026-11-20T23:58:02.6030168Z D	playground/vite-plugin-cloudflare/.gitignore
+2026-11-20T23:58:02.6030479Z D	playground/vite-plugin-cloudflare/app/entry.server.tsx
+2026-11-20T23:58:02.6030741Z D	playground/vite-plugin-cloudflare/app/root.tsx
+2026-11-20T23:58:02.6031017Z D	playground/vite-plugin-cloudflare/app/routes.ts
+2026-11-20T23:58:02.6031330Z D	playground/vite-plugin-cloudflare/app/routes/_index.tsx
+2026-11-20T23:58:02.6031642Z D	playground/vite-plugin-cloudflare/app/routes/static.tsx
+2026-11-20T23:58:02.6031917Z D	playground/vite-plugin-cloudflare/package.json
+2026-11-20T23:58:02.6032430Z D	playground/vite-plugin-cloudflare/public/favicon.ico
+2026-11-20T23:58:02.6032758Z D	playground/vite-plugin-cloudflare/react-router.config.ts
+2026-11-20T23:58:02.6033100Z D	playground/vite-plugin-cloudflare/tsconfig.cloudflare.json
+2026-11-20T23:58:02.6033376Z D	playground/vite-plugin-cloudflare/tsconfig.json
+2026-11-20T23:58:02.6033675Z D	playground/vite-plugin-cloudflare/tsconfig.node.json
+2026-11-20T23:58:02.6033947Z D	playground/vite-plugin-cloudflare/vite.config.ts
+2026-11-20T23:58:02.6034224Z D	playground/vite-plugin-cloudflare/workers/app.ts
+2026-11-20T23:58:02.6034532Z D	playground/vite-plugin-cloudflare/wrangler.toml
+2026-11-20T23:58:02.6034746Z D	pnpm-lock.yaml
+2026-11-20T23:58:02.6034958Z D	pnpm-workspace.yaml
+2026-11-20T23:58:02.6035159Z D	prettier.config.js
+2026-11-20T23:58:02.6035462Z D	scripts/bench/passthrough-requests.bench.mjs
+2026-11-20T23:58:02.6035671Z D	scripts/changes/add.ts
+2026-11-20T23:58:02.6035931Z D	scripts/changes/changes.ts
+2026-11-20T23:58:02.6036168Z D	scripts/changes/migrate-changesets.ts
+2026-11-20T23:58:02.6036383Z D	scripts/changes/pr.ts
+2026-11-20T23:58:02.6036604Z D	scripts/changes/publish.ts
+2026-11-20T23:58:02.6036820Z D	scripts/changes/validate.ts
+2026-11-20T23:58:02.6037034Z D	scripts/changes/version.ts
+2026-11-20T23:58:02.6037250Z D	scripts/clean-v6-artifacts.sh
+2026-11-20T23:58:02.6037508Z D	scripts/delete-nightly-tags.sh
+2026-11-20T23:58:02.6037722Z D	scripts/delete-pre-tags.sh
+2026-11-20T23:58:02.6037918Z D	scripts/docs.ts
+2026-11-20T23:58:02.6038121Z D	scripts/experimental.ts
+2026-11-20T23:58:02.6038340Z D	scripts/package.json
+2026-11-20T23:58:02.6038549Z D	scripts/playground.js
+2026-11-20T23:58:02.6038739Z D	scripts/pr.ts
+2026-11-20T23:58:02.6038954Z D	scripts/previews/branch.ts
+2026-11-20T23:58:02.6039156Z D	scripts/previews/pr.ts
+2026-11-20T23:58:02.6039371Z D	scripts/release-comments.ts
+2026-11-20T23:58:02.6039568Z D	scripts/tsconfig.json
+2026-11-20T23:58:02.6040402Z D	scripts/utils/HEAD is now at 10b87ff Add the benchmark workflow; remove the other workflows and Dependabot config
+2026-11-20T23:58:02.6040598Z color.ts
+2026-11-20T23:58:02.6040800Z D	scripts/utils/fs.ts
+2026-11-20T23:58:02.6041002Z D	scripts/utils/git.ts
+2026-11-20T23:58:02.6041204Z D	scripts/utils/github.ts
+2026-11-20T23:58:02.6041414Z D	scripts/utils/packages.ts
+2026-11-20T23:58:02.6041617Z D	scripts/utils/process.ts
+2026-11-20T23:58:02.6041827Z D	static/base-branch.png
+2026-11-20T23:58:02.6042046Z D	tutorials/address-book/.gitignore
+2026-11-20T23:58:02.6042268Z D	tutorials/address-book/README.md
+2026-11-20T23:58:02.6042532Z D	tutorials/address-book/app/app.css
+2026-11-20T23:58:02.6042751Z D	tutorials/address-book/app/data.ts
+2026-11-20T23:58:02.6043016Z D	tutorials/address-book/app/root.tsx
+2026-11-20T23:58:02.6043342Z D	tutorials/address-book/app/routes.ts
+2026-11-20T23:58:02.6043574Z D	tutorials/address-book/package.json
+2026-11-20T23:58:02.6043811Z D	tutorials/address-book/public/favicon.ico
+2026-11-20T23:58:02.6044081Z D	tutorials/address-book/react-router.config.ts
+2026-11-20T23:58:02.6044326Z D	tutorials/address-book/tsconfig.json
+2026-11-20T23:58:02.6044549Z D	tutorials/address-book/vite.config.ts
+2026-11-20T23:58:02.6044741Z D	typedoc.mjs
+2026-11-20T23:58:02.6050650Z [command]/usr/bin/git branch --delete --force main
+2026-11-20T23:58:02.6050869Z Deleted branch main (was 10b87ff).
+2026-11-20T23:58:02.6053643Z ##[endgroup]
+2026-11-20T23:58:02.6053868Z [command]/usr/bin/git submodule status
+2026-11-20T23:58:02.6055314Z ##[group]Cleaning the repository
+2026-11-20T23:58:02.6055533Z [command]/usr/bin/git clean -ffdx
+2026-11-20T23:58:02.6056348Z [command]/usr/bin/git reset --hard HEAD
+2026-11-20T23:58:02.6063198Z HEAD is now at 10b87ff Add the benchmark workflow; remove the other workflows and Dependabot config
+2026-11-20T23:58:02.6068723Z ##[endgroup]
+2026-11-20T23:58:02.6070750Z ##[group]Disabling automatic garbage collection
+2026-11-20T23:58:02.6075466Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T23:58:02.6100686Z ##[endgroup]
+2026-11-20T23:58:02.6101181Z ##[group]Setting up auth
+2026-11-20T23:58:02.6101603Z Removing SSH command configuration
+2026-11-20T23:58:02.6110655Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T23:58:02.6132243Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T23:58:02.6300933Z Removing HTTP extra header
+2026-11-20T23:58:02.6303651Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T23:58:02.6324475Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T23:58:02.6496716Z Removing includeIf entries pointing to credentials config files
+2026-11-20T23:58:02.6500577Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T23:58:02.6520498Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T23:58:02.6689466Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T23:58:02.6713708Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-router/react-router/.git.path /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-20T23:58:02.6752225Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-20T23:58:02.6777444Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-20T23:58:02.6797888Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-20T23:58:02.6817286Z ##[endgroup]
+2026-11-20T23:58:02.6817797Z ##[group]Fetching the repository
+2026-11-20T23:58:02.6824108Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +10b87ff62714e588c23c2aa57bf158d60e8b5d12:refs/remotes/origin/main
+2026-11-20T23:58:03.1396186Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-20T23:58:03.1413654Z   origin/main
+2026-11-20T23:58:03.1419239Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-20T23:58:03.1433916Z 10b87ff62714e588c23c2aa57bf158d60e8b5d12
+2026-11-20T23:58:03.1436962Z ##[endgroup]
+2026-11-20T23:58:03.1437339Z ##[group]Determining the checkout info
+2026-11-20T23:58:03.1438003Z ##[endgroup]
+2026-11-20T23:58:03.1440311Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T23:58:03.1712211Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T23:58:03.1732761Z ##[group]Checking out the ref
+2026-11-20T23:58:03.1735054Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T23:58:03.1786601Z Switched to a new branch 'main'
+2026-11-20T23:58:03.1787693Z branch 'main' set up to track 'origin/main'.
+2026-11-20T23:58:03.1793264Z ##[endgroup]
+2026-11-20T23:58:03.1820396Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T23:58:03.1837188Z 10b87ff62714e588c23c2aa57bf158d60e8b5d12
+2026-11-20T23:58:03.1985478Z ##[group]Run pnpm/action-setup@v6
+2026-11-20T23:58:03.1985781Z with:
+2026-11-20T23:58:03.1986026Z   dest: ~/setup-pnpm
+2026-11-20T23:58:03.1986259Z   run_install: null
+2026-11-20T23:58:03.1986490Z   cache: false
+2026-11-20T23:58:03.1986730Z   cache_dependency_path: pnpm-lock.yaml
+2026-11-20T23:58:03.1987013Z   package_json_file: package.json
+2026-11-20T23:58:03.1987267Z   standalone: false
+2026-11-20T23:58:03.1987735Z env:
+2026-11-20T23:58:03.1987947Z   CI: true
+2026-11-20T23:58:03.1988162Z ##[endgroup]
+2026-11-20T23:58:03.2987283Z ##[group]Running self-installer...
+2026-11-20T23:58:04.0830089Z 
+2026-11-20T23:58:04.0830528Z added 1 package, and audited 2 packages in 584ms
+2026-11-20T23:58:04.0830926Z 
+2026-11-20T23:58:04.0831169Z 1 package is looking for funding
+2026-11-20T23:58:04.0831460Z   run `npm fund` for details
+2026-11-20T23:58:04.0833728Z 
+2026-11-20T23:58:04.0833840Z found 0 vulnerabilities
+2026-11-20T23:58:04.4404237Z Checking for updates...
+2026-11-20T23:58:04.4521789Z Switching pnpm from v11.28.10 to v9.10.0...
+2026-11-20T23:58:05.0118960Z [WARN] Detected a pnpm v10 installation layout at PNPM_HOME. The pnpm shims at PNPM_HOME have been refreshed so the new version is active, but pnpm v11 expects bins in PNPM_HOME/bin. Run "pnpm setup" to migrate your PATH to the v11 layout.
+2026-11-20T23:58:05.0119799Z Successfully updated pnpm to v9.10.0
+2026-11-20T23:58:05.0453720Z ##[endgroup]
+2026-11-20T23:58:05.0454085Z Installation Completed!
+2026-11-20T23:58:05.0620536Z ##[group]Run actions/setup-node@v6
+2026-11-20T23:58:05.0620735Z with:
+2026-11-20T23:58:05.0620994Z   node-version: 22
+2026-11-20T23:58:05.0621146Z   cache: pnpm
+2026-11-20T23:58:05.0621297Z   check-latest: false
+2026-11-20T23:58:05.0622643Z   token: ***
+2026-11-20T23:58:05.0622809Z   package-manager-cache: true
+2026-11-20T23:58:05.0622979Z env:
+2026-11-20T23:58:05.0623117Z   CI: true
+2026-11-20T23:58:05.0623305Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T23:58:05.0623511Z ##[endgroup]
+2026-11-20T23:58:05.1496371Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+2026-11-20T23:58:05.1498755Z ##[group]Environment details
+2026-11-20T23:58:05.3396678Z node: v22.23.5
+2026-11-20T23:58:05.3396892Z npm: 10.9.9
+2026-11-20T23:58:05.3397063Z yarn: 1.22.22
+2026-11-20T23:58:05.3397510Z ##[endgroup]
+2026-11-20T23:58:05.3404883Z [command]/home/runner/setup-pnpm/node_modules/.bin/bin/pnpm store path --silent
+2026-11-20T23:58:05.5812242Z /home/runner/.local/share/pnpm/store/v3
+2026-11-20T23:58:05.6127303Z Cache hit for: node-cache-Linux-x64-pnpm-f0a0b962efe70bcf2b4d4f788a408c45919c792daad914f47653b037d315ea52
+2026-11-20T23:58:05.9572838Z Cache Size: ~194 MB (203073505 B)
+2026-11-20T23:58:05.9584713Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/081c59f7-2eba-402e-bb3e-3bf7383a3e2f/cache.tzst -P -C /home/runner/work/react-router/react-router --use-compress-program unzstd
+2026-11-20T23:58:10.0585229Z Cache restored successfully
+2026-11-20T23:58:10.0954638Z Cache restored from key: node-cache-Linux-x64-pnpm-f0a0b962efe70bcf2b4d4f788a408c45919c792daad914f47653b037d315ea52
+2026-11-20T23:58:10.1145349Z ##[group]Run pnpm install --frozen-lockfile
+2026-11-20T23:58:10.1145581Z [36;1mpnpm install --frozen-lockfile[0m
+2026-11-20T23:58:10.1163151Z shell: /usr/bin/bash -e {0}
+2026-11-20T23:58:10.1163301Z env:
+2026-11-20T23:58:10.1163425Z   CI: true
+2026-11-20T23:58:10.1163580Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T23:58:10.1163772Z ##[endgroup]
+2026-11-20T23:58:10.3848006Z Scope: all 37 workspace projects
+2026-11-20T23:58:10.4249412Z Lockfile is up to date, resolution step is skipped
+2026-11-20T23:58:10.4645241Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T23:58:10.5890561Z Packages: +1549
+2026-11-20T23:58:10.5890867Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-20T23:58:11.3342537Z Progress: resolved 1549, reused 1521, downloaded 0, added 1549, done
+2026-11-20T23:58:15.5515541Z 
+2026-11-20T23:58:15.5516019Z dependencies:
+2026-11-20T23:58:15.5516228Z + @babel/core 7.27.7
+2026-11-20T23:58:15.5516457Z + @babel/preset-env 7.27.2
+2026-11-20T23:58:15.5516614Z + @babel/preset-react 7.27.1
+2026-11-20T23:58:15.5516794Z + @babel/preset-typescript 7.27.1
+2026-11-20T23:58:15.5516989Z + @eslint/compat 2.0.3
+2026-11-20T23:58:15.5517134Z + @manypkg/get-packages 1.1.3
+2026-11-20T23:58:15.5517285Z + @mdx-js/rollup 3.1.0
+2026-11-20T23:58:15.5517427Z + @playwright/test 1.58.2
+2026-11-20T23:58:15.5518004Z + @types/jest 29.5.12
+2026-11-20T23:58:15.5518136Z + @types/jsdom 21.1.1
+2026-11-20T23:58:15.5518268Z + @types/react 18.2.18
+2026-11-20T23:58:15.5518409Z + @types/react-dom 18.2.7
+2026-11-20T23:58:15.5518576Z + @types/react-test-renderer 18.3.1
+2026-11-20T23:58:15.5518783Z + @typescript-eslint/eslint-plugin 8.57.1
+2026-11-20T23:58:15.5519060Z + @typescript-eslint/parser 8.57.1
+2026-11-20T23:58:15.5519216Z + babel-jest 29.7.0
+2026-11-20T23:58:15.5519369Z + babel-plugin-dev-expression 0.2.3
+2026-11-20T23:58:15.5519524Z + dox 1.0.0
+2026-11-20T23:58:15.5519635Z + eslint 10.1.0
+2026-11-20T23:58:15.5519847Z + eslint-config-react-app 7.0.1
+2026-11-20T23:58:15.5520023Z + eslint-plugin-flowtype 8.0.3
+2026-11-20T23:58:15.5520185Z + eslint-plugin-import 2.32.0
+2026-11-20T23:58:15.5520348Z + eslint-plugin-jest 29.15.0
+2026-11-20T23:58:15.5520503Z + eslint-plugin-jsdoc 62.8.0
+2026-11-20T23:58:15.5520664Z + eslint-plugin-jsx-a11y 6.10.2
+2026-11-20T23:58:15.5520854Z + eslint-plugin-react 7.37.5
+2026-11-20T23:58:15.5521070Z + eslint-plugin-react-hooks 7.1.1-canary-d1727fbf-20260417
+2026-11-20T23:58:15.5521265Z + fast-glob 3.2.11
+2026-11-20T23:58:15.5521388Z + isbot 5.1.11
+2026-11-20T23:58:15.5521503Z + jest 29.7.0
+2026-11-20T23:58:15.5521620Z + jsonfile 6.1.0
+2026-11-20T23:58:15.5521746Z + picocolors 1.1.1
+2026-11-20T23:58:15.5521869Z + prettier 3.6.2
+2026-11-20T23:58:15.5521987Z + prompts 2.4.2
+2026-11-20T23:58:15.5522117Z + remark-gfm 3.0.1
+2026-11-20T23:58:15.5522251Z + remark-parse 10.0.2
+2026-11-20T23:58:15.5522391Z + remark-stringify 10.0.3
+2026-11-20T23:58:15.5522521Z + semver 7.7.4
+2026-11-20T23:58:15.5522641Z + typedoc 0.28.7
+2026-11-20T23:58:15.5522921Z + typescript 5.4.5
+2026-11-20T23:58:15.5523042Z + unified 10.1.2
+2026-11-20T23:58:15.5523170Z + unist-util-remove 3.1.1
+2026-11-20T23:58:15.5523299Z + vite 6.4.1
+2026-11-20T23:58:15.5523416Z + vitest 4.1.0
+2026-11-20T23:58:15.5523494Z 
+2026-11-20T23:58:15.6801966Z Done in 5.5s
+2026-11-20T23:58:15.8861089Z ##[group]Run npx playwright install --with-deps chromium
+2026-11-20T23:58:15.8861355Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-11-20T23:58:15.8873565Z shell: /usr/bin/bash -e {0}
+2026-11-20T23:58:15.8873707Z env:
+2026-11-20T23:58:15.8873820Z   CI: true
+2026-11-20T23:58:15.8873970Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T23:58:15.8874150Z ##[endgroup]
+2026-11-20T23:58:16.5359993Z Installing dependencies...
+2026-11-20T23:58:16.5412123Z Switching to root user to install dependencies...
+2026-11-20T23:58:16.6166688Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-20T23:58:16.6541544Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-20T23:58:16.6603608Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-20T23:58:16.6847147Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-20T23:58:16.6918253Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-20T23:58:16.7000516Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-20T23:58:16.7541791Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1475 kB]
+2026-11-20T23:58:16.7839259Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [319 kB]
+2026-11-20T23:58:16.7932212Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+2026-11-20T23:58:16.8183322Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+2026-11-20T23:58:16.8276128Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1922 kB]
+2026-11-20T23:58:16.8531609Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [443 kB]
+2026-11-20T23:58:16.8645195Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1198 kB]
+2026-11-20T23:58:16.8833586Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [239 kB]
+2026-11-20T23:58:16.8898125Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1231 kB]
+2026-11-20T23:58:16.8960443Z Get:18 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [762 kB]
+2026-11-20T23:58:16.9117490Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1792 kB]
+2026-11-20T23:58:16.9427222Z Get:19 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [832 kB]
+2026-11-20T23:58:17.0002471Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [414 kB]
+2026-11-20T23:58:19.2298154Z Fetched 13.1 MB in 1s (15.1 MB/s)
+2026-11-20T23:58:19.9893311Z Reading package lists...
+2026-11-20T23:58:20.0180346Z Reading package lists...
+2026-11-20T23:58:20.1873438Z Building dependency tree...
+2026-11-20T23:58:20.1877390Z Reading state information...
+2026-11-20T23:58:20.3109642Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-11-20T23:58:20.3110173Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T23:58:20.3110583Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T23:58:20.3111115Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-11-20T23:58:20.3111494Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-11-20T23:58:20.3111870Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-11-20T23:58:20.3112254Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-11-20T23:58:20.3112653Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-11-20T23:58:20.3113036Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.5).
+2026-11-20T23:58:20.3113355Z libgbm1 set to manually installed.
+2026-11-20T23:58:20.3113693Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.10).
+2026-11-20T23:58:20.3114858Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-11-20T23:58:20.3115266Z libnss3 is already the newest version (2:3.98-1ubuntu0.3).
+2026-11-20T23:58:20.3115646Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-11-20T23:58:20.3116127Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+2026-11-20T23:58:20.3116485Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-11-20T23:58:20.3116741Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-11-20T23:58:20.3117003Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-11-20T23:58:20.3117245Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-11-20T23:58:20.3117490Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-11-20T23:58:20.3117742Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-11-20T23:58:20.3117980Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-11-20T23:58:20.3118227Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+2026-11-20T23:58:20.3118524Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-20T23:58:20.3118828Z fonts-unifont is already the newest version (1:15.1.01-1build1).
+2026-11-20T23:58:20.3119105Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-20T23:58:20.3119383Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+2026-11-20T23:58:20.3119653Z xfonts-cyrillic is already the newest version (1:1.0.5+nmu1).
+2026-11-20T23:58:20.3119903Z xfonts-scalable is already the newest version (1:1.0.3-1.3).
+2026-11-20T23:58:20.3120158Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-20T23:58:20.3120437Z fonts-ipafont-gothic is already the newest version (00303-21ubuntu1).
+2026-11-20T23:58:20.3120702Z fonts-wqy-zenhei is already the newest version (0.9.45-8).
+2026-11-20T23:58:20.3120955Z fonts-tlwg-loma-otf is already the newest version (1:0.7.3-1).
+2026-11-20T23:58:20.3121231Z fonts-freefont-ttf is already the newest version (20211204+svn4273-2).
+2026-11-20T23:58:20.3121504Z 0 upgraded, 0 newly installed, 0 to remove and 75 not upgraded.
+2026-11-20T23:58:20.3512223Z ##[group]Run pnpm build
+2026-11-20T23:58:20.3512398Z [36;1mpnpm build[0m
+2026-11-20T23:58:20.3524679Z shell: /usr/bin/bash -e {0}
+2026-11-20T23:58:20.3524820Z env:
+2026-11-20T23:58:20.3524930Z   CI: true
+2026-11-20T23:58:20.3525076Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T23:58:20.3525253Z ##[endgroup]
+2026-11-20T23:58:20.5867243Z 
+2026-11-20T23:58:20.5867703Z > @remix-run/react-router@ build /home/runner/work/react-router/react-router
+2026-11-20T23:58:20.5868015Z > pnpm run --filter="./packages/**/*" build
+2026-11-20T23:58:20.5868139Z 
+2026-11-20T23:58:20.8521874Z Scope: 11 of 37 workspace projects
+2026-11-20T23:58:20.8547479Z packages/create-react-router build$ wireit
+2026-11-20T23:58:20.8547720Z packages/react-router build$ wireit
+2026-11-20T23:58:20.9207588Z packages/create-react-router build: Analyzing
+2026-11-20T23:58:20.9211224Z packages/react-router build: Analyzing
+2026-11-20T23:58:21.1584588Z packages/create-react-router build: [34mCLI[39m Building entry: cli.ts
+2026-11-20T23:58:21.1585295Z packages/create-react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:21.1586945Z packages/create-react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:21.1588315Z packages/create-react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/create-react-router/tsup.config.ts
+2026-11-20T23:58:21.1604288Z packages/create-react-router build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:21.1612628Z packages/create-react-router build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:21.1619328Z packages/create-react-router build: [34mCJS[39m Build start
+2026-11-20T23:58:21.1760624Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-20T23:58:21.1763907Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:21.1766806Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:21.1769489Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-20T23:58:21.1786059Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-20T23:58:21.1789158Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:21.1795765Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:21.1796374Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-20T23:58:21.1803523Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-20T23:58:21.1805612Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:21.1807498Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:21.1809410Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-20T23:58:21.1843633Z packages/react-router build: [34mCLI[39m Building entry: dom-export.ts, index-react-server-client.ts, index.ts, lib/types/internal.ts
+2026-11-20T23:58:21.1844289Z packages/create-react-router build: [32mCJS[39m [1mdist/cli.js [22m[32m62.89 KB[39m
+2026-11-20T23:58:21.1844856Z packages/create-react-router build: [32mCJS[39m ⚡️ Build success in 20ms
+2026-11-20T23:58:21.1845464Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:21.1845801Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:21.1846301Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.ts
+2026-11-20T23:58:21.1927244Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:21.1942804Z packages/react-router build: [34mCJS[39m Build start
+2026-11-20T23:58:21.1958016Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:21.1958400Z packages/react-router build: [34mESM[39m Build start
+2026-11-20T23:58:21.1966329Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:21.1971858Z packages/react-router build: [34mCJS[39m Build start
+2026-11-20T23:58:21.2010424Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:21.2010871Z packages/react-router build: [34mESM[39m Build start
+2026-11-20T23:58:21.3944953Z packages/create-react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:21.4169548Z packages/react-router build: [32mESM[39m [1mdist/production/dom-export.mjs                [22m[32m33.00 KB[39m
+2026-11-20T23:58:21.4170286Z packages/react-router build: [32mESM[39m [1mdist/production/index.mjs                     [22m[32m6.39 KB[39m
+2026-11-20T23:58:21.4170919Z packages/react-router build: [32mESM[39m [1mdist/production/chunk-2C5754TP.mjs            [22m[32m77.09 KB[39m
+2026-11-20T23:58:21.4171489Z packages/react-router build: [32mESM[39m [1mdist/production/index-react-server-client.mjs [22m[32m1.09 KB[39m
+2026-11-20T23:58:21.4172188Z packages/react-router build: [32mESM[39m [1mdist/production/chunk-7RTFRKQW.mjs            [22m[32m367.82 KB[39m
+2026-11-20T23:58:21.4172737Z packages/react-router build: [32mESM[39m [1mdist/production/lib/types/internal.mjs        [22m[32m223.00 B[39m
+2026-11-20T23:58:21.4173199Z packages/react-router build: [32mESM[39m ⚡️ Build success in 221ms
+2026-11-20T23:58:21.4209455Z packages/react-router build: [32mESM[39m [1mdist/development/dom-export.mjs                [22m[32m33.00 KB[39m
+2026-11-20T23:58:21.4210107Z packages/react-router build: [32mESM[39m [1mdist/development/index-react-server-client.mjs [22m[32m1.09 KB[39m
+2026-11-20T23:58:21.4210711Z packages/react-router build: [32mESM[39m [1mdist/development/index.mjs                     [22m[32m6.39 KB[39m
+2026-11-20T23:58:21.4211224Z packages/react-router build: [32mESM[39m [1mdist/development/chunk-RDEHLYZQ.mjs            [22m[32m77.09 KB[39m
+2026-11-20T23:58:21.4211877Z packages/react-router build: [32mESM[39m [1mdist/development/lib/types/internal.mjs        [22m[32m223.00 B[39m
+2026-11-20T23:58:21.4212710Z packages/react-router build: [32mESM[39m [1mdist/development/chunk-6KYCQHYJ.mjs            [22m[32m367.82 KB[39m
+2026-11-20T23:58:21.4214569Z packages/react-router build: [32mESM[39m ⚡️ Build success in 220ms
+2026-11-20T23:58:21.8692723Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:21.8693274Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:21.8693872Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:22.0837013Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:22.0847421Z packages/react-router build: [32mCJS[39m [1mdist/development/dom-export.js                [22m[32m36.03 KB[39m
+2026-11-20T23:58:22.0854962Z packages/react-router build: [32mCJS[39m [1mdist/development/index-react-server-client.js [22m[32m1.63 KB[39m
+2026-11-20T23:58:22.0862362Z packages/react-router build: [32mCJS[39m [1mdist/development/index.js                     [22m[32m83.36 KB[39m
+2026-11-20T23:58:22.0868386Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-IFHLIXZW.js            [22m[32m5.74 KB[39m
+2026-11-20T23:58:22.0873725Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-NDF5KBLP.js            [22m[32m45.05 KB[39m
+2026-11-20T23:58:22.0878700Z packages/react-router build: [32mCJS[39m [1mdist/development/lib/types/internal.js        [22m[32m236.00 B[39m
+2026-11-20T23:58:22.0902337Z packages/react-router build: [32mCJS[39m [1mdist/development/chunk-2ZBLYC7V.js            [22m[32m339.52 KB[39m
+2026-11-20T23:58:22.1050209Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 905ms
+2026-11-20T23:58:22.1306506Z packages/react-router build: [32mCJS[39m [1mdist/production/dom-export.js                [22m[32m36.03 KB[39m
+2026-11-20T23:58:22.1311930Z packages/react-router build: [32mCJS[39m [1mdist/production/index-react-server-client.js [22m[32m1.63 KB[39m
+2026-11-20T23:58:22.1313160Z packages/react-router build: [32mCJS[39m [1mdist/production/index.js                     [22m[32m83.36 KB[39m
+2026-11-20T23:58:22.1315829Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-K3NA4NUH.js            [22m[32m5.74 KB[39m
+2026-11-20T23:58:22.1318862Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-75HN637G.js            [22m[32m45.05 KB[39m
+2026-11-20T23:58:22.1320897Z packages/react-router build: [32mCJS[39m [1mdist/production/chunk-HNBICOIU.js            [22m[32m339.52 KB[39m
+2026-11-20T23:58:22.1321647Z packages/react-router build: [32mCJS[39m [1mdist/production/lib/types/internal.js        [22m[32m236.00 B[39m
+2026-11-20T23:58:22.1324215Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 939ms
+2026-11-20T23:58:23.5737706Z packages/create-react-router build: [32mDTS[39m ⚡️ Build success in 2180ms
+2026-11-20T23:58:23.5738405Z packages/create-react-router build: [32mDTS[39m [1mdist/cli.d.ts [22m[32m20.00 B[39m
+2026-11-20T23:58:23.6384045Z packages/create-react-router build: ✅ Ran 1 script and skipped 0 in 2.7s.
+2026-11-20T23:58:23.6432867Z packages/create-react-router build: Done
+2026-11-20T23:58:31.7816379Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10067ms
+2026-11-20T23:58:31.7817744Z packages/react-router build: [32mDTS[39m [1mdist/production/dom-export.d.mts                         [22m[32m6.79 KB[39m
+2026-11-20T23:58:31.7819087Z packages/react-router build: [32mDTS[39m [1mdist/production/lib/types/internal.d.mts                 [22m[32m8.78 KB[39m
+2026-11-20T23:58:31.7820231Z packages/react-router build: [32mDTS[39m [1mdist/production/index.d.mts                              [22m[32m58.87 KB[39m
+2026-11-20T23:58:31.7821490Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client.d.mts          [22m[32m590.00 B[39m
+2026-11-20T23:58:31.7822661Z packages/react-router build: [32mDTS[39m [1mdist/production/register-CmkRspdl.d.mts                  [22m[32m1.10 KB[39m
+2026-11-20T23:58:31.7823812Z packages/react-router build: [32mDTS[39m [1mdist/production/browser-CiGxXXOl.d.mts                   [22m[32m12.74 KB[39m
+2026-11-20T23:58:31.7824873Z packages/react-router build: [32mDTS[39m [1mdist/production/context-BlYKn1tE.d.mts                   [22m[32m62.33 KB[39m
+2026-11-20T23:58:31.7825967Z packages/react-router build: [32mDTS[39m [1mdist/production/data-DEjBmEfD.d.mts                      [22m[32m67.14 KB[39m
+2026-11-20T23:58:31.7827047Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client-KK-TR-t7.d.mts [22m[32m95.85 KB[39m
+2026-11-20T23:58:31.8764582Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10079ms
+2026-11-20T23:58:31.8769088Z packages/react-router build: [32mDTS[39m [1mdist/production/dom-export.d.ts                         [22m[32m6.83 KB[39m
+2026-11-20T23:58:31.8769830Z packages/react-router build: [32mDTS[39m [1mdist/production/lib/types/internal.d.ts                 [22m[32m8.78 KB[39m
+2026-11-20T23:58:31.8770600Z packages/react-router build: [32mDTS[39m [1mdist/production/index.d.ts                              [22m[32m58.90 KB[39m
+2026-11-20T23:58:31.8771533Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client.d.ts          [22m[32m592.00 B[39m
+2026-11-20T23:58:31.8772198Z packages/react-router build: [32mDTS[39m [1mdist/production/register-roq_0qYo.d.ts                  [22m[32m1.10 KB[39m
+2026-11-20T23:58:31.8772762Z packages/react-router build: [32mDTS[39m [1mdist/production/browser-7x6a6gQP.d.ts                   [22m[32m12.75 KB[39m
+2026-11-20T23:58:31.8773748Z packages/react-router build: [32mDTS[39m [1mdist/production/instrumentation-CPkMwccd.d.ts           [22m[32m23.38 KB[39m
+2026-11-20T23:58:31.8774295Z packages/react-router build: [32mDTS[39m [1mdist/production/data-CjO11-hU.d.ts                      [22m[32m67.14 KB[39m
+2026-11-20T23:58:31.8774846Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server-client-BaaZU3sM.d.ts [22m[32m134.83 KB[39m
+2026-11-20T23:58:32.0436193Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10252ms
+2026-11-20T23:58:32.0451116Z packages/react-router build: [32mDTS[39m [1mdist/development/dom-export.d.ts                         [22m[32m6.83 KB[39m
+2026-11-20T23:58:32.0452121Z packages/react-router build: [32mDTS[39m [1mdist/development/lib/types/internal.d.ts                 [22m[32m8.78 KB[39m
+2026-11-20T23:58:32.0453013Z packages/react-router build: [32mDTS[39m [1mdist/development/index.d.ts                              [22m[32m58.90 KB[39m
+2026-11-20T23:58:32.0467586Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client.d.ts          [22m[32m592.00 B[39m
+2026-11-20T23:58:32.0468805Z packages/react-router build: [32mDTS[39m [1mdist/development/register-roq_0qYo.d.ts                  [22m[32m1.10 KB[39m
+2026-11-20T23:58:32.0469868Z packages/react-router build: [32mDTS[39m [1mdist/development/browser-7x6a6gQP.d.ts                   [22m[32m12.75 KB[39m
+2026-11-20T23:58:32.0471051Z packages/react-router build: [32mDTS[39m [1mdist/development/instrumentation-CPkMwccd.d.ts           [22m[32m23.38 KB[39m
+2026-11-20T23:58:32.0472119Z packages/react-router build: [32mDTS[39m [1mdist/development/data-CjO11-hU.d.ts                      [22m[32m67.14 KB[39m
+2026-11-20T23:58:32.0473179Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client-BaaZU3sM.d.ts [22m[32m134.83 KB[39m
+2026-11-20T23:58:32.1244004Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 10242ms
+2026-11-20T23:58:32.1249058Z packages/react-router build: [32mDTS[39m [1mdist/development/dom-export.d.mts                         [22m[32m6.79 KB[39m
+2026-11-20T23:58:32.1249919Z packages/react-router build: [32mDTS[39m [1mdist/development/lib/types/internal.d.mts                 [22m[32m8.78 KB[39m
+2026-11-20T23:58:32.1250637Z packages/react-router build: [32mDTS[39m [1mdist/development/index.d.mts                              [22m[32m58.87 KB[39m
+2026-11-20T23:58:32.1251277Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client.d.mts          [22m[32m590.00 B[39m
+2026-11-20T23:58:32.1253885Z packages/react-router build: [32mDTS[39m [1mdist/development/register-CmkRspdl.d.mts                  [22m[32m1.10 KB[39m
+2026-11-20T23:58:32.1254939Z packages/react-router build: [32mDTS[39m [1mdist/development/browser-CiGxXXOl.d.mts                   [22m[32m12.74 KB[39m
+2026-11-20T23:58:32.1255598Z packages/react-router build: [32mDTS[39m [1mdist/development/context-BlYKn1tE.d.mts                   [22m[32m62.33 KB[39m
+2026-11-20T23:58:32.1256170Z packages/react-router build: [32mDTS[39m [1mdist/development/data-DEjBmEfD.d.mts                      [22m[32m67.14 KB[39m
+2026-11-20T23:58:32.1256733Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server-client-KK-TR-t7.d.mts [22m[32m95.85 KB[39m
+2026-11-20T23:58:32.4863168Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-20T23:58:32.4864066Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:32.4871244Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:32.4872210Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-20T23:58:32.4877743Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-20T23:58:32.4879177Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:32.4879620Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:32.4880351Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-20T23:58:32.4884815Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-20T23:58:32.4886058Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:32.4886587Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:32.4887263Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-20T23:58:32.4891450Z packages/react-router build: [34mCLI[39m Building entry: index-react-server.ts
+2026-11-20T23:58:32.4892720Z packages/react-router build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:32.4893186Z packages/react-router build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:32.4893804Z packages/react-router build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router/tsup.config.rsc.ts
+2026-11-20T23:58:32.4941713Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:32.4946091Z packages/react-router build: [34mCJS[39m Build start
+2026-11-20T23:58:32.4983976Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:32.4989979Z packages/react-router build: [34mESM[39m Build start
+2026-11-20T23:58:32.5079195Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:32.5090043Z packages/react-router build: [34mCJS[39m Build start
+2026-11-20T23:58:32.5099771Z packages/react-router build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:32.5101637Z packages/react-router build: [34mESM[39m Build start
+2026-11-20T23:58:33.3853219Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:33.3854370Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:33.3856133Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:33.3857961Z packages/react-router build: [34mDTS[39m Build start
+2026-11-20T23:58:33.3884053Z packages/react-router build: [32mESM[39m [1mdist/development/index-react-server.mjs [22m[32m118.96 KB[39m
+2026-11-20T23:58:33.3884909Z packages/react-router build: [32mESM[39m ⚡️ Build success in 879ms
+2026-11-20T23:58:33.3887356Z packages/react-router build: [32mCJS[39m [1mdist/production/index-react-server.js [22m[32m122.13 KB[39m
+2026-11-20T23:58:33.3889032Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 894ms
+2026-11-20T23:58:33.3891344Z packages/react-router build: [32mESM[39m [1mdist/production/index-react-server.mjs [22m[32m118.96 KB[39m
+2026-11-20T23:58:33.3893519Z packages/react-router build: [32mESM[39m ⚡️ Build success in 891ms
+2026-11-20T23:58:33.5732576Z packages/react-router build: [32mCJS[39m [1mdist/development/index-react-server.js [22m[32m122.13 KB[39m
+2026-11-20T23:58:33.5733283Z packages/react-router build: [32mCJS[39m ⚡️ Build success in 1064ms
+2026-11-20T23:58:37.4838051Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 4632ms
+2026-11-20T23:58:37.4839566Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server.d.ts [22m[32m96.43 KB[39m
+2026-11-20T23:58:37.8736195Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 5002ms
+2026-11-20T23:58:37.8737038Z packages/react-router build: [32mDTS[39m [1mdist/production/index-react-server.d.mts [22m[32m96.43 KB[39m
+2026-11-20T23:58:37.8910240Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 5055ms
+2026-11-20T23:58:37.8911032Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server.d.mts [22m[32m96.43 KB[39m
+2026-11-20T23:58:37.9645812Z packages/react-router build: [32mDTS[39m ⚡️ Build success in 5005ms
+2026-11-20T23:58:37.9695161Z packages/react-router build: [32mDTS[39m [1mdist/development/index-react-server.d.ts [22m[32m96.43 KB[39m
+2026-11-20T23:58:38.0948168Z packages/react-router build: ✅ Ran 1 script and skipped 0 in 17.2s.
+2026-11-20T23:58:38.1014050Z packages/react-router build: Done
+2026-11-20T23:58:38.1017807Z packages/react-router-cloudflare build$ wireit
+2026-11-20T23:58:38.1019266Z packages/react-router-dom build$ wireit
+2026-11-20T23:58:38.1021859Z packages/react-router-node build$ wireit
+2026-11-20T23:58:38.1735807Z packages/react-router-node build: Analyzing
+2026-11-20T23:58:38.1754033Z packages/react-router-cloudflare build: Analyzing
+2026-11-20T23:58:38.1807747Z packages/react-router-dom build: Analyzing
+2026-11-20T23:58:38.4169637Z packages/react-router-node build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:38.4174337Z packages/react-router-node build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:38.4176579Z packages/react-router-node build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:38.4177469Z packages/react-router-node build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-node/tsup.config.ts
+2026-11-20T23:58:38.4206535Z packages/react-router-cloudflare build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:38.4209508Z packages/react-router-cloudflare build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:38.4211585Z packages/react-router-cloudflare build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:38.4212650Z packages/react-router-cloudflare build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-cloudflare/tsup.config.ts
+2026-11-20T23:58:38.4234153Z packages/react-router-node build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:38.4245853Z packages/react-router-cloudflare build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:38.4246227Z packages/react-router-dom build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:38.4246621Z packages/react-router-dom build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:38.4246952Z packages/react-router-dom build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:38.4247569Z packages/react-router-dom build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-dom/tsup.config.ts
+2026-11-20T23:58:38.4252362Z packages/react-router-node build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:38.4258701Z packages/react-router-cloudflare build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:38.4259035Z packages/react-router-node build: [34mCJS[39m Build start
+2026-11-20T23:58:38.4260437Z packages/react-router-node build: [34mESM[39m Build start
+2026-11-20T23:58:38.4269645Z packages/react-router-cloudflare build: [34mCJS[39m Build start
+2026-11-20T23:58:38.4269971Z packages/react-router-dom build: [34mCLI[39m Target: es2020
+2026-11-20T23:58:38.4283522Z packages/react-router-dom build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:38.4288423Z packages/react-router-dom build: [34mCJS[39m Build start
+2026-11-20T23:58:38.4288864Z packages/react-router-cloudflare build: [34mESM[39m Build start
+2026-11-20T23:58:38.4289205Z packages/react-router-dom build: [34mESM[39m Build start
+2026-11-20T23:58:38.4388659Z packages/react-router-dom build: [32mCJS[39m [1mdist/index.js [22m[32m1.62 KB[39m
+2026-11-20T23:58:38.4389116Z packages/react-router-dom build: [32mCJS[39m ⚡️ Build success in 10ms
+2026-11-20T23:58:38.4390407Z packages/react-router-dom build: [32mESM[39m [1mdist/index.mjs [22m[32m384.00 B[39m
+2026-11-20T23:58:38.4390842Z packages/react-router-dom build: [32mESM[39m ⚡️ Build success in 10ms
+2026-11-20T23:58:38.4480357Z packages/react-router-node build: [32mCJS[39m [1mdist/index.js [22m[32m11.73 KB[39m
+2026-11-20T23:58:38.4481351Z packages/react-router-node build: [32mCJS[39m ⚡️ Build success in 20ms
+2026-11-20T23:58:38.4483260Z packages/react-router-node build: [32mESM[39m [1mdist/index.mjs [22m[32m9.58 KB[39m
+2026-11-20T23:58:38.4497129Z packages/react-router-node build: [32mESM[39m ⚡️ Build success in 20ms
+2026-11-20T23:58:38.4575921Z packages/react-router-cloudflare build: [32mCJS[39m [1mdist/index.js [22m[32m4.40 KB[39m
+2026-11-20T23:58:38.4576557Z packages/react-router-cloudflare build: [32mCJS[39m ⚡️ Build success in 29ms
+2026-11-20T23:58:38.4582712Z packages/react-router-cloudflare build: [32mESM[39m [1mdist/index.mjs [22m[32m3.25 KB[39m
+2026-11-20T23:58:38.4583324Z packages/react-router-cloudflare build: [32mESM[39m ⚡️ Build success in 29ms
+2026-11-20T23:58:38.6158048Z packages/react-router-node build: [34mDTS[39m Build start
+2026-11-20T23:58:38.6161721Z packages/react-router-cloudflare build: [34mDTS[39m Build start
+2026-11-20T23:58:38.6296861Z packages/react-router-dom build: [34mDTS[39m Build start
+2026-11-20T23:58:39.6360058Z packages/react-router-cloudflare build: [32mDTS[39m ⚡️ Build success in 1020ms
+2026-11-20T23:58:39.6370271Z packages/react-router-cloudflare build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.59 KB[39m
+2026-11-20T23:58:39.6377596Z packages/react-router-cloudflare build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.59 KB[39m
+2026-11-20T23:58:39.6805141Z packages/react-router-cloudflare build: ✅ Ran 1 script and skipped 0 in 1.5s.
+2026-11-20T23:58:39.6873201Z packages/react-router-cloudflare build: Done
+2026-11-20T23:58:39.7090678Z packages/react-router-dom build: [32mDTS[39m ⚡️ Build success in 1080ms
+2026-11-20T23:58:39.7091709Z packages/react-router-dom build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m118.00 B[39m
+2026-11-20T23:58:39.7092259Z packages/react-router-dom build: [32mDTS[39m [1mdist/index.d.mts [22m[32m118.00 B[39m
+2026-11-20T23:58:39.7579953Z packages/react-router-dom build: ✅ Ran 1 script and skipped 0 in 1.6s.
+2026-11-20T23:58:39.7647388Z packages/react-router-dom build: Done
+2026-11-20T23:58:39.8352973Z packages/react-router-node build: [32mDTS[39m ⚡️ Build success in 1220ms
+2026-11-20T23:58:39.8353803Z packages/react-router-node build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.38 KB[39m
+2026-11-20T23:58:39.8354441Z packages/react-router-node build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.38 KB[39m
+2026-11-20T23:58:39.8858587Z packages/react-router-node build: ✅ Ran 1 script and skipped 0 in 1.7s.
+2026-11-20T23:58:39.8931562Z packages/react-router-node build: Done
+2026-11-20T23:58:39.8936355Z packages/react-router-architect build$ wireit
+2026-11-20T23:58:39.8937690Z packages/react-router-express build$ wireit
+2026-11-20T23:58:39.9602543Z packages/react-router-architect build: Analyzing
+2026-11-20T23:58:39.9619420Z packages/react-router-express build: Analyzing
+2026-11-20T23:58:40.1846922Z packages/react-router-express build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:40.1847493Z packages/react-router-express build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:40.1848299Z packages/react-router-express build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:40.1850478Z packages/react-router-express build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-express/tsup.config.ts
+2026-11-20T23:58:40.1855765Z packages/react-router-express build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:40.1865143Z packages/react-router-express build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:40.1871756Z packages/react-router-express build: [34mCJS[39m Build start
+2026-11-20T23:58:40.1873160Z packages/react-router-express build: [34mESM[39m Build start
+2026-11-20T23:58:40.1897268Z packages/react-router-architect build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:40.1897794Z packages/react-router-architect build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:40.1898284Z packages/react-router-architect build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:40.1898999Z packages/react-router-architect build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-architect/tsup.config.ts
+2026-11-20T23:58:40.1926805Z packages/react-router-architect build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:40.1938496Z packages/react-router-architect build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:40.1939764Z packages/react-router-architect build: [34mCJS[39m Build start
+2026-11-20T23:58:40.1945208Z packages/react-router-architect build: [34mESM[39m Build start
+2026-11-20T23:58:40.2027380Z packages/react-router-express build: [32mCJS[39m [1mdist/index.js [22m[32m4.04 KB[39m
+2026-11-20T23:58:40.2035184Z packages/react-router-express build: [32mCJS[39m ⚡️ Build success in 15ms
+2026-11-20T23:58:40.2035870Z packages/react-router-express build: [32mESM[39m [1mdist/index.mjs [22m[32m3.05 KB[39m
+2026-11-20T23:58:40.2036758Z packages/react-router-express build: [32mESM[39m ⚡️ Build success in 16ms
+2026-11-20T23:58:40.2094448Z packages/react-router-architect build: [32mESM[39m [1mdist/index.mjs [22m[32m6.41 KB[39m
+2026-11-20T23:58:40.2094962Z packages/react-router-architect build: [32mESM[39m ⚡️ Build success in 14ms
+2026-11-20T23:58:40.2095384Z packages/react-router-architect build: [32mCJS[39m [1mdist/index.js [22m[32m8.13 KB[39m
+2026-11-20T23:58:40.2095864Z packages/react-router-architect build: [32mCJS[39m ⚡️ Build success in 16ms
+2026-11-20T23:58:40.3733718Z packages/react-router-architect build: [34mDTS[39m Build start
+2026-11-20T23:58:40.3764949Z packages/react-router-express build: [34mDTS[39m Build start
+2026-11-20T23:58:41.2904931Z packages/react-router-express build: [32mDTS[39m ⚡️ Build success in 914ms
+2026-11-20T23:58:41.2905468Z packages/react-router-express build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m1.21 KB[39m
+2026-11-20T23:58:41.2905923Z packages/react-router-express build: [32mDTS[39m [1mdist/index.d.mts [22m[32m1.21 KB[39m
+2026-11-20T23:58:41.3417482Z packages/react-router-express build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-20T23:58:41.3491851Z packages/react-router-express build: Done
+2026-11-20T23:58:41.3758615Z packages/react-router-architect build: [32mDTS[39m ⚡️ Build success in 1003ms
+2026-11-20T23:58:41.3759313Z packages/react-router-architect build: [32mDTS[39m [1mdist/index.d.ts  [22m[32m2.34 KB[39m
+2026-11-20T23:58:41.3760043Z packages/react-router-architect build: [32mDTS[39m [1mdist/index.d.mts [22m[32m2.34 KB[39m
+2026-11-20T23:58:41.4261800Z packages/react-router-architect build: ✅ Ran 1 script and skipped 0 in 1.5s.
+2026-11-20T23:58:41.4334118Z packages/react-router-architect build: Done
+2026-11-20T23:58:41.4336514Z packages/react-router-serve build$ wireit
+2026-11-20T23:58:41.4967880Z packages/react-router-serve build: Analyzing
+2026-11-20T23:58:41.7080990Z packages/react-router-serve build: [34mCLI[39m Building entry: cli.ts
+2026-11-20T23:58:41.7082848Z packages/react-router-serve build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:41.7084490Z packages/react-router-serve build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:41.7085575Z packages/react-router-serve build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-serve/tsup.config.ts
+2026-11-20T23:58:41.7106935Z packages/react-router-serve build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:41.7117472Z packages/react-router-serve build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:41.7125737Z packages/react-router-serve build: [34mCJS[39m Build start
+2026-11-20T23:58:41.7189614Z packages/react-router-serve build: [32mCJS[39m [1mdist/cli.js [22m[32m5.57 KB[39m
+2026-11-20T23:58:41.7190297Z packages/react-router-serve build: [32mCJS[39m ⚡️ Build success in 6ms
+2026-11-20T23:58:41.8753952Z packages/react-router-serve build: [34mDTS[39m Build start
+2026-11-20T23:58:42.6186369Z packages/react-router-serve build: [32mDTS[39m ⚡️ Build success in 743ms
+2026-11-20T23:58:42.6186823Z packages/react-router-serve build: [32mDTS[39m [1mdist/cli.d.ts [22m[32m20.00 B[39m
+2026-11-20T23:58:42.6684248Z packages/react-router-serve build: ✅ Ran 1 script and skipped 0 in 1.2s.
+2026-11-20T23:58:42.6752272Z packages/react-router-serve build: Done
+2026-11-20T23:58:42.6755971Z packages/react-router-dev build$ wireit
+2026-11-20T23:58:42.7369429Z packages/react-router-dev build: Analyzing
+2026-11-20T23:58:42.9543738Z packages/react-router-dev build: [34mCLI[39m Building entry: config.ts, routes.ts, vite.ts, cli/index.ts, vite/cloudflare.ts
+2026-11-20T23:58:42.9544453Z packages/react-router-dev build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:42.9545042Z packages/react-router-dev build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:42.9545614Z packages/react-router-dev build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-dev/tsup.config.ts
+2026-11-20T23:58:42.9564429Z packages/react-router-dev build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:42.9579421Z packages/react-router-dev build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:42.9581066Z packages/react-router-dev build: [34mCJS[39m Build start
+2026-11-20T23:58:42.9944816Z packages/react-router-dev build: [32mCJS[39m [1mdist/config.js          [22m[32m985.00 B[39m
+2026-11-20T23:58:42.9945596Z packages/react-router-dev build: [32mCJS[39m [1mdist/vite/cloudflare.js [22m[32m30.94 KB[39m
+2026-11-20T23:58:42.9946621Z packages/react-router-dev build: [32mCJS[39m [1mdist/routes.js          [22m[32m6.23 KB[39m
+2026-11-20T23:58:42.9949087Z packages/react-router-dev build: [32mCJS[39m [1mdist/cli/index.js       [22m[32m86.01 KB[39m
+2026-11-20T23:58:42.9951093Z packages/react-router-dev build: [32mCJS[39m [1mdist/vite.js            [22m[32m246.98 KB[39m
+2026-11-20T23:58:42.9953078Z packages/react-router-dev build: [32mCJS[39m ⚡️ Build success in 37ms
+2026-11-20T23:58:43.1254353Z packages/react-router-dev build: [34mDTS[39m Build start
+2026-11-20T23:58:47.3069135Z packages/react-router-dev build: [32mDTS[39m ⚡️ Build success in 4182ms
+2026-11-20T23:58:47.3069841Z packages/react-router-dev build: [32mDTS[39m [1mdist/cli/index.d.ts       [22m[32m20.00 B[39m
+2026-11-20T23:58:47.3070638Z packages/react-router-dev build: [32mDTS[39m [1mdist/config.d.ts          [22m[32m9.69 KB[39m
+2026-11-20T23:58:47.3071133Z packages/react-router-dev build: [32mDTS[39m [1mdist/vite/cloudflare.d.ts [22m[32m1.08 KB[39m
+2026-11-20T23:58:47.3071589Z packages/react-router-dev build: [32mDTS[39m [1mdist/vite.d.ts            [22m[32m444.00 B[39m
+2026-11-20T23:58:47.3072024Z packages/react-router-dev build: [32mDTS[39m [1mdist/routes.d.ts          [22m[32m185.00 B[39m
+2026-11-20T23:58:47.3072462Z packages/react-router-dev build: [32mDTS[39m [1mdist/routes-CZR-bKRt.d.ts [22m[32m4.49 KB[39m
+2026-11-20T23:58:47.4554295Z packages/react-router-dev build: ✅ Ran 1 script and skipped 0 in 4.7s.
+2026-11-20T23:58:47.4624009Z packages/react-router-dev build: Done
+2026-11-20T23:58:47.4629446Z packages/react-router-fs-routes build$ wireit
+2026-11-20T23:58:47.4633342Z ...ct-router-remix-routes-option-adapter build$ wireit
+2026-11-20T23:58:47.5272507Z ...ct-router-remix-routes-option-adapter build: Analyzing
+2026-11-20T23:58:47.5279900Z packages/react-router-fs-routes build: Analyzing
+2026-11-20T23:58:47.7428702Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:47.7429568Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:47.7431143Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:47.7432303Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-remix-routes-option-adapter/tsup.config.ts
+2026-11-20T23:58:47.7496228Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:47.7496815Z ...ct-router-remix-routes-option-adapter build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:47.7497249Z ...ct-router-remix-routes-option-adapter build: [34mCJS[39m Build start
+2026-11-20T23:58:47.7547936Z packages/react-router-fs-routes build: [34mCLI[39m Building entry: index.ts
+2026-11-20T23:58:47.7549285Z ...ct-router-remix-routes-option-adapter build: [32mCJS[39m [1mdist/index.js [22m[32m4.47 KB[39m
+2026-11-20T23:58:47.7551116Z ...ct-router-remix-routes-option-adapter build: [32mCJS[39m ⚡️ Build success in 8ms
+2026-11-20T23:58:47.7555541Z packages/react-router-fs-routes build: [34mCLI[39m Using tsconfig: tsconfig.json
+2026-11-20T23:58:47.7558178Z packages/react-router-fs-routes build: [34mCLI[39m tsup v8.5.0
+2026-11-20T23:58:47.7560217Z packages/react-router-fs-routes build: [34mCLI[39m Using tsup config: /home/runner/work/react-router/react-router/packages/react-router-fs-routes/tsup.config.ts
+2026-11-20T23:58:47.7583423Z packages/react-router-fs-routes build: [34mCLI[39m Target: es2022
+2026-11-20T23:58:47.7592663Z packages/react-router-fs-routes build: [34mCLI[39m Cleaning output folder
+2026-11-20T23:58:47.7599864Z packages/react-router-fs-routes build: [34mCJS[39m Build start
+2026-11-20T23:58:47.7677864Z packages/react-router-fs-routes build: [32mCJS[39m [1mdist/index.js [22m[32m16.44 KB[39m
+2026-11-20T23:58:47.7680632Z packages/react-router-fs-routes build: [32mCJS[39m ⚡️ Build success in 8ms
+2026-11-20T23:58:47.9196980Z ...ct-router-remix-routes-option-adapter build: [34mDTS[39m Build start
+2026-11-20T23:58:47.9246999Z packages/react-router-fs-routes build: [34mDTS[39m Build start
+2026-11-20T23:58:48.8493417Z ...ct-router-remix-routes-option-adapter build: [32mDTS[39m ⚡️ Build success in 930ms
+2026-11-20T23:58:48.8493945Z ...ct-router-remix-routes-option-adapter build: [32mDTS[39m [1mdist/index.d.ts [22m[32m1.94 KB[39m
+2026-11-20T23:58:48.9009156Z ...ct-router-remix-routes-option-adapter build: ✅ Ran 1 script and skipped 0 in 1.4s.
+2026-11-20T23:58:48.9085792Z ...ct-router-remix-routes-option-adapter build: Done
+2026-11-20T23:58:48.9355958Z packages/react-router-fs-routes build: [32mDTS[39m ⚡️ Build success in 1011ms
+2026-11-20T23:58:48.9356492Z packages/react-router-fs-routes build: [32mDTS[39m [1mdist/index.d.ts [22m[32m705.00 B[39m
+2026-11-20T23:58:48.9869607Z packages/react-router-fs-routes build: ✅ Ran 1 script and skipped 0 in 1.5s.
+2026-11-20T23:58:48.9935053Z packages/react-router-fs-routes build: Done
+2026-11-20T23:58:49.0255705Z ##[group]Run coldteadotai/boba@v1
+2026-11-20T23:58:49.0255868Z with:
+2026-11-20T23:58:49.0256004Z   config: integration/playwright.config.ts
+2026-11-20T23:58:49.0256169Z   project: chromium
+2026-11-20T23:58:49.0256290Z   turbo: true
+2026-11-20T23:58:49.0256406Z   fail-fast: false
+2026-11-20T23:58:49.0257690Z   github-token: ***
+2026-11-20T23:58:49.0257816Z   timeout-minutes: 60
+2026-11-20T23:58:49.0257947Z   check-name: Boba
+2026-11-20T23:58:49.0258063Z   post: true
+2026-11-20T23:58:49.0258178Z env:
+2026-11-20T23:58:49.0258285Z   CI: true
+2026-11-20T23:58:49.0258429Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2026-11-20T23:58:49.0258615Z ##[endgroup]
+2026-11-20T23:58:50.3465928Z Waiting for Boba job bj_6659f711bc1a3ed8
+2026-11-20T23:58:50.6703343Z Boba history read in 324 ms
+2026-11-20T23:58:51.8111404Z Boba job bj_6659f711bc1a3ed8: running, building
+2026-11-20T23:59:01.8349634Z Boba job bj_6659f711bc1a3ed8: running, listing
+2026-11-20T23:59:04.1996179Z Boba job bj_6659f711bc1a3ed8: running, running
+2026-11-21T00:00:55.4405212Z Boba job bj_6659f711bc1a3ed8: done
+2026-11-21T00:00:55.4881595Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-21T00:00:56.4664901Z Check run: https://github.com/boba-benchmarks/react-router/runs/136648708983
+2026-11-21T00:00:56.4927083Z Post job cleanup.
+2026-11-21T00:00:56.5633691Z Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-f0a0b962efe70bcf2b4d4f788a408c45919c792daad914f47653b037d315ea52, not saving cache.
+2026-11-21T00:00:56.5738287Z Post job cleanup.
+2026-11-21T00:00:56.6634781Z Pruning is unnecessary.
+2026-11-21T00:00:56.6760430Z Post job cleanup.
+2026-11-21T00:00:56.7282944Z [command]/usr/bin/git version
+2026-11-21T00:00:56.7336367Z git version 2.56.1
+2026-11-21T00:00:56.7355972Z Temporarily overriding HOME='/home/runner/work/_temp/7418f8d0-6228-4990-8a60-368b8c4e900a' before making global git config changes
+2026-11-21T00:00:56.7356564Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-21T00:00:56.7358569Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react-router/react-router
+2026-11-21T00:00:56.7379184Z Removing SSH command configuration
+2026-11-21T00:00:56.7382877Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-21T00:00:56.7406230Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-21T00:00:56.7576331Z Removing HTTP extra header
+2026-11-21T00:00:56.7578826Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-21T00:00:56.7599946Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-21T00:00:56.7790507Z Removing includeIf entries pointing to credentials config files
+2026-11-21T00:00:56.7796011Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-21T00:00:56.7819031Z includeif.gitdir:/home/runner/work/react-router/react-router/.git.path
+2026-11-21T00:00:56.7819512Z includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path
+2026-11-21T00:00:56.7819875Z includeif.gitdir:/github/workspace/.git.path
+2026-11-21T00:00:56.7820197Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-21T00:00:56.7827641Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-router/react-router/.git.path
+2026-11-21T00:00:56.7843910Z /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7850750Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-router/react-router/.git.path /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7881666Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path
+2026-11-21T00:00:56.7896708Z /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7905367Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/react-router/react-router/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7924876Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-21T00:00:56.7939100Z /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7945677Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7968208Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-21T00:00:56.7986886Z /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.7992950Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config
+2026-11-21T00:00:56.8016113Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-21T00:00:56.8184388Z Removing credentials config '/home/runner/work/_temp/git-credentials-ca7f438f-a42a-44ce-a585-82419f0e150f.config'
+2026-11-21T00:00:56.8321627Z Cleaning up orphan processes
