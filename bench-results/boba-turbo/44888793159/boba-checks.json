@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/react-router/runs/136800845748",
+  "conclusion": "success",
+  "started_at": "2026-11-21T09:17:40Z",
+  "completed_at": "2026-11-21T09:20:24Z",
+  "title": "1250 passed, 4 flaky",
+  "summary": "### \u2705 All 1250 tests passed in 2 min 44 s\n\nOn 10b87ff \u00b7 3 min 54 s into the job \u00b7 44 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ac17781fadc33080/79b611bd697b36468bb5b0fa911b39fb/html/index.html)\n\n<details>\n<summary>4 flaky tests, not blocking</summary>\n\n`waits for new styles to load before transitioning` failed once here, then passed on retry\n`parent.clientLoader` failed once here, then passed on retry\n`parent.clientLoader/child.clientLoader` failed once here, then passed on retry\n`child.clientAction/parent.childLoader` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ }
+]
